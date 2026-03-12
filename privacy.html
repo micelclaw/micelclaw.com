@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Micelclaw</title>
+  <meta name="description" content="Privacy Policy for Micelclaw OS and micelclaw.com. Your data stays on your hardware.">
+  <meta property="og:title" content="Privacy Policy — Micelclaw">
+  <meta property="og:description" content="How Micelclaw handles your data. GDPR compliant.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://micelclaw.com/privacy">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="canonical" href="https://micelclaw.com/privacy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --cyan: #00c8ff; --cyan-bright: #40dfff; --cyan-dim: #0098cc;
+      --cyan-glow: rgba(0,200,255,0.20);
+      --bg-deep: #06060a; --surface: #0c0c12; --card-dark: #111118;
+      --border-dark: #1a1a26; --text-light: #e0e0e8; --text-dim: #7a7a8a;
+      --white: #ffffff; --gray-100: #eaeae8; --gray-200: #d4d4d0;
+      --gray-400: #9c9c96; --gray-600: #5c5c58; --gray-800: #2a2a28; --gray-900: #141413;
+      --font: 'Exo 2', system-ui, -apple-system, sans-serif;
+      --font-display: 'Orbitron', 'Exo 2', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+      --max-w: 1200px; --radius: 16px; --radius-sm: 10px; --radius-xs: 6px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font); color: var(--gray-900); line-height: 1.6;
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
+      background: url('images/bg-light.png') center top / cover no-repeat fixed;
+      min-height: 100vh;
+    }
+
+    /* ═══ NAV ═══ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      backdrop-filter: blur(16px) saturate(1.4);
+      -webkit-backdrop-filter: blur(16px) saturate(1.4);
+      background: rgba(6,6,10,0.7);
+      border-bottom: 1px solid rgba(0,200,255,0.08);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.3); }
+    .nav-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      padding: 0 32px; height: 60px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-brand {
+      font-family: var(--font-display); font-weight: 700; font-size: 16px; letter-spacing: 0.06em;
+      color: var(--text-light); text-decoration: none; text-transform: uppercase;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-brand img { width: 40px; height: 40px; object-fit: contain; }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a {
+      font-size: 13.5px; font-weight: 500; color: rgba(224,224,232,0.7);
+      text-decoration: none; transition: color 0.2s; letter-spacing: -0.01em;
+    }
+    .nav-links a:hover { color: var(--text-light); }
+    .btn-cta {
+      background: rgba(0,200,255,0.12); color: var(--cyan);
+      padding: 9px 20px; border-radius: var(--radius-xs);
+      border: 1px solid rgba(0,200,255,0.2);
+      font-family: var(--font); font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: all 0.2s; letter-spacing: -0.01em;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+    }
+    .btn-cta:hover { background: rgba(0,200,255,0.2); transform: translateY(-1px); }
+    .btn-cta svg { width: 14px; height: 14px; }
+
+    /* ═══ CONTENT ═══ */
+    .policy-content {
+      max-width: 780px; margin: 0 auto; padding: 120px 32px 80px;
+    }
+    .policy-content h1 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: 0.04em;
+      text-transform: uppercase; margin-bottom: 8px; line-height: 1.1;
+    }
+    .policy-meta {
+      font-size: 14px; color: var(--gray-400); margin-bottom: 40px;
+    }
+    .policy-meta a { color: var(--cyan-dim); text-decoration: none; }
+    .policy-meta a:hover { text-decoration: underline; }
+    .policy-content h2 {
+      font-family: var(--font-display);
+      font-size: 18px; font-weight: 700; letter-spacing: 0.03em;
+      text-transform: uppercase; margin: 48px 0 16px;
+      padding-top: 24px; border-top: 1px solid rgba(0,200,255,0.1);
+    }
+    .policy-content h3 {
+      font-size: 16px; font-weight: 600; margin: 28px 0 12px; color: var(--gray-800);
+    }
+    .policy-content p {
+      font-size: 15px; color: var(--gray-600); line-height: 1.75; margin-bottom: 16px;
+    }
+    .policy-content strong { color: var(--gray-900); }
+    .policy-content a { color: var(--cyan-dim); text-decoration: none; }
+    .policy-content a:hover { text-decoration: underline; }
+    .policy-content ul {
+      margin: 12px 0 16px 20px; font-size: 15px; color: var(--gray-600); line-height: 1.75;
+    }
+    .policy-content li { margin-bottom: 6px; }
+
+    /* Tables */
+    .policy-content table {
+      width: 100%; border-collapse: collapse; margin: 16px 0 24px;
+      font-size: 13.5px; line-height: 1.6;
+    }
+    .policy-content thead th {
+      text-align: left; padding: 10px 14px;
+      background: rgba(0,200,255,0.04); border-bottom: 2px solid rgba(0,200,255,0.1);
+      font-weight: 600; color: var(--gray-800); font-size: 12.5px;
+      text-transform: uppercase; letter-spacing: 0.03em;
+    }
+    .policy-content td {
+      padding: 10px 14px; border-bottom: 1px solid rgba(0,0,0,0.06);
+      color: var(--gray-600); vertical-align: top;
+    }
+    .policy-content tr:last-child td { border-bottom: none; }
+
+    /* ═══ FOOTER ═══ */
+    footer { padding: 32px; border-top: 1px solid rgba(0,0,0,0.06); }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .footer-left { font-size: 12.5px; color: var(--gray-400); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 12.5px; color: var(--gray-400); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gray-800); }
+
+    @media (max-width: 768px) {
+      .nav-links a:not(.btn-cta) { display: none; }
+      .policy-content { padding: 100px 20px 60px; }
+      .policy-content table { font-size: 12px; }
+      .policy-content thead th, .policy-content td { padding: 8px 10px; }
+      .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
+    }
+    @media (max-width: 600px) {
+      .policy-content table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="images/favicon.png" alt="Micelclaw">
+        Micelclaw
+      </a>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#preview">Preview</a>
+        <a href="https://github.com/micelclaw" target="_blank" rel="noopener">GitHub</a>
+        <a href="/#waitlist" class="btn-cta">Join waitlist <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="policy-content">
+    <h1>Privacy Policy</h1>
+    <p class="policy-meta">Last updated: March 12, 2026 &middot; Contact: <a href="mailto:privacy@micelclaw.com">privacy@micelclaw.com</a></p>
+
+    <p>This Privacy Policy explains how Micelclaw ("we", "us", "our") handles information across our website (micelclaw.com) and our self-hosted software product (Micelclaw OS). We are based in Madrid, Spain, and comply with the EU General Data Protection Regulation (GDPR).</p>
+
+    <h2>1. Our core principle</h2>
+    <p><strong>Your data stays on your hardware.</strong> Micelclaw OS is self-hosted software. Your notes, emails, calendar events, contacts, photos, files, diary entries, conversations, and any other personal content are stored exclusively on your own device. We never have access to this data, cannot read it, and do not transfer it to our servers.</p>
+
+    <h2>2. What we collect and why</h2>
+
+    <h3>2.1 Website (micelclaw.com)</h3>
+    <table>
+      <thead><tr><th>Data</th><th>Purpose</th><th>Legal basis (GDPR)</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr><td>Email address (waitlist)</td><td>Notify you about launch and product updates</td><td>Consent (Art. 6(1)(a))</td><td>Until you unsubscribe or we delete the list</td></tr>
+        <tr><td>Page views, referrer, country (via Cloudflare Web Analytics)</td><td>Understand website traffic. No cookies, no personal identifiers, no IP tracking</td><td>Legitimate interest (Art. 6(1)(f))</td><td>Aggregated, no personal data stored</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 Payments (LemonSqueezy)</h3>
+    <p>When you purchase a subscription or Cloud Credits, payment processing is handled by <strong>Lemon Squeezy Inc.</strong> ("LemonSqueezy"), which acts as the Merchant of Record. LemonSqueezy collects:</p>
+    <ul>
+      <li>Name, email, billing address</li>
+      <li>Payment method details (card number, PayPal, etc.)</li>
+      <li>VAT/tax identification (where required)</li>
+    </ul>
+    <p>We do not store your payment details. We receive from LemonSqueezy: your email, transaction ID, product purchased, and license key metadata. LemonSqueezy's privacy policy applies to payment data: <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">lemonsqueezy.com/privacy</a></p>
+    <table>
+      <thead><tr><th>Data</th><th>Purpose</th><th>Legal basis</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr><td>Email, transaction ID, product purchased</td><td>Fulfill your order, manage your license</td><td>Contract performance (Art. 6(1)(b))</td><td>Duration of your account + 5 years (tax obligations)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.3 License server (api.micelclaw.com)</h3>
+    <p>When you register for a free license or activate a paid license, our server processes:</p>
+    <table>
+      <thead><tr><th>Data</th><th>Purpose</th><th>Legal basis</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr><td>Email, hashed password</td><td>Account authentication</td><td>Contract performance (Art. 6(1)(b))</td><td>Until account deletion</td></tr>
+        <tr><td>License key, tier (free/pro/plus)</td><td>License validation and feature access</td><td>Contract performance (Art. 6(1)(b))</td><td>Until account deletion</td></tr>
+        <tr><td>Hardware fingerprint (hashed)</td><td>Prevent license abuse. Not reversible to identify your device</td><td>Legitimate interest (Art. 6(1)(f))</td><td>Until account deletion</td></tr>
+        <tr><td>Heartbeat check (every 14 days)</td><td>Verify license status</td><td>Contract performance (Art. 6(1)(b))</td><td>Not stored (real-time check)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.4 Cloud Credits (AI proxy — api.micelclaw.com)</h3>
+    <p>When you use Cloud Credits, your AI requests are routed through our proxy to third-party AI providers (Anthropic, OpenAI, Google, DeepSeek, xAI). We process:</p>
+    <table>
+      <thead><tr><th>Data</th><th>Purpose</th><th>Legal basis</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr><td>AI request content (prompt, context)</td><td>Forward to AI provider and return the response</td><td>Contract performance (Art. 6(1)(b))</td><td><strong>Not stored.</strong> Streamed in real-time and discarded</td></tr>
+        <tr><td>Token count, model used, cost</td><td>Billing and credit deduction</td><td>Contract performance (Art. 6(1)(b))</td><td>12 months</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Important:</strong> When you use Cloud Credits, your AI request content passes through our proxy server to reach the AI provider. We do not log, store, or read this content — it is streamed through and discarded. However, the third-party AI provider's privacy policy applies to how they handle your data. If you want zero data exposure to external servers, use BYOK (Bring Your Own Keys) or local models via Ollama — both are available on all tiers, including free.</p>
+
+    <h3>2.5 Micelclaw OS (the self-hosted product)</h3>
+    <p><strong>We do not collect any data from your Micelclaw OS instance</strong> unless you explicitly initiate one of the services above (license registration, Cloud Credits, cloud backup).</p>
+    <p>All processing — AI embeddings, search, knowledge graph, entity extraction, photo analysis, sync connectors — happens locally on your hardware. When using BYOK API keys or local models (Ollama), your data never leaves your device.</p>
+
+    <h3>2.6 Telemetry (opt-in only)</h3>
+    <p>Micelclaw OS may include optional, opt-in crash reporting (via Sentry). This is disabled by default and collects no data unless you explicitly enable it in Settings. If enabled, it sends anonymized crash reports (stack traces, OS version, no personal content). You can disable it at any time.</p>
+
+    <h2>3. Third-party services</h2>
+    <table>
+      <thead><tr><th>Service</th><th>Role</th><th>Data shared</th><th>Their privacy policy</th></tr></thead>
+      <tbody>
+        <tr><td>Cloudflare</td><td>CDN, DNS, web analytics</td><td>Aggregated page views (no personal data)</td><td><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></td></tr>
+        <tr><td>Buttondown</td><td>Email newsletter/waitlist</td><td>Email address</td><td><a href="https://buttondown.com/legal/privacy" target="_blank" rel="noopener">buttondown.com/legal/privacy</a></td></tr>
+        <tr><td>LemonSqueezy</td><td>Payment processing (MoR)</td><td>Name, email, billing, payment method</td><td><a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">lemonsqueezy.com/privacy</a></td></tr>
+        <tr><td>Sentry (opt-in)</td><td>Crash reporting</td><td>Anonymized stack traces</td><td><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">sentry.io/privacy</a></td></tr>
+        <tr><td>AI providers (via Cloud Credits)</td><td>AI model inference</td><td>Request content (streamed, not stored by us)</td><td>Per provider</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Cookies</h2>
+    <p><strong>micelclaw.com does not use cookies.</strong> Cloudflare Web Analytics is cookieless and does not track individual users.</p>
+    <p>LemonSqueezy may set cookies during the checkout process under their domain.</p>
+
+    <h2>5. Your rights (GDPR)</h2>
+    <p>As an EU resident, you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — Request a copy of the personal data we hold about you</li>
+      <li><strong>Rectification</strong> — Correct inaccurate personal data</li>
+      <li><strong>Erasure</strong> — Request deletion of your personal data ("right to be forgotten")</li>
+      <li><strong>Restriction</strong> — Request we limit processing of your data</li>
+      <li><strong>Portability</strong> — Receive your data in a structured, machine-readable format</li>
+      <li><strong>Object</strong> — Object to processing based on legitimate interest</li>
+      <li><strong>Withdraw consent</strong> — For consent-based processing (e.g., waitlist), at any time</li>
+    </ul>
+    <p>To exercise any of these rights, email <a href="mailto:privacy@micelclaw.com"><strong>privacy@micelclaw.com</strong></a>. We will respond within 30 days.</p>
+    <p>You also have the right to lodge a complaint with the Spanish Data Protection Authority (AEPD): <a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a></p>
+
+    <h2>6. Data transfers</h2>
+    <p>Our license server and AI proxy are hosted in the EU. When you use Cloud Credits, your AI request is forwarded to the selected AI provider, which may process data outside the EU. These providers maintain adequate safeguards (Standard Contractual Clauses or equivalents).</p>
+
+    <h2>7. Data security</h2>
+    <ul>
+      <li>License server communications are encrypted via TLS</li>
+      <li>Passwords are hashed (bcrypt)</li>
+      <li>Hardware fingerprints are hashed and not reversible</li>
+      <li>AI request content is streamed and never stored on our servers</li>
+      <li>Payment data is handled entirely by LemonSqueezy; we never see your card number</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>Micelclaw is not directed at children under 16. We do not knowingly collect personal data from children. If you believe we have, contact <a href="mailto:privacy@micelclaw.com">privacy@micelclaw.com</a> and we will delete it.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>We may update this Privacy Policy. Changes will be posted on this page with an updated date. For significant changes, we will notify you via email (if you're on the waitlist or are a customer).</p>
+
+    <h2>10. Contact</h2>
+    <p>For any privacy-related questions or requests:</p>
+    <p><strong>Email:</strong> <a href="mailto:privacy@micelclaw.com">privacy@micelclaw.com</a><br>
+    <strong>Location:</strong> Madrid, Spain</p>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-left">&copy; 2026 Micelclaw</span>
+      <div class="footer-links">
+        <a href="https://github.com/micelclaw" target="_blank" rel="noopener">GitHub</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav=document.getElementById('nav');
+    window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>10)},{passive:true});
+  </script>
+</body>
+</html>
