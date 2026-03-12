@@ -599,8 +599,33 @@
     }
     document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox(e)});
 
-    // Waitlist
-    document.querySelectorAll('.waitlist-form').forEach(f=>{f.addEventListener('submit',e=>{e.preventDefault();const b=f.querySelector('button'),i=f.querySelector('input');b.textContent='\u2713 You\'re in!';b.style.background='#059669';b.style.color='#fff';i.disabled=true;b.disabled=true})});
+    // Waitlist — POST to Cloudflare Worker
+    const WAITLIST_URL = 'https://micelclaw-waitlist.vgvaldunciel.workers.dev/subscribe';
+    document.querySelectorAll('.waitlist-form').forEach(f=>{
+      f.addEventListener('submit', async e=>{
+        e.preventDefault();
+        const b=f.querySelector('button'), i=f.querySelector('input');
+        const email = i.value.trim();
+        b.textContent='Sending...'; b.disabled=true;
+        try {
+          const res = await fetch(WAITLIST_URL, {
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({email})
+          });
+          const data = await res.json();
+          if(data.ok){
+            b.textContent='\u2713 You\'re in!';
+            b.style.background='#059669'; b.style.color='#fff';
+            i.disabled=true;
+          } else {
+            b.textContent='Try again'; b.disabled=false;
+          }
+        } catch(err){
+          b.textContent='Try again'; b.disabled=false;
+        }
+      });
+    });
   </script>
 </body>
 </html>
