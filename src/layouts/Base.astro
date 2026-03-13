@@ -1,0 +1,180 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonicalPath?: string;
+}
+
+const { title, description = "One app replaces your NAS, your notes, your calendar, your AI assistant — and it runs on your hardware. Powered by OpenClaw.", canonicalPath } = Astro.props;
+const canonical = canonicalPath ? `https://micelclaw.com${canonicalPath}` : undefined;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:type" content="website">
+  {canonical && <meta property="og:url" content={canonical}>}
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+  {canonical && <link rel="canonical" href={canonical}>}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <img src="/images/favicon.png" alt="Micelclaw">
+        Micelclaw
+      </a>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/blog">Blog</a>
+        <a href="https://github.com/micelclaw" target="_blank" rel="noopener">GitHub</a>
+        <a href="/#waitlist" class="btn-cta">Join waitlist <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+    </div>
+  </nav>
+
+  <slot />
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-left">&copy; 2026 Micelclaw</span>
+      <div class="footer-links">
+        <a href="https://github.com/micelclaw" target="_blank" rel="noopener">GitHub</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav?.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+</body>
+</html>
+
+<style is:global>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --cyan: #00c8ff; --cyan-bright: #40dfff; --cyan-dim: #0098cc;
+    --cyan-glow: rgba(0,200,255,0.20); --cyan-glow-soft: rgba(0,200,255,0.06);
+    --col-notes: #eab308; --col-calendar: #3b82f6; --col-mail: #22c55e;
+    --col-contacts: #a855f7; --col-diary: #14b8a6; --col-tools: #f97316;
+    --col-photos: #ec4899; --col-drive: #94a3b8; --col-office: #22c55e; --col-vpn: #a855f7;
+    --bg-deep: #06060a; --surface: #0c0c12; --card-dark: #111118;
+    --border-dark: #1a1a26; --text-light: #e0e0e8; --text-dim: #7a7a8a;
+    --dark-glass: rgba(6,6,10,0.55);
+    --white: #ffffff; --gray-100: #eaeae8; --gray-200: #d4d4d0;
+    --gray-400: #9c9c96; --gray-600: #5c5c58; --gray-800: #2a2a28; --gray-900: #141413;
+    --font: 'Exo 2', system-ui, -apple-system, sans-serif;
+    --font-display: 'Orbitron', 'Exo 2', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+    --max-w: 1200px; --radius: 16px; --radius-sm: 10px; --radius-xs: 6px;
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  [id] { scroll-margin-top: 80px; }
+  body {
+    font-family: var(--font); color: var(--gray-900); line-height: 1.6;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    background: url('/images/bg-light.png') center top / cover no-repeat fixed;
+    min-height: 100vh;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    backdrop-filter: blur(16px) saturate(1.4);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+    background: rgba(6,6,10,0.7);
+    border-bottom: 1px solid rgba(0,200,255,0.08);
+    transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 1px 20px rgba(0,0,0,0.3); }
+  .nav-inner {
+    max-width: var(--max-w); margin: 0 auto;
+    padding: 0 32px; height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand {
+    font-family: var(--font-display); font-weight: 700; font-size: 16px; letter-spacing: 0.06em;
+    color: var(--text-light); text-decoration: none; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-brand img { width: 40px; height: 40px; object-fit: contain; }
+  .nav-links { display: flex; align-items: center; gap: 28px; }
+  .nav-links a {
+    font-size: 13.5px; font-weight: 500; color: rgba(224,224,232,0.7);
+    text-decoration: none; transition: color 0.2s; letter-spacing: -0.01em;
+  }
+  .nav-links a:hover { color: var(--text-light); }
+  .btn-cta {
+    background: rgba(0,200,255,0.12); color: var(--cyan);
+    padding: 9px 20px; border-radius: var(--radius-xs);
+    border: 1px solid rgba(0,200,255,0.2);
+    font-family: var(--font); font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s; letter-spacing: -0.01em;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .btn-cta:hover { background: rgba(0,200,255,0.2); transform: translateY(-1px); }
+  .btn-cta svg { width: 14px; height: 14px; }
+
+  /* FOOTER */
+  footer { padding: 32px; border-top: 1px solid rgba(0,0,0,0.06); }
+  .footer-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+  .footer-left { font-size: 12.5px; color: var(--gray-400); }
+  .footer-links { display: flex; gap: 24px; }
+  .footer-links a { font-size: 12.5px; color: var(--gray-400); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gray-800); }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(0,200,255,0.35); } 70% { box-shadow: 0 0 0 6px rgba(0,200,255,0); } 100% { box-shadow: 0 0 0 0 rgba(0,200,255,0); } }
+  @keyframes lbIn { from { opacity: 0; } to { opacity: 1; } }
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* GLASS DARK SECTION */
+  .glass-dark {
+    background: var(--dark-glass);
+    backdrop-filter: blur(10px) saturate(1.3);
+    -webkit-backdrop-filter: blur(10px) saturate(1.3);
+    border-top: 1px solid rgba(0,200,255,0.06);
+    border-bottom: 1px solid rgba(0,200,255,0.06);
+    position: relative;
+  }
+  .glass-dark::before {
+    content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 200px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  }
+
+  .section-label {
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--cyan); font-weight: 500; margin-bottom: 20px;
+  }
+
+  .cyan-text {
+    background: linear-gradient(135deg, var(--cyan-dim) 0%, var(--cyan) 40%, var(--cyan-bright) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links a:not(.btn-cta) { display: none; }
+    .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>

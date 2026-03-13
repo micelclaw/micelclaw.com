@@ -1,0 +1,82 @@
+---
+title: "137 migrations and counting: building a personal OS schema from scratch"
+description: "How we designed the database schema for Micelclaw OS — a single PostgreSQL database that handles notes, emails, calendar, contacts, files, photos, and more."
+date: 2026-03-13
+author: "Victor"
+tags: ["architecture", "database", "postgresql"]
+draft: false
+---
+
+Building a "personal OS" sounds ambitious until you realize it mostly means one thing: **a really good database schema**.
+
+Micelclaw OS stores everything — notes, emails, calendar events, contacts, photos, files, diary entries, bookmarks, conversations — in a single PostgreSQL instance. No microservices, no separate databases per module. One schema to rule them all.
+
+After 137 migrations (and counting), here's what we've learned.
+
+{/* TODO: expand with full content */}
+
+## Why one database?
+
+The typical self-hosted stack looks like this: Nextcloud for files, Joplin for notes, Thunderbird for email, a separate CalDAV server, maybe a photo gallery. Each has its own database, its own auth, its own backup story. Nothing talks to each other.
+
+We wanted the opposite. When you write a note mentioning "meeting with Sarah next Thursday", the AI should be able to:
+
+1. Find Sarah in your contacts
+2. Check your calendar for Thursday
+3. Create the event
+4. Link the note to both
+
+That only works if everything lives in the same database.
+
+## The migration philosophy
+
+Every schema change goes through a numbered migration. No exceptions. We use Drizzle ORM's migration system, which generates SQL files from TypeScript schema definitions.
+
+```typescript
+// Example: adding the knowledge graph edges table
+export const knowledgeEdges = pgTable('knowledge_edges', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  sourceId: uuid('source_id').notNull(),
+  targetId: uuid('target_id').notNull(),
+  relation: text('relation').notNull(),
+  weight: real('weight').default(1.0),
+  createdAt: timestamp('created_at').defaultNow(),
+});
+```
+
+Rules we follow:
+
+- **Migrations are append-only.** Never edit a migration that's been released.
+- **Every migration must be reversible.** We write explicit `down` migrations.
+- **Schema changes ship with the app.** Micelclaw runs migrations automatically on startup — zero config.
+
+## What 137 migrations look like
+
+The schema has grown organically but intentionally:
+
+| Range | What happened |
+|-------|--------------|
+| 001–020 | Core: users, settings, notes, folders |
+| 021–045 | Calendar, contacts, email accounts |
+| 046–070 | Files, photos, thumbnails, EXIF metadata |
+| 071–095 | AI: embeddings, knowledge graph, entities |
+| 096–115 | Sync: IMAP state, CalDAV/CardDAV sync tokens |
+| 116–137 | Apps framework, skills, marketplace metadata |
+
+The total schema is around 80 tables. That sounds like a lot, but PostgreSQL handles it effortlessly.
+
+## Lessons learned
+
+1. **UUIDs everywhere.** We use UUIDs as primary keys for every table. It makes cross-table references predictable and avoids ID collision headaches.
+
+2. **Soft deletes for user data.** Notes, contacts, events — anything the user created gets a `deletedAt` timestamp instead of being removed. The trash can is a feature.
+
+3. **Embeddings are just another column.** We store vector embeddings using `pgvector`. No separate vector database needed.
+
+4. **Timestamps in UTC, always.** Calendar events store the user's timezone separately. Everything else is UTC.
+
+5. **Don't normalize too early.** Some tables have JSON columns for flexible metadata. That's fine. Normalize when you have three real use cases, not when you imagine them.
+
+---
+
+137 migrations in, the schema feels solid. It'll probably be 200 by the time we ship v1. And that's okay — each migration is a small, reversible step forward.

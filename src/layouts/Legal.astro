@@ -1,0 +1,87 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath: string;
+  lastUpdated: string;
+  contact: { label: string; email: string };
+}
+
+const { title, description, canonicalPath, lastUpdated, contact } = Astro.props;
+---
+
+<Base title={`${title} — Micelclaw`} description={description} canonicalPath={canonicalPath}>
+  <main class="legal-content">
+    <h1>{title}</h1>
+    <p class="legal-meta">Last updated: {lastUpdated} &middot; Contact: <a href={`mailto:${contact.email}`}>{contact.email}</a></p>
+    <slot />
+  </main>
+</Base>
+
+<style is:global>
+  .legal-content {
+    max-width: 800px; margin: 0 auto; padding: 120px 32px 80px;
+  }
+  .legal-content h1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: 0.04em;
+    text-transform: uppercase; margin-bottom: 8px; line-height: 1.1;
+  }
+  .legal-meta {
+    font-size: 14px; color: var(--gray-400); margin-bottom: 40px;
+  }
+  .legal-meta a { color: var(--cyan-dim); text-decoration: none; }
+  .legal-meta a:hover { text-decoration: underline; }
+  .legal-content h2 {
+    font-family: var(--font-display);
+    font-size: 18px; font-weight: 700; letter-spacing: 0.03em;
+    text-transform: uppercase; margin: 48px 0 16px;
+    padding-top: 24px; border-top: 1px solid rgba(0,200,255,0.1);
+  }
+  .legal-content h3 {
+    font-size: 16px; font-weight: 600; margin: 28px 0 12px; color: var(--gray-800);
+  }
+  .legal-content p {
+    font-size: 15px; color: var(--gray-600); line-height: 1.75; margin-bottom: 16px;
+  }
+  .legal-content strong { color: var(--gray-900); }
+  .legal-content a { color: var(--cyan-dim); text-decoration: none; }
+  .legal-content a:hover { text-decoration: underline; }
+  .legal-content ul {
+    margin: 12px 0 16px 20px; font-size: 15px; color: var(--gray-600); line-height: 1.75;
+  }
+  .legal-content li { margin-bottom: 6px; }
+  .legal-content code {
+    font-family: var(--mono); font-size: 13px; background: rgba(0,0,0,0.05);
+    padding: 2px 6px; border-radius: 4px;
+  }
+  .legal-content table {
+    width: 100%; border-collapse: collapse; margin: 16px 0 24px;
+    font-size: 13.5px; line-height: 1.6;
+  }
+  .legal-content thead th {
+    text-align: left; padding: 10px 14px;
+    background: rgba(0,200,255,0.04); border-bottom: 2px solid rgba(0,200,255,0.1);
+    font-weight: 600; color: var(--gray-800); font-size: 12.5px;
+    text-transform: uppercase; letter-spacing: 0.03em;
+  }
+  .legal-content td {
+    padding: 10px 14px; border-bottom: 1px solid rgba(0,0,0,0.06);
+    color: var(--gray-600); vertical-align: top;
+  }
+  .legal-content tr:last-child td { border-bottom: none; }
+  .legal-content .disclaimer {
+    font-size: 13px; color: var(--gray-600); line-height: 1.7;
+    text-transform: uppercase; letter-spacing: 0.01em; margin-bottom: 16px;
+  }
+  @media (max-width: 768px) {
+    .legal-content { padding: 100px 20px 60px; }
+    .legal-content table { font-size: 12px; }
+    .legal-content thead th, .legal-content td { padding: 8px 10px; }
+  }
+  @media (max-width: 600px) {
+    .legal-content table { display: block; overflow-x: auto; }
+  }
+</style>

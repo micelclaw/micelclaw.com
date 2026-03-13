@@ -1,0 +1,485 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Micelclaw — Your zero-config, self-hosted AI productivity OS" canonicalPath="/">
+
+  <!-- HERO -->
+  <section class="hero" id="waitlist">
+    <div class="hero-badge"><span class="pulse-dot"></span> In active development</div>
+    <h1><span class="cyan-text">Micelclaw</span> OS</h1>
+    <p class="hero-subtitle">Your zero-config, self-hosted AI productivity OS</p>
+    <p class="hero-sub">One app replaces your NAS, your notes, your calendar, your AI&nbsp;assistant&nbsp;— and it runs on your hardware.</p>
+    <form class="waitlist-form" id="wl-top">
+      <input type="email" placeholder="you@email.com" required aria-label="Email">
+      <button type="submit">Get early access</button>
+    </form>
+    <p class="hero-note">No spam. We'll email you once when it's ready.</p>
+    <div class="hero-screen-wrapper">
+      <div class="hero-screen">
+        <img src="/images/screen-notes.png" alt="Micelclaw Dashboard — Notes with semantic search and knowledge graph" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- POWERED BY OPENCLAW -->
+  <section class="openclaw-section glass-dark">
+    <div class="openclaw-inner reveal">
+      <p class="section-label">The engine</p>
+      <h2>Powered by OpenClaw</h2>
+      <p>OpenClaw is the open-source AI agent runtime — the brain. Micelclaw is the product layer — the dashboard, the integrations, the experience you actually use every day.</p>
+      <div class="openclaw-visual">
+        <div class="oc-node brain">OpenClaw — the brain</div>
+        <span class="oc-arrow">→</span>
+        <div class="oc-node body">Micelclaw — the body</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem-section reveal">
+    <div class="problem-inner">
+      <p class="section-label" style="color: var(--cyan);">The problem</p>
+      <h2>You shouldn't need 10&nbsp;apps and 3&nbsp;subscriptions to be productive</h2>
+      <p>Your notes in one app. Calendar in another. Files in the cloud. Photos on a NAS. AI behind a paywall. Nothing talks to each other — and none of it is truly yours.</p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section" id="features">
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" stroke="var(--col-notes)"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="var(--col-calendar)"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="var(--col-mail)"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="var(--col-contacts)"/></svg>
+        </div>
+        <h3>Everything in one place</h3>
+        <p>Notes, email, calendar, contacts, files, photos, diary, bookmarks — all unified in a single dashboard. No more context-switching between a dozen tabs, remembering which app has what, or paying for separate subscriptions that don't talk to each other.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" stroke="var(--cyan)"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.4 5 7.6V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.4c2.9-1.2 5-4.2 5-7.6a8 8 0 0 0-8-8z"/><line x1="10" y1="22" x2="14" y2="22"/></svg>
+        </div>
+        <h3>AI that understands your data</h3>
+        <p>Semantic search finds what you mean, not just what you type. A knowledge graph automatically connects people, topics, and events across all your data. Daily digests surface what matters before you ask — all powered by local AI models, nothing leaves your machine.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" stroke="var(--col-tools)"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Zero configuration</h3>
+        <p>Install and open — that's it. No YAML files to edit, no Docker Compose to debug, no weekend tutorials to follow. Micelclaw handles database setup, service orchestration, SSL certificates, and AI model management automatically. You focus on your work, not on infrastructure.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" stroke="var(--col-contacts)"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Your hardware, your rules</h3>
+        <p>Runs on any PC, mini-PC, Raspberry Pi, or NAS you already own. Your data stays on your network — no cloud dependency, no vendor lock-in, no surprise price hikes. You're in control, always. Core features are free forever, no strings attached.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" stroke="var(--col-mail)"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>Sync everything you already use</h3>
+        <p>Connect your Google Calendar, IMAP email, CardDAV contacts, and CalDAV calendars. Micelclaw syncs bidirectionally — your data flows in, stays local, and the AI understands all of it. No migration needed; keep using what works while Micelclaw adds the intelligence layer.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" stroke="var(--col-diary)"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </div>
+        <h3>Extensible with apps &amp; skills</h3>
+        <p>Micelclaw grows with you. Install apps from the marketplace — office suites, VPN management, terminal access, media players, finance tools — or build your own. AI agents can learn new skills to automate your specific workflows, from triaging emails to generating weekly reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="preview">
+    <div class="gallery-header reveal">
+      <p class="section-label" style="color: var(--cyan);">A look inside</p>
+      <h2>One dashboard, everything you need</h2>
+      <p>Real screenshots. Real product. No mockups.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-label="Calendar — Month">
+        <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-calendar)"></span><span class="gallery-item-title">Calendar — Month</span></div>
+        <img src="/images/screen-calendar-month.png" alt="Calendar month view" loading="lazy">
+        <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-label="Calendar — Week">
+        <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-calendar)"></span><span class="gallery-item-title">Calendar — Week</span></div>
+        <img src="/images/screen-calendar-week.png" alt="Calendar week view" loading="lazy">
+        <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-label="Mail">
+        <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-mail)"></span><span class="gallery-item-title">Mail</span></div>
+        <img src="/images/screen-mail.png" alt="Email client" loading="lazy">
+        <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-label="Photos — AI Vision">
+        <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-photos)"></span><span class="gallery-item-title">Photos</span></div>
+        <img src="/images/screen-photos.png" alt="Photo gallery with AI" loading="lazy">
+        <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-label="Drive">
+        <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-drive)"></span><span class="gallery-item-title">Drive</span></div>
+        <img src="/images/screen-drive.png" alt="File manager" loading="lazy">
+        <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-label="VPN Management">
+        <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-vpn)"></span><span class="gallery-item-title">VPN</span></div>
+        <img src="/images/screen-vpn.png" alt="VPN management" loading="lazy">
+        <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-label" id="lightbox-label"></div>
+  </div>
+
+  <!-- OSS -->
+  <section class="oss-section glass-dark">
+    <div class="oss-inner reveal">
+      <p class="section-label">Standing on the shoulders of giants</p>
+      <h2>Built on the best open source</h2>
+      <p>No reinvented wheels. Battle-tested projects, integrated into one seamless experience. Actively developed every day.</p>
+      <div class="oss-grid">
+        <span class="oss-chip"><span class="oss-dot" style="background:#336791"></span>PostgreSQL</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:#61dafb"></span>React</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:#fff"></span>Ollama</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:#f0a830"></span>Fastify</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:#c3e88d"></span>Drizzle ORM</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:#2496ed"></span>Docker</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:#646cff"></span>Vite</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:#38bdf8"></span>Tailwind CSS</span>
+        <span class="oss-chip"><span class="oss-dot" style="background:var(--cyan)"></span>Shadcn/ui</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="final-cta">
+    <h2 class="reveal">Take back your <span class="cyan-text">digital life</span></h2>
+    <p class="reveal">Be the first to know when Micelclaw launches.</p>
+    <form class="waitlist-form reveal" id="wl-bottom">
+      <input type="email" placeholder="you@email.com" required aria-label="Email">
+      <button type="submit">Get early access</button>
+    </form>
+  </section>
+
+  <script>
+    // Reveal on scroll
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(el => {
+        if (el.isIntersecting) { el.target.classList.add('visible'); obs.unobserve(el.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // Lightbox
+    const lb = document.getElementById('lightbox')!;
+    const lbImg = document.getElementById('lightbox-img') as HTMLImageElement;
+    const lbLabel = document.getElementById('lightbox-label')!;
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img')!;
+        lbImg.src = (img as HTMLImageElement).src;
+        lbImg.alt = (img as HTMLImageElement).alt;
+        lbLabel.textContent = (item as HTMLElement).dataset.label || '';
+        lb.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    function closeLightbox(e: Event) {
+      if (e.target === lbImg) return;
+      lb.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    lb.addEventListener('click', closeLightbox);
+    lb.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(e); });
+
+    // Waitlist — POST to Cloudflare Worker
+    const WAITLIST_URL = 'https://micelclaw-waitlist.vgvaldunciel.workers.dev/subscribe';
+    document.querySelectorAll('.waitlist-form').forEach(f => {
+      f.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const b = f.querySelector('button') as HTMLButtonElement;
+        const i = f.querySelector('input') as HTMLInputElement;
+        const email = i.value.trim();
+        b.textContent = 'Sending...'; b.disabled = true;
+        try {
+          const res = await fetch(WAITLIST_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email })
+          });
+          const data = await res.json();
+          if (data.ok) {
+            b.textContent = '\u2713 You\'re in!';
+            b.style.background = '#059669'; b.style.color = '#fff';
+            i.disabled = true;
+          } else {
+            b.textContent = 'Try again'; b.disabled = false;
+          }
+        } catch {
+          b.textContent = 'Try again'; b.disabled = false;
+        }
+      });
+    });
+  </script>
+</Base>
+
+<style>
+  /* HERO */
+  .hero {
+    position: relative; padding: 150px 32px 0; text-align: center;
+  }
+  .hero > :global(*) { position: relative; z-index: 1; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 16px 6px 12px; border-radius: 100px;
+    background: rgba(255,255,255,0.85); border: 1px solid rgba(0,200,255,0.15);
+    font-size: 12.5px; font-weight: 500; color: var(--gray-600);
+    margin-bottom: 28px; box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    animation: fadeUp 0.5s ease both;
+  }
+  .pulse-dot {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--cyan);
+    box-shadow: 0 0 0 0 var(--cyan-glow); animation: pulse-ring 2.5s infinite;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(48px, 7vw, 88px); font-weight: 900; letter-spacing: 0.06em;
+    line-height: 1; color: var(--gray-900); max-width: 900px; margin: 0 auto 16px;
+    text-transform: uppercase;
+    animation: fadeUp 0.6s 0.08s ease both;
+  }
+  .hero-subtitle {
+    font-family: var(--font-display);
+    font-size: clamp(15px, 2vw, 20px); font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--cyan-dim);
+    max-width: 700px; margin: 0 auto 16px;
+    animation: fadeUp 0.6s 0.12s ease both;
+  }
+  .hero-sub {
+    font-size: clamp(16px, 1.8vw, 19px); color: var(--gray-600); max-width: 520px;
+    margin: 0 auto 40px; line-height: 1.55; font-weight: 400; letter-spacing: -0.01em;
+    animation: fadeUp 0.6s 0.15s ease both;
+  }
+
+  /* Waitlist */
+  .waitlist-form {
+    display: flex; gap: 8px; max-width: 420px; margin: 0 auto;
+    animation: fadeUp 0.6s 0.22s ease both;
+  }
+  .waitlist-form input {
+    flex: 1; padding: 13px 16px; border-radius: var(--radius-sm);
+    border: 1.5px solid rgba(0,200,255,0.15); background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
+    font-family: var(--font); font-size: 14px; color: var(--gray-900); outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .waitlist-form input::placeholder { color: var(--gray-400); }
+  .waitlist-form input:focus {
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 3px var(--cyan-glow);
+    background: rgba(255,255,255,0.95);
+  }
+  .waitlist-form button {
+    padding: 13px 24px; border: none; border-radius: var(--radius-sm);
+    background: var(--bg-deep); color: var(--cyan);
+    font-family: var(--font); font-size: 14px; font-weight: 600;
+    cursor: pointer; white-space: nowrap; transition: all 0.2s;
+  }
+  .waitlist-form button:hover { background: #12121a; transform: translateY(-1px); }
+  .waitlist-form button:active { transform: scale(0.98); }
+  .hero-note {
+    font-size: 12px; color: var(--gray-400); margin-top: 12px;
+    animation: fadeUp 0.6s 0.28s ease both;
+  }
+
+  /* Hero screenshot */
+  .hero-screen-wrapper {
+    max-width: 1040px; margin: 56px auto 0; position: relative;
+    animation: fadeUp 0.8s 0.35s ease both;
+  }
+  .hero-screen {
+    width: 100%; border-radius: var(--radius) var(--radius) 0 0;
+    overflow: hidden; border: 1px solid rgba(0,200,255,0.1); border-bottom: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08), 0 16px 48px rgba(0,0,0,0.12), 0 32px 80px rgba(0,0,0,0.08);
+  }
+  .hero-screen img { width: 100%; display: block; }
+
+  /* OPENCLAW */
+  .openclaw-section { padding: 100px 32px; }
+  .openclaw-inner { max-width: var(--max-w); margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+  .openclaw-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(26px, 3.5vw, 40px); font-weight: 700; letter-spacing: 0.04em;
+    color: var(--text-light); margin-bottom: 16px; text-transform: uppercase;
+  }
+  .openclaw-section p {
+    font-size: 16px; color: rgba(224,224,232,0.8); max-width: 520px; margin: 0 auto; line-height: 1.7;
+  }
+  .openclaw-visual {
+    margin-top: 48px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;
+  }
+  .oc-node { padding: 18px 32px; border-radius: var(--radius-sm); font-weight: 600; font-size: 15px; letter-spacing: -0.02em; }
+  .oc-node.brain { background: rgba(12,12,18,0.6); color: var(--text-light); border: 1px solid var(--border-dark); }
+  .oc-node.body { background: rgba(0,200,255,0.08); color: var(--cyan); border: 1px solid rgba(0,200,255,0.15); }
+  .oc-arrow { color: var(--cyan); font-size: 22px; opacity: 0.5; }
+
+  /* PROBLEM */
+  .problem-section { padding: 120px 32px; text-align: center; }
+  .problem-inner { max-width: 600px; margin: 0 auto; }
+  .problem-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 34px); font-weight: 700; letter-spacing: 0.02em;
+    line-height: 1.15; margin-bottom: 20px;
+  }
+  .problem-section p { font-size: 16px; color: var(--gray-600); line-height: 1.75; }
+
+  /* FEATURES */
+  .features-section { padding: 0 32px 120px; }
+  .features-grid {
+    max-width: var(--max-w); margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  }
+  .feature-card {
+    padding: 32px; border-radius: var(--radius);
+    background: rgba(255,255,255,0.75); backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: all 0.3s ease; position: relative; overflow: hidden;
+  }
+  .feature-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .feature-card:nth-child(1)::before { background: linear-gradient(90deg, var(--col-notes), var(--col-calendar), transparent); }
+  .feature-card:nth-child(2)::before { background: linear-gradient(90deg, var(--cyan), transparent); }
+  .feature-card:nth-child(3)::before { background: linear-gradient(90deg, var(--col-tools), transparent); }
+  .feature-card:nth-child(4)::before { background: linear-gradient(90deg, var(--col-contacts), transparent); }
+  .feature-card:nth-child(5)::before { background: linear-gradient(90deg, var(--col-mail), transparent); }
+  .feature-card:nth-child(6)::before { background: linear-gradient(90deg, var(--col-diary), var(--col-photos), transparent); }
+  .feature-card:hover {
+    background: rgba(255,255,255,0.9);
+    border-color: rgba(0,200,255,0.15);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+  }
+  .feature-card:hover::before { opacity: 1; }
+  .feature-icon { width: 36px; height: 36px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; }
+  .feature-icon :global(svg) { width: 28px; height: 28px; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .feature-card h3 { font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.03em; text-transform: uppercase; }
+  .feature-card p { font-size: 14px; color: var(--gray-600); line-height: 1.7; }
+
+  /* GALLERY */
+  .gallery-section { padding: 0 32px 120px; }
+  .gallery-header { max-width: var(--max-w); margin: 0 auto 48px; text-align: center; }
+  .gallery-header h2 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); font-weight: 700; letter-spacing: 0.03em; margin-bottom: 12px; text-transform: uppercase; }
+  .gallery-header p { font-size: 16px; color: var(--gray-600); }
+  .gallery-grid {
+    max-width: var(--max-w); margin: 0 auto;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  }
+  .gallery-item {
+    border-radius: var(--radius); overflow: hidden;
+    border: 1px solid rgba(26,26,38,0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; position: relative;
+  }
+  .gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+  }
+  .gallery-item-header {
+    padding: 10px 14px; display: flex; align-items: center; gap: 8px;
+    background: var(--bg-deep); border-bottom: 1px solid var(--border-dark);
+  }
+  .gallery-item-dot { width: 7px; height: 7px; border-radius: 50%; }
+  .gallery-item-title { font-size: 11px; font-weight: 500; color: var(--text-dim); font-family: var(--mono); }
+  .gallery-item img { width: 100%; display: block; background: var(--bg-deep); }
+  .gallery-item .zoom-hint {
+    position: absolute; bottom: 12px; right: 12px;
+    width: 32px; height: 32px; border-radius: 8px;
+    background: rgba(6,6,10,0.7); backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: opacity 0.25s;
+  }
+  .gallery-item:hover .zoom-hint { opacity: 1; }
+  .zoom-hint :global(svg) { width: 16px; height: 16px; stroke: var(--cyan); stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(6,6,10,0.92); backdrop-filter: blur(20px);
+    display: none; align-items: center; justify-content: center;
+    padding: 40px; cursor: zoom-out;
+  }
+  .lightbox:global(.active) { display: flex; animation: lbIn 0.25s ease; }
+  .lightbox img {
+    max-width: 95%; max-height: 90vh; border-radius: 12px;
+    box-shadow: 0 16px 64px rgba(0,0,0,0.4);
+    border: 1px solid var(--border-dark);
+  }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 24px;
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .lightbox-close:hover { background: rgba(255,255,255,0.15); }
+  .lightbox-close :global(svg) { width: 18px; height: 18px; stroke: var(--text-light); stroke-width: 2; fill: none; stroke-linecap: round; }
+  .lightbox-label {
+    position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+    font-family: var(--mono); font-size: 13px; color: var(--text-dim);
+    background: rgba(6,6,10,0.6); padding: 6px 16px; border-radius: 100px;
+    border: 1px solid var(--border-dark);
+  }
+
+  /* OSS */
+  .oss-section { padding: 100px 32px; text-align: center; }
+  .oss-inner { max-width: var(--max-w); margin: 0 auto; position: relative; z-index: 1; }
+  .oss-section h2 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); font-weight: 700; letter-spacing: 0.03em; color: var(--text-light); margin-bottom: 12px; text-transform: uppercase; }
+  .oss-section > .oss-inner > p { font-size: 16px; color: rgba(224,224,232,0.75); margin-bottom: 48px; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.65; }
+  .oss-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 680px; margin: 0 auto; }
+  .oss-chip {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 18px; border-radius: 100px;
+    background: rgba(12,12,18,0.5); border: 1px solid var(--border-dark);
+    font-size: 13.5px; font-weight: 500; color: rgba(224,224,232,0.7);
+    transition: border-color 0.25s, color 0.25s;
+  }
+  .oss-chip:hover { border-color: rgba(0,200,255,0.2); color: var(--text-light); }
+  .oss-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+  /* CTA */
+  .final-cta { padding: 120px 32px; text-align: center; }
+  .final-cta h2 { font-family: var(--font-display); font-size: clamp(28px, 4vw, 46px); font-weight: 800; letter-spacing: 0.04em; margin-bottom: 16px; line-height: 1.1; text-transform: uppercase; }
+  .final-cta p { font-size: 16px; color: var(--gray-600); margin-bottom: 36px; max-width: 440px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 1024px) {
+    .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero { padding: 120px 20px 0; }
+    .waitlist-form { flex-direction: column; }
+    .waitlist-form button { width: 100%; }
+    .features-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .openclaw-visual { flex-direction: column; }
+    .oc-arrow { transform: rotate(90deg); }
+  }
+</style>

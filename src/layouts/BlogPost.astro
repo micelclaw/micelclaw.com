@@ -1,0 +1,128 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  author: string;
+  tags: string[];
+}
+
+const { title, description, date, author, tags } = Astro.props;
+const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<Base title={`${title} — Micelclaw Blog`} description={description}>
+  <main class="blog-post">
+    <article>
+      <header class="post-header">
+        <div class="post-meta">
+          <time datetime={date.toISOString()}>{formattedDate}</time>
+          <span class="meta-sep">&middot;</span>
+          <span>{author}</span>
+        </div>
+        <h1>{title}</h1>
+        {tags.length > 0 && (
+          <div class="post-tags">
+            {tags.map(tag => <span class="tag">{tag}</span>)}
+          </div>
+        )}
+      </header>
+      <div class="post-content">
+        <slot />
+      </div>
+    </article>
+  </main>
+</Base>
+
+<style is:global>
+  .blog-post {
+    max-width: 720px; margin: 0 auto; padding: 120px 32px 80px;
+  }
+  .post-header {
+    margin-bottom: 48px;
+  }
+  .post-meta {
+    font-family: var(--mono); font-size: 13px; color: var(--gray-400);
+    margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+  }
+  .meta-sep { opacity: 0.4; }
+  .post-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 42px); font-weight: 800; letter-spacing: 0.02em;
+    line-height: 1.15; margin-bottom: 16px;
+  }
+  .post-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+    letter-spacing: 0.06em; padding: 4px 10px; border-radius: 100px;
+    background: rgba(0,200,255,0.06); color: var(--cyan-dim);
+    border: 1px solid rgba(0,200,255,0.1);
+  }
+
+  /* Post content prose */
+  .post-content {
+    font-size: 16px; color: var(--gray-600); line-height: 1.8;
+  }
+  .post-content h2 {
+    font-family: var(--font-display);
+    font-size: 20px; font-weight: 700; letter-spacing: 0.02em;
+    margin: 48px 0 16px; color: var(--gray-900);
+    text-transform: uppercase;
+  }
+  .post-content h3 {
+    font-size: 17px; font-weight: 600; margin: 36px 0 12px; color: var(--gray-800);
+  }
+  .post-content p { margin-bottom: 20px; }
+  .post-content a { color: var(--cyan-dim); text-decoration: underline; text-underline-offset: 2px; }
+  .post-content a:hover { color: var(--cyan); }
+  .post-content strong { color: var(--gray-900); }
+  .post-content ul, .post-content ol {
+    margin: 12px 0 20px 20px; line-height: 1.8;
+  }
+  .post-content li { margin-bottom: 6px; }
+  .post-content blockquote {
+    margin: 24px 0; padding: 16px 20px;
+    border-left: 3px solid var(--cyan); background: rgba(0,200,255,0.03);
+    font-style: italic; color: var(--gray-600);
+  }
+  .post-content code {
+    font-family: var(--mono); font-size: 14px;
+    background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 4px;
+  }
+  .post-content pre {
+    margin: 24px 0; padding: 20px; border-radius: var(--radius-sm);
+    overflow-x: auto; font-size: 13.5px; line-height: 1.6;
+    border: 1px solid rgba(0,200,255,0.08);
+  }
+  .post-content pre code {
+    background: none; padding: 0; font-size: inherit;
+  }
+  .post-content img {
+    max-width: 100%; border-radius: var(--radius-sm); margin: 24px 0;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  .post-content table {
+    width: 100%; border-collapse: collapse; margin: 20px 0;
+    font-size: 14px;
+  }
+  .post-content thead th {
+    text-align: left; padding: 10px 14px;
+    background: rgba(0,200,255,0.04); border-bottom: 2px solid rgba(0,200,255,0.1);
+    font-weight: 600; color: var(--gray-800); font-size: 12.5px;
+    text-transform: uppercase; letter-spacing: 0.03em;
+  }
+  .post-content td {
+    padding: 10px 14px; border-bottom: 1px solid rgba(0,0,0,0.06);
+    color: var(--gray-600);
+  }
+  .post-content hr {
+    border: none; border-top: 1px solid rgba(0,200,255,0.1);
+    margin: 48px 0;
+  }
+
+  @media (max-width: 768px) {
+    .blog-post { padding: 100px 20px 60px; }
+  }
+</style>
