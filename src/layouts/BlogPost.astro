@@ -13,6 +13,21 @@ interface Props {
 const { title, description, date, author, tags, image } = Astro.props;
 const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const slug = Astro.url.pathname;
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description,
+  author: { "@type": "Person", name: author },
+  datePublished: date.toISOString(),
+  publisher: {
+    "@type": "Organization",
+    name: "Micelclaw",
+    logo: { "@type": "ImageObject", url: "https://micelclaw.com/images/favicon.png" },
+  },
+  ...(image && { image: image.startsWith("http") ? image : `https://micelclaw.com${image}` }),
+};
 ---
 
 <Base
@@ -21,6 +36,7 @@ const slug = Astro.url.pathname;
   canonicalPath={slug}
   ogType="article"
   ogImage={image}
+  jsonLd={articleJsonLd}
 >
   <main class="blog-post">
     <article>

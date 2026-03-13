@@ -1,11 +1,21 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Micelclaw",
+  url: "https://micelclaw.com",
+  logo: "https://micelclaw.com/images/favicon.png",
+  sameAs: ["https://github.com/micelclaw"],
+};
 ---
 
 <Base
   title="Micelclaw — Self-hosted AI Productivity OS"
   description="One app replaces your NAS, notes, calendar, email, and AI assistant. Runs on your hardware. Your data stays yours."
   canonicalPath="/"
+  jsonLd={orgJsonLd}
 >
 
   <!-- HERO -->

@@ -5,6 +5,7 @@ interface Props {
   canonicalPath?: string;
   ogImage?: string;
   ogType?: string;
+  jsonLd?: Record<string, unknown>;
 }
 
 const {
@@ -13,11 +14,12 @@ const {
   canonicalPath,
   ogImage = "/images/og-default.png",
   ogType = "website",
+  jsonLd,
 } = Astro.props;
 
 const siteUrl = "https://micelclaw.com";
 const canonical = canonicalPath ? `${siteUrl}${canonicalPath}` : undefined;
-const ogImageUrl = ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`;
+const ogImageUrl = ogImage?.startsWith("http") ? ogImage : `${siteUrl}${ogImage ?? "/images/og-default.png"}`;
 ---
 
 <!DOCTYPE html>
@@ -38,13 +40,16 @@ const ogImageUrl = ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={ogImageUrl}>
+  <link rel="icon" href="/images/favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png">
   <link rel="apple-touch-icon" href="/images/favicon.png">
   {canonical && <link rel="canonical" href={canonical}>}
+  <link rel="alternate" type="application/rss+xml" title="Micelclaw Blog" href="/rss.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 </head>
 <body>
 
