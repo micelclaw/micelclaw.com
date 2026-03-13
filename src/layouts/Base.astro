@@ -3,10 +3,21 @@ interface Props {
   title: string;
   description?: string;
   canonicalPath?: string;
+  ogImage?: string;
+  ogType?: string;
 }
 
-const { title, description = "One app replaces your NAS, your notes, your calendar, your AI assistant — and it runs on your hardware. Powered by OpenClaw.", canonicalPath } = Astro.props;
-const canonical = canonicalPath ? `https://micelclaw.com${canonicalPath}` : undefined;
+const {
+  title,
+  description = "One app replaces your NAS, notes, calendar, email, and AI assistant. Runs on your hardware. Your data stays yours.",
+  canonicalPath,
+  ogImage = "/images/og-default.png",
+  ogType = "website",
+} = Astro.props;
+
+const siteUrl = "https://micelclaw.com";
+const canonical = canonicalPath ? `${siteUrl}${canonicalPath}` : undefined;
+const ogImageUrl = ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`;
 ---
 
 <!DOCTYPE html>
@@ -16,11 +27,17 @@ const canonical = canonicalPath ? `https://micelclaw.com${canonicalPath}` : unde
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content={description}>
+  <!-- Open Graph -->
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
-  <meta property="og:type" content="website">
+  <meta property="og:type" content={ogType}>
+  <meta property="og:image" content={ogImageUrl}>
   {canonical && <meta property="og:url" content={canonical}>}
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImageUrl}>
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png">
   <link rel="apple-touch-icon" href="/images/favicon.png">

@@ -12,7 +12,7 @@ interface Props {
 const { title, description, canonicalPath, lastUpdated, contact } = Astro.props;
 ---
 
-<Base title={`${title} — Micelclaw`} description={description} canonicalPath={canonicalPath}>
+<Base title={`${title} | Micelclaw`} description={description} canonicalPath={canonicalPath}>
   <main class="legal-content">
     <h1>{title}</h1>
     <p class="legal-meta">Last updated: {lastUpdated} &middot; Contact: <a href={`mailto:${contact.email}`}>{contact.email}</a></p>

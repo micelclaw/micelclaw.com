@@ -6,7 +6,11 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<Base title="Blog — Micelclaw" description="Engineering notes, product updates, and behind-the-scenes from building Micelclaw OS." canonicalPath="/blog">
+<Base
+  title="Blog | Micelclaw"
+  description="Technical articles about building a self-hosted AI productivity OS with PostgreSQL, Fastify, and React."
+  canonicalPath="/blog"
+>
   <main class="blog-index">
     <header class="blog-header">
       <p class="section-label">Blog</p>

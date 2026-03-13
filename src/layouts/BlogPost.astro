@@ -7,13 +7,21 @@ interface Props {
   date: Date;
   author: string;
   tags: string[];
+  image?: string;
 }
 
-const { title, description, date, author, tags } = Astro.props;
+const { title, description, date, author, tags, image } = Astro.props;
 const formattedDate = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const slug = Astro.url.pathname;
 ---
 
-<Base title={`${title} — Micelclaw Blog`} description={description}>
+<Base
+  title={`${title} | Micelclaw Blog`}
+  description={description}
+  canonicalPath={slug}
+  ogType="article"
+  ogImage={image}
+>
   <main class="blog-post">
     <article>
       <header class="post-header">

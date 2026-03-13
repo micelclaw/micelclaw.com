@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://micelclaw.com/sitemap.xml
+Sitemap: https://micelclaw.com/sitemap-index.xml
