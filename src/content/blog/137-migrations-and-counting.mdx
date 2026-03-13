@@ -1,82 +1,150 @@
 ---
 title: "137 migrations and counting: building a personal OS schema from scratch"
-description: "How we designed the database schema for Micelclaw OS — a single PostgreSQL database that handles notes, emails, calendar, contacts, files, photos, and more."
+description: "How a weekend project to save contacts efficiently turned into a 147-table PostgreSQL schema powering a full personal operating system."
 date: 2026-03-13
-author: "Victor"
-tags: ["architecture", "database", "postgresql"]
-draft: false
+author: "Víctor"
+tags: ["architecture", "database", "postgresql", "selfhosted"]
 ---
 
-Building a "personal OS" sounds ambitious until you realize it mostly means one thing: **a really good database schema**.
+The project started on February 18th, 2026. The original scope was minimal: a personal assistant that could look up contacts quickly without burning through API tokens. Notes, emails, a diary. A Fastify server, a PostgreSQL database, maybe ten tables.
 
-Micelclaw OS stores everything — notes, emails, calendar events, contacts, photos, files, diary entries, bookmarks, conversations — in a single PostgreSQL instance. No microservices, no separate databases per module. One schema to rule them all.
+That initial scope produced 137 SQL migrations.
 
-After 137 migrations (and counting), here's what we've learned.
+What follows is a technical account of how a "quick personal cloud" evolved into a sovereign digital operating system — and what the schema looks like when you're building the plane while flying it.
 
-{/* TODO: expand with full content */}
+## Day 1: the schema that fit on a napkin
 
-## Why one database?
+The first migration, `0000_initial_schema.sql`, contained thirteen tables covering notes, events, contacts, emails, files, diary entries, a CRM module, Home Assistant events, agent conversations, entity links, OAuth tokens, a license cache, and an embeddings table with pgvector.
 
-The typical self-hosted stack looks like this: Nextcloud for files, Joplin for notes, Thunderbird for email, a separate CalDAV server, maybe a photo gallery. Each has its own database, its own auth, its own backup story. Nothing talks to each other.
+```sql
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+CREATE EXTENSION IF NOT EXISTS "vector";
 
-We wanted the opposite. When you write a note mentioning "meeting with Sarah next Thursday", the AI should be able to:
-
-1. Find Sarah in your contacts
-2. Check your calendar for Thursday
-3. Create the event
-4. Link the note to both
-
-That only works if everything lives in the same database.
-
-## The migration philosophy
-
-Every schema change goes through a numbered migration. No exceptions. We use Drizzle ORM's migration system, which generates SQL files from TypeScript schema definitions.
-
-```typescript
-// Example: adding the knowledge graph edges table
-export const knowledgeEdges = pgTable('knowledge_edges', {
-  id: uuid('id').primaryKey().defaultRandom(),
-  sourceId: uuid('source_id').notNull(),
-  targetId: uuid('target_id').notNull(),
-  relation: text('relation').notNull(),
-  weight: real('weight').default(1.0),
-  createdAt: timestamp('created_at').defaultNow(),
-});
+CREATE TABLE IF NOT EXISTS notes (
+    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    title           TEXT,
+    content         TEXT NOT NULL,
+    content_format  VARCHAR(20) DEFAULT 'markdown',
+    source          VARCHAR(50) NOT NULL DEFAULT 'local',
+    tags            TEXT[],
+    pinned          BOOLEAN DEFAULT false,
+    archived        BOOLEAN DEFAULT false,
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
+    updated_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
+    deleted_at      TIMESTAMPTZ
+);
 ```
 
-Rules we follow:
+The embeddings table was equally straightforward — one table for all domains, differentiated by a `domain` column:
 
-- **Migrations are append-only.** Never edit a migration that's been released.
-- **Every migration must be reversible.** We write explicit `down` migrations.
-- **Schema changes ship with the app.** Micelclaw runs migrations automatically on startup — zero config.
+```sql
+CREATE TABLE IF NOT EXISTS embeddings (
+    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    domain          VARCHAR(30) NOT NULL,
+    record_id       UUID NOT NULL,
+    content_text    TEXT NOT NULL,
+    embedding       vector(768) NOT NULL,
+    model_used      VARCHAR(100),
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE(domain, record_id)
+);
+```
 
-## What 137 migrations look like
+That simplicity lasted about four days.
 
-The schema has grown organically but intentionally:
+## The decisions that shaped everything
 
-| Range | What happened |
-|-------|--------------|
-| 001–020 | Core: users, settings, notes, folders |
-| 021–045 | Calendar, contacts, email accounts |
-| 046–070 | Files, photos, thumbnails, EXIF metadata |
-| 071–095 | AI: embeddings, knowledge graph, entities |
-| 096–115 | Sync: IMAP state, CalDAV/CardDAV sync tokens |
-| 116–137 | Apps framework, skills, marketplace metadata |
+Three early architectural decisions ended up defining the entire system. Their impact only became clear much later.
 
-The total schema is around 80 tables. That sounds like a lot, but PostgreSQL handles it effortlessly.
+### Everything in `public` schema
 
-## Lessons learned
+All tables live in PostgreSQL's default `public` schema rather than in separate schemas per domain (`notes`, `emails`, etc.). The reasoning: every record in the system — notes, events, contacts, files — goes through the same intelligence pipeline. Embeddings. Entity extraction. Heat tracking. Knowledge graph edges. Change log entries.
 
-1. **UUIDs everywhere.** We use UUIDs as primary keys for every table. It makes cross-table references predictable and avoids ID collision headaches.
+Separate schemas would have required cross-schema joins and duplicated hooks for every cross-domain feature. With a single schema, one set of CRUD hooks processes any record type through the same pipeline. A note and an email get embedded, heat-tracked, entity-extracted, and changelog'd by the exact same code path.
 
-2. **Soft deletes for user data.** Notes, contacts, events — anything the user created gets a `deletedAt` timestamp instead of being removed. The trash can is a feature.
+This paid off when building the knowledge graph. An entity link between a contact and a calendar event is a row in `entity_links` — no cross-schema ceremony required.
 
-3. **Embeddings are just another column.** We store vector embeddings using `pgvector`. No separate vector database needed.
+### Soft delete everywhere
 
-4. **Timestamps in UTC, always.** Calendar events store the user's timezone separately. Everything else is UTC.
+Every domain table has `deleted_at TIMESTAMPTZ`. No exceptions.
 
-5. **Don't normalize too early.** Some tables have JSON columns for flexible metadata. That's fine. Normalize when you have three real use cases, not when you imagine them.
+This turned out to be critical for the sync engine. When syncing with Gmail or Google Calendar, the system needs to know what was deleted locally to propagate the deletion upstream. A hard delete means lost information. `deleted_at` preserves the diff between "this record was deleted" and "this record never existed."
+
+It also enabled restore functionality with zero additional effort. `PATCH /notes/:id/restore` is just `SET deleted_at = NULL`.
+
+### UUID primary keys on everything
+
+Not `SERIAL`, not `BIGINT`. UUIDs on every table.
+
+The immediate benefit: `entity_links` can reference any table with `(source_type, source_id)`. No composite foreign keys, no lookup tables. The knowledge graph doesn't care if the source is a note or an email — it's always a UUID.
+
+The less obvious benefit: when multi-user support was added later, there were zero ID collision issues. Users on different instances sync without conflicts because UUIDs don't collide.
+
+## The migration timeline: from 0 to 137
+
+### Migrations 0000–0010: The foundation
+
+The initial thirteen tables, followed by tsvector search columns for free-tier full-text search, sync engine infrastructure (`change_log`, `sync_connectors`, `sync_history`), custom fields support, email accounts, file snapshots and shared links, photo albums and face clusters.
+
+At this point the schema had around 20 tables. CRUD, search, and sync worked. A functional personal cloud.
+
+### Migrations 0050–0065: The intelligence layer
+
+This batch transformed the system from static storage into an intelligent assistant:
+
+- `change_log_affected_columns` — tracking which specific fields changed, not just "this record was updated"
+- `record_heat` — heat scores that decay over time, turning every record into a memory that fades unless interacted with
+- `graph_entities` — knowledge graph nodes (Person, Project, Location, Topic) extracted automatically by an LLM
+- Extended `entity_links` with `link_type`, `confidence`, `strength`, and `created_by` columns
+- `semantic_cache` — caching API responses by query embedding similarity
+- Reserved schemas for future domains (bookmarks, financial accounts, health data)
+
+The `record_heat` system tracks scores between 0 and 1 that decay exponentially over time. User interactions increase heat. The search algorithm uses heat as a post-fusion ranking multiplier — frequently accessed records rank higher than cold ones, all else being equal.
+
+The knowledge graph was the other inflection point. `entity_links` went from "this note mentions this contact" to "the system automatically discovered that Person:Ana García appeared in 3 emails, 2 notes, and tomorrow's calendar event, with confidence 0.85."
+
+### Migrations 0080–0103: Proactive intelligence
+
+Sleep-time jobs. Derived insights. User preferences. Proactive feedback. Agent tokens. Audit logs. Data sensitivity labels. PII routing logs. Pseudonym maps.
+
+This batch transformed the system from "a database you query" to "a database that processes while idle." The sleep-time engine runs background LLM jobs during inactive periods — discovering cross-domain correlations, extracting behavioral preferences, generating insights. All stored in tables that started as sketches on a whiteboard.
+
+### Migrations 0110–0137: The OS layer
+
+App system tables. Email moderation. Clipboard items. Visual intelligence embeddings. Face detection infrastructure. Kanban boards with labels, comments, dependencies, and checklists. RSS feeds with categories and AI summarization.
+
+By migration 0137, the schema had grown from "a personal notes database" into something that manages an entire digital life — notes, emails, calendar, contacts, files, photos, diary, projects, feeds, and an AI that understands the connections between all of them.
+
+## What I'd do differently
+
+**Plan multi-user from day one.** Migration 0009 (`add_user_id_to_domain_tables`) added `user_id` to every single domain table. Every one. That meant a lot of `ALTER TABLE` statements, index recreations, and unique constraint changes — diary entries went from `UNIQUE(entry_date)` to `UNIQUE(user_id, entry_date)`. Including `user_id` in the initial schema would have eliminated that entire migration.
+
+**Version-track the embedding model from the start.** The `model_version` field was added to the embeddings table after thousands of embeddings had already been generated with one model. When switching from `nomic-embed-text` to `qwen3-embedding:0.6b`, everything had to be re-embedded. With model versioning from day one, re-embedding could have been incremental.
+
+**Automate migration execution immediately.** The most common bug during development wasn't a code error — it was forgetting to run a migration that had already been written. The schema in the SQL file said one thing; the database said another. The fix was a simple `for f in core/drizzle/0*.sql; do psql $DATABASE_URL -f "$f"; done`, but it should have existed from week one.
+
+## The numbers
+
+As of today:
+
+| Metric | Count |
+|--------|-------|
+| SQL migration files | 137 |
+| Tables in the schema | ~50 |
+| Drizzle ORM schemas | 35+ |
+| Domains (notes, events, etc.) | 7 core + 5 extended |
+| Index definitions | 80+ |
+
+Some migrations took minutes to write. Others took days to get right.
+
+## The takeaway
+
+**The schema is the product.** Not the API. Not the frontend. Not the AI. The schema.
+
+Every feature — heat scoring, knowledge graph, sleep-time intelligence, PII routing, multi-user isolation — started as a migration file. The tables defined the boundaries of what was possible. Getting the schema right (or at least right enough to iterate on) was the single highest-leverage activity in the entire project.
+
+137 migrations is a lot. But each one was a small, deliberate step from "personal notes database" to something much bigger. And migration 0138 is already drafted.
 
 ---
 
-137 migrations in, the schema feels solid. It'll probably be 200 by the time we ship v1. And that's okay — each migration is a small, reversible step forward.
+*This is the first in a series of technical posts about building a self-hosted AI productivity OS. Next up: how a 4-slot hook pipeline makes every CRUD operation feed embeddings, heat tracking, entity extraction, and the changelog — without any of them blocking each other.*
