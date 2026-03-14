@@ -1,9 +1,9 @@
 ---
 title: "The 4-slot hook pipeline: how every CRUD operation feeds four systems at once"
-published: false
-description: A simple post-CRUD pipeline that feeds embeddings, heat tracking, entity extraction, and the changelog — without any of them blocking each other or the user.
-tags: architecture, postgresql, typescript, ai
-cover_image: 
+description: "A simple post-CRUD pipeline that feeds embeddings, heat tracking, entity extraction, and the changelog — without any of them blocking each other or the user."
+date: 2026-03-14
+author: "Víctor"
+tags: ["architecture", "postgresql", "typescript", "ai"]
 ---
 
 Here's a problem that sneaks up on you when you're building a data-heavy application: every time you create or update a record, a bunch of other things need to happen. The record needs to be embedded for semantic search. Its heat score needs to be updated. Entities (people, places, projects) need to be extracted from the text. And the change needs to be logged so the digest engine knows what happened.
@@ -20,15 +20,15 @@ Our first version of the notes endpoint looked something like this:
 // The "just do it all here" approach
 app.post('/notes', async (req, reply) => {
   const note = await db.insert(notes).values(req.body).returning();
-  
+
   // Now embed it...
   const text = note.title + ' ' + note.content;
   const embedding = await ollama.embed(text);  // 50-200ms
   await db.insert(embeddings).values({ domain: 'notes', recordId: note.id, embedding });
-  
+
   // Log the change...
   await db.insert(changeLog).values({ domain: 'notes', recordId: note.id, action: 'create' });
-  
+
   reply.send({ data: note });
 });
 ```

@@ -1,9 +1,9 @@
 ---
 title: "Entity extraction with a 2B model: benchmarks from a personal knowledge graph"
-published: false
-description: We benchmarked qwen3-vl (2B parameters, quantized) for NER on personal data — notes, emails, diary entries, and photos. The results surprised us, but not in the way F1 scores suggest.
-tags: ai, nlp, ollama, selfhosted
-cover_image: 
+description: "We benchmarked qwen3-vl (2B parameters, quantized) for NER on personal data — notes, emails, diary entries, and photos. The results surprised us, but not in the way F1 scores suggest."
+date: 2026-03-14
+author: "Víctor"
+tags: ["ai", "nlp", "ollama", "selfhosted"]
 ---
 
 When you're building a personal knowledge graph — the kind that automatically discovers that "Ana García" appears in your emails, your calendar, and tomorrow's meeting notes — you need entity extraction. The industry answer is to throw GPT-4 at it and move on. But when your system runs on a mini-PC in someone's living room, you need something that fits in 2GB of RAM.
