@@ -193,6 +193,8 @@ LIMIT $limit;
 
 Then a second query fetches all edges between the returned nodes. The dashboard renders nodes sized by mention count and colored by heat score — hot nodes glow, cold nodes fade.
 
+![Knowledge graph records view with heat map — nodes glow based on access frequency, edges show direct record-to-record connections](/images/knowledge-graph-records.png)
+
 ## How nodes get created
 
 Nodes enter the graph through three pipelines, only one of which involves an LLM:
