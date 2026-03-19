@@ -1,5 +1,5 @@
 ---
-title: "Building a personal knowledge graph with just PostgreSQL (no Neo4j needed)"
+title: "#04 — Building a personal knowledge graph with just PostgreSQL (no Neo4j needed)"
 description: "How two tables, three ALTER statements, and recursive CTEs replaced what most people reach for a graph database to do. At personal scale, PostgreSQL is the graph database."
 date: 2026-03-17
 author: "Víctor"

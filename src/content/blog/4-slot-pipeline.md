@@ -1,5 +1,5 @@
 ---
-title: "The 4-slot hook pipeline: how every CRUD operation feeds four systems at once"
+title: "#02 — The 4-slot hook pipeline: how every CRUD operation feeds four systems at once"
 description: "A simple post-CRUD pipeline that feeds embeddings, heat tracking, entity extraction, and the changelog — without any of them blocking each other or the user."
 date: 2026-03-14
 author: "Víctor"

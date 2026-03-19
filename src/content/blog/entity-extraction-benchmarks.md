@@ -1,5 +1,5 @@
 ---
-title: "Entity extraction with a 2B model: benchmarks from a personal knowledge graph"
+title: "#03 — Entity extraction with a 2B model: benchmarks from a personal knowledge graph"
 description: "We benchmarked qwen3-vl (2B parameters, quantized) for NER on personal data — notes, emails, diary entries, and photos. The results surprised us, but not in the way F1 scores suggest."
 date: 2026-03-14
 author: "Víctor"

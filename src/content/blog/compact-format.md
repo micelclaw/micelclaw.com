@@ -1,5 +1,5 @@
 ---
-title: "From JSON to compact: reducing API payloads 60% for LLM consumption"
+title: "#06 — From JSON to compact: reducing API payloads 60% for LLM consumption"
 description: "Your AI agent doesn't need pretty JSON. We built a compact response format that cuts token usage dramatically — and learned what to kill along the way."
 date: 2026-03-19
 author: "Víctor"

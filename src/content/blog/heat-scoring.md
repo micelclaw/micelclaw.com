@@ -1,5 +1,5 @@
 ---
-title: "Heat scoring: teaching your data to forget (gracefully)"
+title: "#05 — Heat scoring: teaching your data to forget (gracefully)"
 description: "Every record in our system has a temperature. It rises when you interact with it and decays exponentially when you don't. Here's how a simple formula changed the way search, digest, and the AI agent work with personal data."
 date: 2026-03-18
 author: "Víctor"
