@@ -29,6 +29,7 @@ const orgJsonLd = {
       <button type="submit">Get early access</button>
     </form>
     <p class="hero-note">No spam. We'll email you once when it's ready.</p>
+    <p class="hero-docs-link"><a href="https://docs.micelclaw.com" target="_blank" rel="noopener">Read the docs &rarr;</a></p>
     <div class="hero-screen-wrapper">
       <div class="hero-screen">
         <img src="/images/screen-notes.png" alt="Micelclaw Dashboard — Notes with semantic search and knowledge graph" loading="eager">
@@ -322,6 +323,15 @@ const orgJsonLd = {
     font-size: 12px; color: var(--gray-400); margin-top: 12px;
     animation: fadeUp 0.6s 0.28s ease both;
   }
+  .hero-docs-link {
+    margin-top: 10px;
+    animation: fadeUp 0.6s 0.32s ease both;
+  }
+  .hero-docs-link a {
+    font-size: 13.5px; font-weight: 500; color: var(--cyan-dim);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .hero-docs-link a:hover { color: var(--cyan); }
 
   /* Hero screenshot */
   .hero-screen-wrapper {
