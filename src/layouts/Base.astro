@@ -10,7 +10,7 @@ interface Props {
 
 const {
   title,
-  description = "One app replaces your NAS, notes, calendar, email, and AI assistant. Runs on your hardware. Your data stays yours.",
+  description = "Free, open-source alternative to Google Workspace and Notion. Notes, calendar, email, files, photos, and AI assistant — all self-hosted on your hardware with local AI. Privacy-first, no cloud dependency.",
   canonicalPath,
   ogImage = "/images/og-default.png",
   ogType = "website",
@@ -29,11 +29,15 @@ const ogImageUrl = ogImage?.startsWith("http") ? ogImage : `${siteUrl}${ogImage 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content={description}>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="Micelclaw">
   <!-- Open Graph -->
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
   <meta property="og:type" content={ogType}>
   <meta property="og:image" content={ogImageUrl}>
+  <meta property="og:site_name" content="Micelclaw">
+  <meta property="og:locale" content="en_US">
   {canonical && <meta property="og:url" content={canonical}>}
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">

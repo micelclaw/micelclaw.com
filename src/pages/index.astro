@@ -3,17 +3,32 @@ import Base from '../layouts/Base.astro';
 
 const orgJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Micelclaw",
+  "@type": "SoftwareApplication",
+  name: "Micelclaw OS",
   url: "https://micelclaw.com",
-  logo: "https://micelclaw.com/images/favicon.png",
-  sameAs: ["https://github.com/micelclaw"],
+  applicationCategory: "ProductivityApplication",
+  operatingSystem: "Linux",
+  description: "Open-source, self-hosted AI productivity operating system. A privacy-first alternative to Google Workspace and Notion that runs on your own hardware with local AI.",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  author: {
+    "@type": "Organization",
+    name: "Micelclaw",
+    url: "https://micelclaw.com",
+    logo: "https://micelclaw.com/images/favicon.png",
+    sameAs: ["https://github.com/micelclaw"],
+  },
+  featureList: "Notes, Calendar, Email, Contacts, Files, Photos, Diary, Bookmarks, Knowledge Graph, Semantic Search, AI Assistant, VPN, Docker Management",
+  keywords: "self-hosted, open source, AI, productivity, personal cloud, NAS, privacy, homelab",
 };
 ---
 
 <Base
-  title="Micelclaw — Self-hosted AI Productivity OS"
-  description="One app replaces your NAS, notes, calendar, email, and AI assistant. Runs on your hardware. Your data stays yours."
+  title="Micelclaw — Open-Source Self-Hosted AI Productivity OS"
+  description="Free, open-source alternative to Google Workspace and Notion. Notes, calendar, email, files, photos, and AI assistant — all self-hosted on your hardware with local AI. Privacy-first, no cloud dependency."
   canonicalPath="/"
   jsonLd={orgJsonLd}
 >
@@ -22,8 +37,8 @@ const orgJsonLd = {
   <section class="hero" id="waitlist">
     <div class="hero-badge"><span class="pulse-dot"></span> In active development</div>
     <h1><span class="cyan-text">Micelclaw</span> OS</h1>
-    <p class="hero-subtitle">Your zero-config, self-hosted AI productivity OS</p>
-    <p class="hero-sub">One app replaces your NAS, your notes, your calendar, your AI&nbsp;assistant&nbsp;— and it runs on your hardware.</p>
+    <p class="hero-subtitle">The open-source, self-hosted alternative to Google Workspace</p>
+    <p class="hero-sub">Notes, calendar, email, files, photos, and a private AI&nbsp;assistant&nbsp;— all on your hardware. No cloud. No subscriptions. Your data stays yours.</p>
     <form class="waitlist-form" id="wl-top">
       <input type="email" placeholder="you@email.com" required aria-label="Email">
       <button type="submit">Get early access</button>
@@ -32,7 +47,7 @@ const orgJsonLd = {
     <p class="hero-docs-link"><a href="https://docs.micelclaw.com" target="_blank" rel="noopener">Read the docs &rarr;</a></p>
     <div class="hero-screen-wrapper">
       <div class="hero-screen">
-        <img src="/images/screen-notes.png" alt="Micelclaw Dashboard — Notes with semantic search and knowledge graph" loading="eager">
+        <img src="/images/screen-notes.png" alt="Micelclaw OS dashboard showing notes app with semantic search, knowledge graph, and AI-powered productivity tools — self-hosted alternative to Notion" loading="eager">
       </div>
     </div>
   </section>
@@ -118,32 +133,32 @@ const orgJsonLd = {
     <div class="gallery-grid">
       <div class="gallery-item" data-label="Calendar — Month">
         <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-calendar)"></span><span class="gallery-item-title">Calendar — Month</span></div>
-        <img src="/images/screen-calendar-month.png" alt="Calendar month view" loading="lazy">
+        <img src="/images/screen-calendar-month.png" alt="Self-hosted calendar month view with event management — Google Calendar alternative" loading="lazy">
         <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
       <div class="gallery-item" data-label="Calendar — Week">
         <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-calendar)"></span><span class="gallery-item-title">Calendar — Week</span></div>
-        <img src="/images/screen-calendar-week.png" alt="Calendar week view" loading="lazy">
+        <img src="/images/screen-calendar-week.png" alt="Self-hosted calendar week view with drag-and-drop scheduling" loading="lazy">
         <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
       <div class="gallery-item" data-label="Mail">
         <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-mail)"></span><span class="gallery-item-title">Mail</span></div>
-        <img src="/images/screen-mail.png" alt="Email client" loading="lazy">
+        <img src="/images/screen-mail.png" alt="Privacy-first email client with IMAP sync — self-hosted Gmail alternative" loading="lazy">
         <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
       <div class="gallery-item" data-label="Photos — AI Vision">
         <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-photos)"></span><span class="gallery-item-title">Photos</span></div>
-        <img src="/images/screen-photos.png" alt="Photo gallery with AI" loading="lazy">
+        <img src="/images/screen-photos.png" alt="AI-powered photo gallery with face recognition and auto-tagging — self-hosted Google Photos alternative" loading="lazy">
         <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
       <div class="gallery-item" data-label="Drive">
         <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-drive)"></span><span class="gallery-item-title">Drive</span></div>
-        <img src="/images/screen-drive.png" alt="File manager" loading="lazy">
+        <img src="/images/screen-drive.png" alt="Self-hosted file manager and cloud storage — Google Drive and NAS alternative" loading="lazy">
         <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
       <div class="gallery-item" data-label="VPN Management">
         <div class="gallery-item-header"><span class="gallery-item-dot" style="background:var(--col-vpn)"></span><span class="gallery-item-title">VPN</span></div>
-        <img src="/images/screen-vpn.png" alt="VPN management" loading="lazy">
+        <img src="/images/screen-vpn.png" alt="Built-in VPN management with Tailscale and WireGuard integration" loading="lazy">
         <div class="zoom-hint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
     </div>
