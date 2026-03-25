@@ -1,6 +1,71 @@
 ---
 import Base from '../layouts/Base.astro';
 
+const faqs = [
+  {
+    q: "What does Micelclaw replace?",
+    a: "Notes (Notion, Obsidian), Calendar (Google Calendar), Email (Gmail), Files (Google Drive, Dropbox), Photos (Google Photos, iCloud), Contacts, Bookmarks, and Diary — all in one self-hosted app. Instead of paying for separate subscriptions that don't talk to each other, you get a single dashboard where everything is connected and AI understands all your data."
+  },
+  {
+    q: "Can I degoogle with Micelclaw?",
+    a: "Yes. Sync your Google Calendar, Gmail (IMAP), and Google Contacts (CardDAV) into Micelclaw. Your data stays on your machine. You can stop depending on Google without losing your history — Micelclaw pulls everything in and keeps it local."
+  },
+  {
+    q: "Is it really free?",
+    a: "Core features are free forever and open source. Notes, calendar, email, files, contacts, bookmarks, and diary — all included. The Pro tier adds AI-powered features: semantic search, knowledge graph, entity extraction, voice assistant, and daily AI digests."
+  },
+  {
+    q: "What hardware do I need?",
+    a: "Any x86 PC or mini-PC with 4 GB of RAM or more. Works on bare metal Linux or Docker. Raspberry Pi 5 for light use. No GPU required — AI models run on CPU via Ollama. A retired laptop, a $150 mini-PC, or a NAS you already own will do."
+  },
+  {
+    q: "How is this different from a NAS?",
+    a: "A NAS stores files. Micelclaw is a productivity operating system: notes, calendar, email, photos with face recognition, AI-powered semantic search, a personal knowledge graph, and 40+ managed services (Jellyfin, qBittorrent, Firefly III, and more) — all from one dashboard. Think of it as a NAS with a brain."
+  },
+  {
+    q: "Can I access it from my phone?",
+    a: "Yes. The dashboard is fully responsive and works in any mobile browser. Use Tailscale or WireGuard for secure remote access from anywhere — no port forwarding, no exposing your server to the internet."
+  },
+  {
+    q: "Does any data leave my machine?",
+    a: "No. All AI processing runs locally via Ollama. There are no cloud API calls, no telemetry, and no analytics. Your notes, emails, photos, and search history never leave your network. You own your data completely."
+  },
+  {
+    q: "Can I use it without an internet connection?",
+    a: "Yes. Everything runs locally — notes, files, photos, calendar, AI search, and the knowledge graph all work fully offline. You only need internet for syncing external email (IMAP) and external calendar/contacts (CalDAV, CardDAV)."
+  },
+  {
+    q: "How does Micelclaw compare to Nextcloud?",
+    a: "Nextcloud is primarily a file sync and collaboration platform with an app ecosystem of plugins. Micelclaw is an AI-native productivity OS built from the ground up: semantic search across all your data, an automatic knowledge graph, daily AI digests, and a unified dashboard — not features bolted on as third-party plugins."
+  },
+  {
+    q: "How does Micelclaw compare to Notion?",
+    a: "Notion is cloud-only, proprietary, and charges per user. Micelclaw is self-hosted, open source, and free. Beyond notes, Micelclaw includes email, calendar, file storage, photo management, and an AI assistant — things Notion doesn't offer. Your data stays on your hardware, not on someone else's servers."
+  },
+  {
+    q: "How does Micelclaw compare to Obsidian?",
+    a: "Obsidian is an excellent markdown editor for personal notes. Micelclaw is a full productivity OS: notes + calendar + email + files + photos + AI assistant + 40 managed services. If you only need notes, Obsidian is a great choice. If you want everything connected with AI that understands relationships across all your data, Micelclaw replaces the need for separate apps."
+  },
+  {
+    q: "Is Micelclaw secure?",
+    a: "Yes. All data is encrypted at rest with AES-256-GCM. All AI runs locally — no data is sent to external APIs. Authentication uses JWT with refresh tokens. Remote access is secured via Tailscale or WireGuard VPN. No ports are exposed to the internet by default."
+  },
+  {
+    q: "Who is Micelclaw for?",
+    a: "Freelancers who want one tool for everything. Developers and sysadmins who prefer self-hosted software. Privacy enthusiasts who are tired of Big Tech. Homelabbers looking for a productivity layer on their existing server. Anyone who wants to degoogle without losing the convenience of a modern, integrated workspace."
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(f => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -191,6 +256,24 @@ const orgJsonLd = {
         <span class="oss-chip"><span class="oss-dot" style="background:var(--cyan)"></span>Shadcn/ui</span>
       </div>
     </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section glass-dark" id="faq">
+    <div class="faq-inner reveal">
+      <p class="section-label">Frequently asked questions</p>
+      <h2>Everything you need to know</h2>
+      <div class="faq-list">
+        {faqs.map(f => (
+          <details class="faq-item">
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <p class="faq-more">More technical questions? <a href="https://docs.micelclaw.com/getting-started/faq" target="_blank" rel="noopener">See the technical FAQ &rarr;</a></p>
+    </div>
+    <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
   </section>
 
   <!-- CTA -->
@@ -504,6 +587,48 @@ const orgJsonLd = {
   }
   .oss-chip:hover { border-color: rgba(0,200,255,0.2); color: var(--text-light); }
   .oss-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+  /* FAQ */
+  .faq-section { padding: 100px 32px; }
+  .faq-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+  .faq-section h2 {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 3vw, 34px); font-weight: 700; letter-spacing: 0.03em;
+    color: var(--text-light); margin-bottom: 40px; text-transform: uppercase; text-align: center;
+  }
+  .faq-list { display: flex; flex-direction: column; gap: 8px; }
+  .faq-item {
+    background: rgba(12,12,18,0.5); border: 1px solid var(--border-dark);
+    border-radius: var(--radius-sm); overflow: hidden;
+    transition: border-color 0.25s;
+  }
+  .faq-item[open] { border-color: rgba(0,200,255,0.15); }
+  .faq-item summary {
+    padding: 18px 24px; cursor: pointer;
+    font-size: 15px; font-weight: 600; color: var(--text-light);
+    letter-spacing: -0.01em; list-style: none;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: color 0.2s;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+'; font-size: 20px; font-weight: 400; color: var(--cyan-dim);
+    transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item summary:hover { color: var(--cyan); }
+  .faq-item p {
+    padding: 0 24px 18px; font-size: 14px; color: rgba(224,224,232,0.7);
+    line-height: 1.7; margin: 0;
+  }
+  .faq-more {
+    text-align: center; margin-top: 32px;
+    font-size: 13.5px; color: var(--text-dim);
+  }
+  .faq-more a {
+    color: var(--cyan-dim); text-decoration: none; transition: color 0.2s;
+  }
+  .faq-more a:hover { color: var(--cyan); }
 
   /* CTA */
   .final-cta { padding: 120px 32px; text-align: center; }
