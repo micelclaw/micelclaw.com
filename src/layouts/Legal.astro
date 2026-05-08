@@ -54,8 +54,8 @@ const { title, description, canonicalPath, lastUpdated, contact } = Astro.props;
   }
   .legal-content li { margin-bottom: 6px; }
   .legal-content code {
-    font-family: var(--mono); font-size: 13px; background: rgba(0,0,0,0.05);
-    padding: 2px 6px; border-radius: 4px;
+    font-family: var(--mono); font-size: 13px; background: rgba(255,255,255,0.06);
+    color: var(--cyan-bright); padding: 2px 6px; border-radius: 4px;
   }
   .legal-content table {
     width: 100%; border-collapse: collapse; margin: 16px 0 24px;
@@ -63,12 +63,12 @@ const { title, description, canonicalPath, lastUpdated, contact } = Astro.props;
   }
   .legal-content thead th {
     text-align: left; padding: 10px 14px;
-    background: rgba(0,200,255,0.04); border-bottom: 2px solid rgba(0,200,255,0.1);
-    font-weight: 600; color: var(--gray-800); font-size: 12.5px;
+    background: rgba(0,200,255,0.08); border-bottom: 2px solid rgba(0,200,255,0.15);
+    font-weight: 600; color: var(--text-light); font-size: 12.5px;
     text-transform: uppercase; letter-spacing: 0.03em;
   }
   .legal-content td {
-    padding: 10px 14px; border-bottom: 1px solid rgba(0,0,0,0.06);
+    padding: 10px 14px; border-bottom: 1px solid var(--border-dark);
     color: var(--gray-600); vertical-align: top;
   }
   .legal-content tr:last-child td { border-bottom: none; }

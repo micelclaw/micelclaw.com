@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import { X } from '@lucide/astro';
 
 interface Props {
   title: string;
@@ -61,7 +62,7 @@ const articleJsonLd = {
 
   <!-- Lightbox overlay (hidden until an image is clicked) -->
   <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
-    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <button class="lightbox-close" type="button" aria-label="Close"><X size={20} /></button>
     <img class="lightbox-img" alt="" />
   </div>
 
@@ -132,45 +133,46 @@ const articleJsonLd = {
 
   /* Post content prose */
   .post-content {
-    font-size: 17px; color: #1a1a1a; line-height: 1.7;
+    font-size: 17px; color: var(--text-light); line-height: 1.7;
   }
   .post-content h2 {
     font-family: var(--font-display);
     font-size: 20px; font-weight: 700; letter-spacing: 0.02em;
-    margin: 48px 0 16px; color: var(--gray-900);
+    margin: 48px 0 16px; color: var(--text-light);
     text-transform: uppercase;
   }
   .post-content h3 {
-    font-size: 17px; font-weight: 600; margin: 32px 0 10px; color: #222;
+    font-size: 17px; font-weight: 600; margin: 32px 0 10px; color: var(--text-light);
   }
   .post-content p { margin-bottom: 16px; }
   .post-content a { color: var(--cyan-dim); text-decoration: underline; text-underline-offset: 2px; }
   .post-content a:hover { color: var(--cyan); }
-  .post-content strong { color: #111; }
+  .post-content strong { color: var(--white); }
   .post-content ul, .post-content ol {
-    margin: 8px 0 16px 20px; color: #1a1a1a; line-height: 1.7;
+    margin: 8px 0 16px 20px; color: var(--text-light); line-height: 1.7;
   }
   .post-content li { margin-bottom: 6px; }
   .post-content blockquote {
     margin: 20px 0; padding: 14px 20px;
-    border-left: 3px solid var(--cyan); background: rgba(0,200,255,0.03);
-    font-style: italic; color: #444;
+    border-left: 3px solid var(--cyan); background: rgba(0,200,255,0.06);
+    font-style: italic; color: var(--gray-600);
   }
   .post-content code {
     font-family: var(--mono); font-size: 14px;
-    background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 4px;
+    background: rgba(255,255,255,0.06); color: var(--cyan-bright);
+    padding: 2px 6px; border-radius: 4px;
   }
   .post-content pre {
     margin: 24px 0; padding: 20px; border-radius: var(--radius-sm);
     overflow-x: auto; font-size: 13.5px; line-height: 1.6;
-    border: 1px solid rgba(0,200,255,0.08);
+    border: 1px solid var(--border-dark);
   }
   .post-content pre code {
-    background: none; padding: 0; font-size: inherit;
+    background: none; padding: 0; font-size: inherit; color: inherit;
   }
   .post-content img {
     max-width: 100%; border-radius: var(--radius-sm); margin: 24px 0;
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid var(--border-dark);
     cursor: zoom-in;
     transition: opacity 0.15s;
   }
@@ -201,7 +203,7 @@ const articleJsonLd = {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    color: #fff; font-size: 28px; line-height: 1;
+    color: #fff; line-height: 1;
     cursor: pointer;
     display: flex; align-items: center; justify-content: center;
     transition: background 0.15s;
@@ -213,13 +215,13 @@ const articleJsonLd = {
   }
   .post-content thead th {
     text-align: left; padding: 10px 14px;
-    background: rgba(0,200,255,0.04); border-bottom: 2px solid rgba(0,200,255,0.1);
-    font-weight: 600; color: var(--gray-800); font-size: 12.5px;
+    background: rgba(0,200,255,0.08); border-bottom: 2px solid rgba(0,200,255,0.15);
+    font-weight: 600; color: var(--text-light); font-size: 12.5px;
     text-transform: uppercase; letter-spacing: 0.03em;
   }
   .post-content td {
-    padding: 10px 14px; border-bottom: 1px solid rgba(0,0,0,0.06);
-    color: #333;
+    padding: 10px 14px; border-bottom: 1px solid var(--border-dark);
+    color: var(--gray-600);
   }
   .post-content hr {
     border: none; border-top: 1px solid rgba(0,200,255,0.1);
