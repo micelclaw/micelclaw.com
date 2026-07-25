@@ -16,6 +16,12 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+.env.local
+content-ops/.env.local
+content-ops/.tiktok-tokens.json
+
+# content-ops runtime artifacts (never commit secrets or ephemeral screenshots)
+content-ops/assets/*.tmp.png
 
 # macOS-specific files
 .DS_Store
