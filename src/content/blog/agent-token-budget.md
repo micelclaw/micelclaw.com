@@ -244,4 +244,4 @@ The expensive part was retracting two confident conclusions and one bug that did
 
 ---
 
-*Next up: the seven agents from [#15](/blog/multi-agent-topology) now fit in the window. What happens when you ask them to work on the same thing at the same time?*
+*Next up: we replaced two accounting containers with a double-entry ledger of our own — and found a real bug hiding inside the tolerance that was supposed to catch it.*
