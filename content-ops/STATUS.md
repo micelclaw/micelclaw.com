@@ -1,6 +1,6 @@
 # 📊 content-ops — tablero de estado
 
-> Generado por `scripts/status.mjs` el 2026-08-20 18:13. **No editar a mano** (se regenera). Fuente: `queue/`, `posted/posted.jsonl`, `src/content/blog/`, `ROADMAP.md`, `video/projects/`.
+> Generado por `scripts/status.mjs` el 2026-08-20 18:14. **No editar a mano** (se regenera). Fuente: `queue/`, `posted/posted.jsonl`, `src/content/blog/`, `ROADMAP.md`, `video/projects/`.
 
 ## 🗓️ Programación
 
@@ -24,20 +24,7 @@
 
 ## 📦 Generado, SIN publicar — **TODO** (aprobado o no), post a post
 
-**7 piezas** generadas esperando salir. Aprobado ✅ = saldrá solo a su hora; ❌ = bloqueado por el gate hasta que lo apruebes.
-
-| Fecha | Día | Red | Item | Aprobado | Cuándo sale |
-|---|---|---|---|---|---|
-| 2026-08-20 | Jue | bluesky | unified-drive | ✅ | hoy 2026-08-20 09:33 |
-| 2026-08-20 | Jue | devto | unified-drive | ✅ | hoy 2026-08-20 09:33 |
-| 2026-08-20 | Jue | facebook | unified-drive | ✅ | hoy 2026-08-20 09:33 |
-| 2026-08-20 | Jue | instagram | unified-drive | ✅ | hoy 2026-08-20 09:33 |
-| 2026-08-20 | Jue | mastodon | unified-drive | ✅ | hoy 2026-08-20 09:33 |
-| 2026-08-20 | Jue | telegram | unified-drive | ✅ | hoy 2026-08-20 09:33 |
-| 2026-08-20 | Jue | **X** | unified-drive | ✅ | ✍️ a mano (2026-08-20) |
-
-> ✍️ Las de **X** las publicas tú a mano (no hay API); el texto sale en el aviso diario.
-
+_(nada generado pendiente de publicar)_
 
 ## ✍️ Serie de blog
 
@@ -50,7 +37,7 @@
 | 16 | `agent-token-budget` | Fitting agents into small local models (−45% catalog) *(seq #07)* | ☑ publicado | 2026-08-02 |
 | 17 | `native-accounting` | Three ways to look at your money. Pick the one that's you *(product post)* | ☑ publicado | 2026-08-03 |
 | 18 | `inventory-ledger` | Photograph a receipt, and your inventory fills itself in *(product post)* | ☑ publicado | 2026-08-06 |
-| 19 | `unified-drive` | Your files, and the two questions a folder can't answer *(product post)* | ◐ en cola | 2026-08-20 |
+| 19 | `unified-drive` | Your files, and the two questions a folder can't answer *(product post)* | ☑ publicado | 2026-08-20 |
 | 20 | `nas-on-zfs` | Building a NAS on ZFS: snapshots as "previous versions" | ☐ pendiente | — |
 | 21 | `unified-messaging` | Unifying Telegram/WhatsApp/Signal: the bridge gotchas | ☐ pendiente | — |
 | 22 | `n8n-gates` | Agents that build automations: turning each LLM error into a gate | ☐ pendiente | — |
@@ -66,6 +53,7 @@ Leyenda: ☑ publicado · ◐ en cola (redactado, sin push) · ☐ pendiente de 
 
 | Item | Fecha | Redes publicadas | Ejemplo |
 |---|---|---|---|
+| unified-drive | 2026-08-20 | devto · mastodon · bluesky · telegram · facebook · instagram · x | [link](https://dev.to/micelclaw/your-files-and-the-two-questions-a-folder-cant-answer-25ia) |
 | weekly-recap | 2026-08-09 | telegram · facebook · instagram | [link](https://facebook.com/986769277864129_122122632296915397) |
 | inventory-standalone | 2026-08-08 | mastodon · bluesky | [link](https://mastodon.social/@micelclaw/117070335069113613) |
 | inventory-standalone | 2026-08-07 | bluesky · facebook · instagram | [link](https://bsky.app/profile/micelclaw.bsky.social/post/3mshtnkajeq2n) |
