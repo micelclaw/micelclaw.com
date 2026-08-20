@@ -1,6 +1,6 @@
 # 📊 content-ops — tablero de estado
 
-> Generado por `scripts/status.mjs` el 2026-08-20 17:07. **No editar a mano** (se regenera). Fuente: `queue/`, `posted/posted.jsonl`, `src/content/blog/`, `ROADMAP.md`, `video/projects/`.
+> Generado por `scripts/status.mjs` el 2026-08-20 18:13. **No editar a mano** (se regenera). Fuente: `queue/`, `posted/posted.jsonl`, `src/content/blog/`, `ROADMAP.md`, `video/projects/`.
 
 ## 🗓️ Programación
 
@@ -28,13 +28,13 @@
 
 | Fecha | Día | Red | Item | Aprobado | Cuándo sale |
 |---|---|---|---|---|---|
-| 2026-08-20 | Jue | bluesky | unified-drive | ❌ no | ⏸ en espera de aprobación (2026-08-20) |
-| 2026-08-20 | Jue | devto | unified-drive | ❌ no | ⏸ en espera de aprobación (2026-08-20) |
-| 2026-08-20 | Jue | facebook | unified-drive | ❌ no | ⏸ en espera de aprobación (2026-08-20) |
-| 2026-08-20 | Jue | instagram | unified-drive | ❌ no | ⏸ en espera de aprobación (2026-08-20) |
-| 2026-08-20 | Jue | mastodon | unified-drive | ❌ no | ⏸ en espera de aprobación (2026-08-20) |
-| 2026-08-20 | Jue | telegram | unified-drive | ❌ no | ⏸ en espera de aprobación (2026-08-20) |
-| 2026-08-20 | Jue | **X** | unified-drive | ❌ no | ✍️ a mano (2026-08-20) |
+| 2026-08-20 | Jue | bluesky | unified-drive | ✅ | hoy 2026-08-20 09:33 |
+| 2026-08-20 | Jue | devto | unified-drive | ✅ | hoy 2026-08-20 09:33 |
+| 2026-08-20 | Jue | facebook | unified-drive | ✅ | hoy 2026-08-20 09:33 |
+| 2026-08-20 | Jue | instagram | unified-drive | ✅ | hoy 2026-08-20 09:33 |
+| 2026-08-20 | Jue | mastodon | unified-drive | ✅ | hoy 2026-08-20 09:33 |
+| 2026-08-20 | Jue | telegram | unified-drive | ✅ | hoy 2026-08-20 09:33 |
+| 2026-08-20 | Jue | **X** | unified-drive | ✅ | ✍️ a mano (2026-08-20) |
 
 > ✍️ Las de **X** las publicas tú a mano (no hay API); el texto sale en el aviso diario.
 
