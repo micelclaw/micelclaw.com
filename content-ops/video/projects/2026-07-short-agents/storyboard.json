@@ -1,0 +1,123 @@
+{
+  "_NOTA": [
+    "Corto del 2026-07-29 (Blog A #15, los siete agentes). Reglas medidas en _template-short.",
+    "Guion: 41 palabras a ~3,6 pal/s de Kokoro ≈ 11,4 s de VOZ repartidos en dos ventanas de",
+    "minSec 6 → las ventanas las llena la voz, no el minSec (sin música los huecos se oyen).",
+    "Riesgo declarado: la delegación en vivo es frágil (deuda AI1 abierta) → NO se captura una",
+    "delegación real; el plano seguro es el equipo de agentes + un turno de chat."
+  ],
+  "id": "2026-07-short-agents",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": null,
+  "sfxDb": -14,
+  "showCaptions": true,
+  "padSec": 0.4,
+  "size": [
+    1080,
+    1920
+  ],
+  "hook": "Not one assistant. A team.",
+  "hookHoldSec": 2.4,
+  "scenes": [
+    {
+      "id": "s1",
+      "kind": "footage",
+      "voiceover": "Your server doesn't give you one assistant. It gives you a coordinator and six specialists, each with its own tools.",
+      "highlight": [
+        "coordinator",
+        "six",
+        "specialists"
+      ],
+      "minSec": 6,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.512
+        }
+      ],
+      "capture": {
+        "holdSec": 14,
+        "note": "MÓVIL: el selector de agente ABIERTO = el equipo, en lista vertical. El árbol de /agents NO sirve en móvil: se despliega en horizontal y el lienzo sale VACÍO en 1080x1920 (comprobado).",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 5000
+          },
+          {
+            "op": "click",
+            "selector": "button:has-text(\"Francis\")",
+            "settleMs": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 6000
+          }
+        ]
+      },
+      "srcOffsetSec": 5.5
+    },
+    {
+      "id": "s2",
+      "kind": "footage",
+      "voiceover": "You just ask. The coordinator picks who does it. Read the write-up on micelclaw dot com.",
+      "highlight": [
+        "ask",
+        "picks"
+      ],
+      "minSec": 6,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.49
+        }
+      ],
+      "capture": {
+        "holdSec": 16,
+        "note": "MÓVIL: el chat, se escribe la petición y se deja reposar",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 5000
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 700
+          },
+          {
+            "op": "type",
+            "text": "Turn my meeting note into audio",
+            "delay": 55
+          },
+          {
+            "op": "pause",
+            "ms": 3500
+          }
+        ]
+      },
+      "srcOffsetSec": 6.4
+    }
+  ],
+  "captionBottom": 360
+}

@@ -1,0 +1,206 @@
+{
+  "id": "2026-08-ep3-projects-vertical",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.6,
+  "size": [
+    1080,
+    1920
+  ],
+  "scenes": [
+    {
+      "id": "v1-prompt",
+      "kind": "footage",
+      "voiceover": "This task never starts in a project form. We ask for it in the chat: high priority, Ready, due Saturday, with three checks.",
+      "highlight": [
+        "chat",
+        "three checks"
+      ],
+      "leadSec": 0.4,
+      "padSec": 0.8,
+      "minSec": 9,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.62
+        }
+      ],
+      "capture": {
+        "holdSec": 13,
+        "note": "MOVIL: teclear el prompt exacto, sin enviar; la conversacion real se crea durante la toma horizontal.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 600
+          },
+          {
+            "op": "type",
+            "text": "Reply in English. In the Projects module, on the Valencia Beach Show board, create a high-priority card called \"Print run of show\" in Ready, due Saturday, August 8, with this checklist: crew call times, firing order, and weather sign-off.",
+            "delay": 32
+          },
+          {
+            "op": "pause",
+            "ms": 2200
+          }
+        ]
+      },
+      "srcOffsetSec": 3.8
+    },
+    {
+      "id": "v2-chip",
+      "kind": "footage",
+      "voiceover": "Francis creates it in Projects and returns a chip. Tap once, and the conversation opens the exact piece of work.",
+      "highlight": [
+        "Projects",
+        "chip"
+      ],
+      "minSec": 12,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.54
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.62
+        }
+      ],
+      "capture": {
+        "holdSec": 30,
+        "note": "MOVIL, TOMA UNICA: abrir la conversacion del horizontal, mostrar tool pills y chip, hacer tap y mantener la tarjeta abierta. Copiar este metraje a v3-card.mp4.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "moveTo",
+            "x": 26,
+            "y": 61,
+            "ms": 600
+          },
+          {
+            "op": "click",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "text=Reply in English",
+            "settleMs": 2200
+          },
+          {
+            "op": "moveTo",
+            "x": 340,
+            "y": 360,
+            "ms": 400
+          },
+          {
+            "op": "click",
+            "settleMs": 1000
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title=\"Print run of show\"]",
+            "settleMs": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 2200
+          },
+          {
+            "op": "click",
+            "selector": "a[title=\"Print run of show\"]",
+            "sfx": "click",
+            "settleMs": 3500
+          },
+          {
+            "op": "pause",
+            "ms": 4500
+          }
+        ]
+      },
+      "srcOffsetSec": 8.0
+    },
+    {
+      "id": "v3-card",
+      "kind": "footage",
+      "voiceover": "Right board. Right column. Right deadline. The checklist is waiting, and the work can move from here.",
+      "highlight": [
+        "Right board",
+        "checklist"
+      ],
+      "minSec": 10,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.48
+        },
+        {
+          "at": 1,
+          "zoom": 1.06,
+          "cx": 0.5,
+          "cy": 0.62
+        }
+      ],
+      "srcOffsetSec": 19.0
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "leadSec": 0.3,
+      "padSec": 1.2,
+      "minSec": 7,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Projects — Ep. 3 of the Module Tours.",
+      "url": "micelclaw.com",
+      "cta": "Full tour on YouTube.",
+      "voiceover": "Projects — Episode three of the Module Tours. The full tour is on our channel.",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

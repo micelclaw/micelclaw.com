@@ -1,0 +1,226 @@
+[
+ {
+  "word": "You",
+  "start": 0.0,
+  "end": 0.22,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "asked",
+  "start": 0.22,
+  "end": 0.54,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "your",
+  "start": 0.54,
+  "end": 0.72,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "agent",
+  "start": 0.72,
+  "end": 1.06,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "for",
+  "start": 1.06,
+  "end": 1.3,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "a",
+  "start": 1.3,
+  "end": 1.48,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "note,",
+  "start": 1.48,
+  "end": 1.72,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "and",
+  "start": 2.06,
+  "end": 2.24,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "it",
+  "start": 2.24,
+  "end": 2.34,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "comes",
+  "start": 2.34,
+  "end": 2.54,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "back",
+  "start": 2.54,
+  "end": 2.92,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "as",
+  "start": 2.92,
+  "end": 3.14,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "a",
+  "start": 3.14,
+  "end": 3.3,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "chip",
+  "start": 3.3,
+  "end": 3.48,
+  "key": true,
+  "sceneId": "s1"
+ },
+ {
+  "word": "you",
+  "start": 3.48,
+  "end": 3.7,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "can",
+  "start": 3.7,
+  "end": 3.88,
+  "key": false,
+  "sceneId": "s1"
+ },
+ {
+  "word": "tap.",
+  "start": 3.88,
+  "end": 4.18,
+  "key": true,
+  "sceneId": "s1"
+ },
+ {
+  "word": "And",
+  "start": 5.0,
+  "end": 5.22,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "there",
+  "start": 5.22,
+  "end": 5.4,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "it",
+  "start": 5.4,
+  "end": 5.56,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "is.",
+  "start": 5.56,
+  "end": 5.98,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "Pinned,",
+  "start": 6.5,
+  "end": 6.72,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "tagged",
+  "start": 6.76,
+  "end": 7.1,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "and",
+  "start": 7.1,
+  "end": 7.32,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "searchable,",
+  "start": 7.32,
+  "end": 7.88,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "in",
+  "start": 8.0,
+  "end": 8.0,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "your",
+  "start": 8.0,
+  "end": 8.12,
+  "key": true,
+  "sceneId": "s2"
+ },
+ {
+  "word": "own",
+  "start": 8.12,
+  "end": 8.36,
+  "key": true,
+  "sceneId": "s2"
+ },
+ {
+  "word": "database.",
+  "start": 8.36,
+  "end": 8.88,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "Micelclaw",
+  "start": 9.66,
+  "end": 10.18,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "dot",
+  "start": 10.18,
+  "end": 10.48,
+  "key": false,
+  "sceneId": "s2"
+ },
+ {
+  "word": "com.",
+  "start": 10.48,
+  "end": 10.88,
+  "key": false,
+  "sceneId": "s2"
+ }
+]

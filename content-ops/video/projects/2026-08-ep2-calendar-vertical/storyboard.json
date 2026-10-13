@@ -1,0 +1,236 @@
+{
+  "id": "2026-08-ep2-calendar-vertical",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.6,
+  "size": [
+    1080,
+    1920
+  ],
+  "scenes": [
+    {
+      "id": "v1",
+      "kind": "footage",
+      "voiceover": "Friday's rehearsal isn't typed into a calendar. It's asked for.",
+      "leadSec": 0.4,
+      "padSec": 0.8,
+      "minSec": 9,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 11,
+        "note": "MOVIL: chat, teclear el prompt del ensayo (sin enviar; el envio real ya paso en el horizontal)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 600
+          },
+          {
+            "op": "type",
+            "text": "Put the final rehearsal on the calendar: Friday at 19:00 at the warehouse.",
+            "delay": 55
+          },
+          {
+            "op": "pause",
+            "ms": 2000
+          }
+        ]
+      },
+      "srcOffsetSec": 3.5
+    },
+    {
+      "id": "v2",
+      "kind": "footage",
+      "voiceover": "The agent schedules it — and hands you a chip. Tap it, and you're standing on the event.",
+      "minSec": 12,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 22,
+        "note": "MOVIL: abrir la conv del hilo, scroll al final, TAP en la chip del rehearsal -> evento abierto",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "moveTo",
+            "x": 26,
+            "y": 61,
+            "ms": 600
+          },
+          {
+            "op": "click",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "text=Put the final rehearsal on",
+            "settleMs": 2000
+          },
+          {
+            "op": "moveTo",
+            "x": 340,
+            "y": 360,
+            "ms": 400
+          },
+          {
+            "op": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title*=\"ehearsal\"]",
+            "settleMs": 800
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          },
+          {
+            "op": "click",
+            "selector": "a[title*=\"ehearsal\"]",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      },
+      "srcOffsetSec": 8.0
+    },
+    {
+      "id": "v3",
+      "kind": "footage",
+      "voiceover": "Right week, right calendar, reminder set — your whole week, in your pocket.",
+      "minSec": 9,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 15,
+        "note": "MOVIL: la sidebar es un drawer -> abrirlo (hamburguesa), apagar maria's, cerrar por backdrop; todo se recorta con srcOffset",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/calendar?view=agenda&date=2026-08-04",
+            "settleMs": 4000
+          },
+          {
+            "op": "click",
+            "selector": "button[aria-label=\"Calendars\"]",
+            "settleMs": 1000
+          },
+          {
+            "op": "eval",
+            "js": "const l=[...document.querySelectorAll('label')].find(e=>e.textContent.includes(\"maria's\")); if(l){l.querySelector('input')?.click(); l.style.display='none';}"
+          },
+          {
+            "op": "pause",
+            "ms": 500
+          },
+          {
+            "op": "moveTo",
+            "x": 350,
+            "y": 400,
+            "ms": 300
+          },
+          {
+            "op": "click",
+            "settleMs": 1000
+          },
+          {
+            "op": "scroll",
+            "dy": 250
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          },
+          {
+            "op": "scroll",
+            "dy": 250
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 7.0
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "leadSec": 0.3,
+      "padSec": 1.2,
+      "minSec": 7,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Calendar — Ep. 2 of the Module Tours.",
+      "url": "micelclaw.com",
+      "cta": "Full tour on YouTube.",
+      "voiceover": "Calendar — Episode two of the Module Tours. The full tour is on our channel.",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

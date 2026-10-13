@@ -1,0 +1,394 @@
+[
+ {
+  "word": "Friday's",
+  "start": 0.4,
+  "end": 1.0,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "rehearsal",
+  "start": 1.0,
+  "end": 1.48,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "isn't",
+  "start": 1.48,
+  "end": 1.86,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "typed",
+  "start": 1.86,
+  "end": 2.08,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "into",
+  "start": 2.08,
+  "end": 2.32,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "a",
+  "start": 2.32,
+  "end": 2.5,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "calendar.",
+  "start": 2.5,
+  "end": 2.86,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "It's",
+  "start": 3.46,
+  "end": 3.64,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "asked",
+  "start": 3.64,
+  "end": 3.92,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "for.",
+  "start": 3.92,
+  "end": 4.26,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "The",
+  "start": 9.0,
+  "end": 9.14,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "agent",
+  "start": 9.14,
+  "end": 9.44,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "schedules",
+  "start": 9.44,
+  "end": 9.96,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it",
+  "start": 9.96,
+  "end": 10.22,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "\u2014",
+  "start": 10.234,
+  "end": 10.324,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "and",
+  "start": 10.4,
+  "end": 10.42,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "hands",
+  "start": 10.42,
+  "end": 10.7,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "you",
+  "start": 10.7,
+  "end": 10.88,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "a",
+  "start": 10.88,
+  "end": 11.04,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "chip.",
+  "start": 11.04,
+  "end": 11.28,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Tap",
+  "start": 12.08,
+  "end": 12.08,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it,",
+  "start": 12.08,
+  "end": 12.3,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "and",
+  "start": 12.46,
+  "end": 12.54,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "you're",
+  "start": 12.54,
+  "end": 12.7,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "standing",
+  "start": 12.7,
+  "end": 12.94,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "on",
+  "start": 12.94,
+  "end": 13.24,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "the",
+  "start": 13.24,
+  "end": 13.38,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "event.",
+  "start": 13.38,
+  "end": 13.68,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Right",
+  "start": 21.0,
+  "end": 21.26,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "week,",
+  "start": 21.26,
+  "end": 21.54,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "right",
+  "start": 21.82,
+  "end": 21.86,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "calendar,",
+  "start": 21.86,
+  "end": 22.44,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "reminder",
+  "start": 23.22,
+  "end": 23.26,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "set",
+  "start": 23.26,
+  "end": 23.68,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "\u2014",
+  "start": 23.69,
+  "end": 23.76,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "your",
+  "start": 23.82,
+  "end": 23.94,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "whole",
+  "start": 23.94,
+  "end": 24.2,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "week,",
+  "start": 24.2,
+  "end": 24.48,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "in",
+  "start": 24.62,
+  "end": 24.66,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "your",
+  "start": 24.66,
+  "end": 24.78,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "pocket.",
+  "start": 24.78,
+  "end": 25.02,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "Calendar",
+  "start": 30.3,
+  "end": 30.72,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "\u2014",
+  "start": 30.741,
+  "end": 30.881,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Episode",
+  "start": 31.0,
+  "end": 31.16,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "two",
+  "start": 31.16,
+  "end": 31.66,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "of",
+  "start": 31.66,
+  "end": 31.86,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "the",
+  "start": 31.86,
+  "end": 31.96,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Module",
+  "start": 31.96,
+  "end": 32.34,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Tours.",
+  "start": 32.34,
+  "end": 32.8,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "The",
+  "start": 33.48,
+  "end": 33.54,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "full",
+  "start": 33.54,
+  "end": 33.82,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "tour",
+  "start": 33.82,
+  "end": 34.18,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "is",
+  "start": 34.18,
+  "end": 34.4,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "on",
+  "start": 34.4,
+  "end": 34.54,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "our",
+  "start": 34.54,
+  "end": 34.68,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "channel.",
+  "start": 34.68,
+  "end": 34.94,
+  "key": false,
+  "sceneId": "outro"
+ }
+]

@@ -1,0 +1,35 @@
+1
+00:00:00,400 --> 00:00:11,216
+The Valencia beach show has stopped being a pile of follow-ups. Every job is visible now. Every deadline has a place. And when the plan moves, the board moves with it.
+
+2
+00:00:16,116 --> 00:00:29,343
+Backlog. Ready. In progress. Review. Done. Priorities, dates, and checklist progress are visible without opening a thing. And when the work changes state, you move the card. That is the whole form.
+
+3
+00:00:34,116 --> 00:00:45,380
+Open one card, and the detail is already there: what it means, how urgent it is, when it is due, what is checked off, what blocks it, and which records belong beside it.
+
+4
+00:00:53,116 --> 00:01:03,420
+The same work can become a table, a calendar, a Gantt plan, or a dashboard. Nothing is copied between them. The board changes shape. The data stays put.
+
+5
+00:01:11,116 --> 00:01:21,953
+Now, from the chat. We ask Francis for one thing: add a high-priority card called Print run of show, due Saturday, with three checks. We never open Projects.
+
+6
+00:01:26,116 --> 00:01:37,572
+Francis finds the right board, creates the card, and builds the checklist. The tool calls stay visible, so we can see what changed. Then the new card comes back as a chip.
+
+7
+00:01:46,116 --> 00:01:57,871
+And the chip is the door. Click it, and we land on the exact card: the right board, the right deadline, and all three checks waiting. The conversation has become work we can act on.
+
+8
+00:02:02,116 --> 00:02:15,343
+The board does not live alone. The rain plan from Notes sits beside the work. The supplier sits there too. Next week, we follow those people into Contacts — the crew and companies behind the show.
+
+9
+00:02:20,416 --> 00:02:26,091
+That's Projects — boards that move from chat, on your own hardware. Next week: Contacts.

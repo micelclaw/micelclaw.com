@@ -1,0 +1,88 @@
+{
+  "_README": [
+    "Primer corto de la cadencia 3/semana. NO se captura nada nuevo: reaprovecha el metraje",
+    "vertical del Ep.1 que ya está en disco (v2 = la chip que navega, v3 = la nota abierta).",
+    "El metraje entra por ENLACES POR FICHERO en el staging (s1.mp4 → v2.mp4), nunca enlazando la",
+    "carpeta entera: 50-render escribe <escena>.trim.mp4 AL LADO del original y con la carpeta",
+    "enlazada machacaría los recortes del Ep.1.",
+    "",
+    "srcOffsetSec elegidos para que la acción se vea PRONTO y le quede REPOSO detrás (regla del",
+    "usuario: 2-3 s sobre el elemento tras cada acción). Se ajusta el offset, NO la ventana: estirar",
+    "la ventana metería silencio, que sin música se oye.",
+    "  s1 ← v2 @10,8 s → el clic de la chip (t=13,28 s) se ve a los 2,5 s de escena y le quedan 2,5 s",
+    "       de reposo; el gancho (2,4 s) se retira justo cuando llega el clic.",
+    "  s2 ← v3 @2,5 s → el clic de abrir la nota (t=4,61 s) se ve a los 2,1 s y le quedan 4,5 s.",
+    "",
+    "minSec BAJO a propósito: la ventana la marca la voz. Kokoro lee a ~3,6 palabras/s (MEDIDO aquí,",
+    "no las 1,4 que suponía el plan): los minSec generosos del Ep.1 eran los que dejaban los huecos",
+    "de silencio (56% medido), no la voz."
+  ],
+  "id": "2026-07-short-notes",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": null,
+  "sfxDb": -14,
+  "showCaptions": true,
+  "padSec": 0.4,
+  "size": [
+    1080,
+    1920
+  ],
+  "hook": "Your agent files the note",
+  "hookHoldSec": 2.4,
+  "scenes": [
+    {
+      "id": "s1",
+      "kind": "footage",
+      "voiceover": "You asked your agent for a note, and it comes back as a chip you can tap.",
+      "highlight": [
+        "chip",
+        "tap"
+      ],
+      "minSec": 5,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.06,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "srcOffsetSec": 10.8
+    },
+    {
+      "id": "s2",
+      "kind": "footage",
+      "voiceover": "And there it is. Pinned, tagged and searchable, in your own database. Micelclaw dot com.",
+      "highlight": [
+        "your",
+        "own"
+      ],
+      "minSec": 5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.06,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "srcOffsetSec": 2.5
+    }
+  ]
+}

@@ -1,0 +1,1003 @@
+[
+ {
+  "word": "This",
+  "start": 0.4,
+  "end": 0.62,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "is",
+  "start": 0.62,
+  "end": 0.78,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "our",
+  "start": 0.78,
+  "end": 0.96,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "home",
+  "start": 0.96,
+  "end": 1.2,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "server.",
+  "start": 1.2,
+  "end": 1.6,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "We",
+  "start": 2.0,
+  "end": 2.12,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "just",
+  "start": 2.12,
+  "end": 2.3,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "asked",
+  "start": 2.3,
+  "end": 2.68,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "it",
+  "start": 2.68,
+  "end": 2.86,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "to",
+  "start": 2.86,
+  "end": 2.98,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "plan",
+  "start": 2.98,
+  "end": 3.28,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "our",
+  "start": 3.28,
+  "end": 3.5,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "week.",
+  "start": 3.5,
+  "end": 3.76,
+  "key": false,
+  "sceneId": "s01"
+ },
+ {
+  "word": "Micelclaw",
+  "start": 9.7,
+  "end": 10.46,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "is",
+  "start": 10.46,
+  "end": 10.7,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "a",
+  "start": 10.7,
+  "end": 10.86,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "self-hosted",
+  "start": 10.918,
+  "end": 11.308,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "AI",
+  "start": 11.64,
+  "end": 12.1,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "productivity",
+  "start": 12.1,
+  "end": 12.7,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "OS.",
+  "start": 12.7,
+  "end": 13.4,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "Notes,",
+  "start": 14.5,
+  "end": 14.52,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "mail,",
+  "start": 14.84,
+  "end": 15.14,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "calendar,",
+  "start": 15.46,
+  "end": 15.8,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "photos,",
+  "start": 16.14,
+  "end": 16.34,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "files,",
+  "start": 16.98,
+  "end": 17.12,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "money",
+  "start": 17.44,
+  "end": 17.6,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "\u2014",
+  "start": 17.628,
+  "end": 17.818,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "one",
+  "start": 17.98,
+  "end": 18.12,
+  "key": true,
+  "sceneId": "s03"
+ },
+ {
+  "word": "local",
+  "start": 18.12,
+  "end": 18.46,
+  "key": true,
+  "sceneId": "s03"
+ },
+ {
+  "word": "database,",
+  "start": 18.46,
+  "end": 18.96,
+  "key": true,
+  "sceneId": "s03"
+ },
+ {
+  "word": "on",
+  "start": 19.22,
+  "end": 19.36,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "your",
+  "start": 19.36,
+  "end": 19.5,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "own",
+  "start": 19.5,
+  "end": 19.74,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "hardware.",
+  "start": 19.74,
+  "end": 20.24,
+  "key": false,
+  "sceneId": "s03"
+ },
+ {
+  "word": "On",
+  "start": 21.009,
+  "end": 21.309,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "top,",
+  "start": 21.309,
+  "end": 21.649,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "seven",
+  "start": 22.289,
+  "end": 22.489,
+  "key": true,
+  "sceneId": "s04"
+ },
+ {
+  "word": "agents",
+  "start": 22.489,
+  "end": 22.909,
+  "key": true,
+  "sceneId": "s04"
+ },
+ {
+  "word": "that",
+  "start": 22.909,
+  "end": 23.149,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "actually",
+  "start": 23.149,
+  "end": 23.589,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "know",
+  "start": 23.589,
+  "end": 23.829,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "your",
+  "start": 23.829,
+  "end": 24.029,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "data",
+  "start": 24.029,
+  "end": 24.369,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "\u2014",
+  "start": 24.408,
+  "end": 24.668,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "on",
+  "start": 24.889,
+  "end": 24.949,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "the",
+  "start": 24.949,
+  "end": 25.109,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "web,",
+  "start": 25.109,
+  "end": 25.369,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "on",
+  "start": 25.629,
+  "end": 25.709,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "Telegram,",
+  "start": 25.709,
+  "end": 26.209,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "even",
+  "start": 26.489,
+  "end": 26.689,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "by",
+  "start": 26.689,
+  "end": 26.989,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "voice.",
+  "start": 26.989,
+  "end": 27.269,
+  "key": false,
+  "sceneId": "s04"
+ },
+ {
+  "word": "Ask",
+  "start": 28.509,
+  "end": 28.869,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "for",
+  "start": 28.869,
+  "end": 29.089,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "a",
+  "start": 29.089,
+  "end": 29.229,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "plan.",
+  "start": 29.229,
+  "end": 29.569,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "You",
+  "start": 30.169,
+  "end": 30.229,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "get",
+  "start": 30.229,
+  "end": 30.369,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "a",
+  "start": 30.369,
+  "end": 30.509,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "real",
+  "start": 30.509,
+  "end": 30.829,
+  "key": true,
+  "sceneId": "s05"
+ },
+ {
+  "word": "document,",
+  "start": 30.829,
+  "end": 31.509,
+  "key": true,
+  "sceneId": "s05"
+ },
+ {
+  "word": "rendered",
+  "start": 31.729,
+  "end": 31.989,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "as",
+  "start": 31.989,
+  "end": 32.289,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "it's",
+  "start": 32.289,
+  "end": 32.509,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "written.",
+  "start": 32.509,
+  "end": 32.789,
+  "key": false,
+  "sceneId": "s05"
+ },
+ {
+  "word": "Hard",
+  "start": 35.509,
+  "end": 35.869,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "question?",
+  "start": 35.869,
+  "end": 36.349,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "The",
+  "start": 36.729,
+  "end": 36.829,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "agents",
+  "start": 36.829,
+  "end": 37.189,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "deliberate.",
+  "start": 37.189,
+  "end": 37.689,
+  "key": true,
+  "sceneId": "s06"
+ },
+ {
+  "word": "You",
+  "start": 38.089,
+  "end": 38.109,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "get",
+  "start": 38.109,
+  "end": 38.249,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "to",
+  "start": 38.249,
+  "end": 38.429,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "watch.",
+  "start": 38.429,
+  "end": 38.709,
+  "key": false,
+  "sceneId": "s06"
+ },
+ {
+  "word": "Tell",
+  "start": 41.009,
+  "end": 41.209,
+  "key": false,
+  "sceneId": "s07a"
+ },
+ {
+  "word": "your",
+  "start": 41.209,
+  "end": 41.389,
+  "key": false,
+  "sceneId": "s07a"
+ },
+ {
+  "word": "agent",
+  "start": 41.389,
+  "end": 41.789,
+  "key": false,
+  "sceneId": "s07a"
+ },
+ {
+  "word": "to",
+  "start": 41.789,
+  "end": 41.989,
+  "key": false,
+  "sceneId": "s07a"
+ },
+ {
+  "word": "save",
+  "start": 41.989,
+  "end": 42.229,
+  "key": false,
+  "sceneId": "s07a"
+ },
+ {
+  "word": "a",
+  "start": 42.229,
+  "end": 42.389,
+  "key": false,
+  "sceneId": "s07a"
+ },
+ {
+  "word": "note.",
+  "start": 42.389,
+  "end": 42.589,
+  "key": true,
+  "sceneId": "s07a"
+ },
+ {
+  "word": "Open",
+  "start": 45.509,
+  "end": 45.949,
+  "key": false,
+  "sceneId": "s07b"
+ },
+ {
+  "word": "Notes.",
+  "start": 45.949,
+  "end": 46.349,
+  "key": false,
+  "sceneId": "s07b"
+ },
+ {
+  "word": "It's",
+  "start": 46.709,
+  "end": 46.869,
+  "key": false,
+  "sceneId": "s07b"
+ },
+ {
+  "word": "already",
+  "start": 46.869,
+  "end": 47.109,
+  "key": true,
+  "sceneId": "s07b"
+ },
+ {
+  "word": "there.",
+  "start": 47.109,
+  "end": 47.449,
+  "key": true,
+  "sceneId": "s07b"
+ },
+ {
+  "word": "Everything",
+  "start": 50.009,
+  "end": 50.489,
+  "key": false,
+  "sceneId": "s08"
+ },
+ {
+  "word": "you",
+  "start": 50.489,
+  "end": 50.749,
+  "key": false,
+  "sceneId": "s08"
+ },
+ {
+  "word": "keep",
+  "start": 50.749,
+  "end": 51.129,
+  "key": false,
+  "sceneId": "s08"
+ },
+ {
+  "word": "becomes",
+  "start": 51.129,
+  "end": 51.689,
+  "key": false,
+  "sceneId": "s08"
+ },
+ {
+  "word": "part",
+  "start": 51.689,
+  "end": 52.069,
+  "key": false,
+  "sceneId": "s08"
+ },
+ {
+  "word": "of",
+  "start": 52.069,
+  "end": 52.249,
+  "key": false,
+  "sceneId": "s08"
+ },
+ {
+  "word": "one",
+  "start": 52.249,
+  "end": 52.469,
+  "key": true,
+  "sceneId": "s08"
+ },
+ {
+  "word": "graph.",
+  "start": 52.469,
+  "end": 52.809,
+  "key": true,
+  "sceneId": "s08"
+ },
+ {
+  "word": "Photos",
+  "start": 56.509,
+  "end": 56.969,
+  "key": false,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "you",
+  "start": 56.969,
+  "end": 57.349,
+  "key": false,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "can",
+  "start": 57.349,
+  "end": 57.509,
+  "key": false,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "search",
+  "start": 57.509,
+  "end": 57.789,
+  "key": true,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "by",
+  "start": 57.789,
+  "end": 58.089,
+  "key": false,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "what's",
+  "start": 58.089,
+  "end": 58.509,
+  "key": false,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "in",
+  "start": 58.509,
+  "end": 58.629,
+  "key": false,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "them.",
+  "start": 58.629,
+  "end": 58.829,
+  "key": false,
+  "sceneId": "s09a"
+ },
+ {
+  "word": "Files",
+  "start": 61.009,
+  "end": 61.529,
+  "key": false,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "with",
+  "start": 61.529,
+  "end": 61.729,
+  "key": false,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "instant",
+  "start": 61.729,
+  "end": 62.109,
+  "key": false,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "previews.",
+  "start": 62.109,
+  "end": 62.609,
+  "key": false,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "Share",
+  "start": 63.269,
+  "end": 63.309,
+  "key": false,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "with",
+  "start": 63.309,
+  "end": 63.509,
+  "key": false,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "a",
+  "start": 63.509,
+  "end": 63.649,
+  "key": false,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "QR.",
+  "start": 63.649,
+  "end": 63.949,
+  "key": true,
+  "sceneId": "s09b"
+ },
+ {
+  "word": "Telegram,",
+  "start": 66.009,
+  "end": 66.509,
+  "key": false,
+  "sceneId": "s09c"
+ },
+ {
+  "word": "WhatsApp,",
+  "start": 66.609,
+  "end": 66.889,
+  "key": false,
+  "sceneId": "s09c"
+ },
+ {
+  "word": "Signal.",
+  "start": 67.109,
+  "end": 67.489,
+  "key": false,
+  "sceneId": "s09c"
+ },
+ {
+  "word": "One",
+  "start": 68.049,
+  "end": 68.109,
+  "key": true,
+  "sceneId": "s09c"
+ },
+ {
+  "word": "inbox.",
+  "start": 68.109,
+  "end": 68.489,
+  "key": true,
+  "sceneId": "s09c"
+ },
+ {
+  "word": "And",
+  "start": 70.209,
+  "end": 70.429,
+  "key": false,
+  "sceneId": "s10"
+ },
+ {
+  "word": "real",
+  "start": 70.429,
+  "end": 70.749,
+  "key": false,
+  "sceneId": "s10"
+ },
+ {
+  "word": "accounting.",
+  "start": 70.749,
+  "end": 71.369,
+  "key": true,
+  "sceneId": "s10"
+ },
+ {
+  "word": "Taxes",
+  "start": 71.929,
+  "end": 72.149,
+  "key": false,
+  "sceneId": "s10"
+ },
+ {
+  "word": "included.",
+  "start": 72.149,
+  "end": 72.649,
+  "key": false,
+  "sceneId": "s10"
+ },
+ {
+  "word": "All",
+  "start": 74.409,
+  "end": 74.729,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "of",
+  "start": 74.729,
+  "end": 74.889,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "this",
+  "start": 74.889,
+  "end": 75.049,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "runs",
+  "start": 75.049,
+  "end": 75.389,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "on",
+  "start": 75.389,
+  "end": 75.649,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "a",
+  "start": 75.649,
+  "end": 75.769,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "mini-PC.",
+  "start": 75.874,
+  "end": 76.574,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "Local",
+  "start": 77.169,
+  "end": 77.349,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "models",
+  "start": 77.349,
+  "end": 77.789,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "if",
+  "start": 77.789,
+  "end": 78.069,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "you",
+  "start": 78.069,
+  "end": 78.249,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "want.",
+  "start": 78.249,
+  "end": 78.589,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "Your",
+  "start": 79.089,
+  "end": 79.249,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "data",
+  "start": 79.249,
+  "end": 79.549,
+  "key": false,
+  "sceneId": "s11"
+ },
+ {
+  "word": "never",
+  "start": 79.549,
+  "end": 79.829,
+  "key": true,
+  "sceneId": "s11"
+ },
+ {
+  "word": "leaves",
+  "start": 79.829,
+  "end": 80.229,
+  "key": true,
+  "sceneId": "s11"
+ },
+ {
+  "word": "home.",
+  "start": 80.229,
+  "end": 80.569,
+  "key": true,
+  "sceneId": "s11"
+ },
+ {
+  "word": "Micelclaw.",
+  "start": 82.009,
+  "end": 82.789,
+  "key": false,
+  "sceneId": "s12"
+ },
+ {
+  "word": "Your",
+  "start": 83.269,
+  "end": 83.349,
+  "key": false,
+  "sceneId": "s12"
+ },
+ {
+  "word": "self-hosted",
+  "start": 83.41,
+  "end": 83.82,
+  "key": false,
+  "sceneId": "s12"
+ },
+ {
+  "word": "AI",
+  "start": 84.169,
+  "end": 84.589,
+  "key": false,
+  "sceneId": "s12"
+ },
+ {
+  "word": "productivity",
+  "start": 84.589,
+  "end": 85.149,
+  "key": false,
+  "sceneId": "s12"
+ },
+ {
+  "word": "OS.",
+  "start": 85.149,
+  "end": 85.729,
+  "key": false,
+  "sceneId": "s12"
+ }
+]

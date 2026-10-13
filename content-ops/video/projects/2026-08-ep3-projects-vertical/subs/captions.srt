@@ -1,0 +1,15 @@
+1
+00:00:00,400 --> 00:00:08,635
+This task never starts in a project form. We ask for it in the chat: high priority, Ready, due Saturday, with three checks.
+
+2
+00:00:09,435 --> 00:00:17,179
+Francis creates it in Projects and returns a chip. Tap once, and the conversation opens the exact piece of work.
+
+3
+00:00:21,435 --> 00:00:27,878
+Right board. Right column. Right deadline. The checklist is waiting, and the work can move from here.
+
+4
+00:00:31,735 --> 00:00:36,706
+Projects — Episode three of the Module Tours. The full tour is on our channel.

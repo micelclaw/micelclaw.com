@@ -1,0 +1,720 @@
+{
+  "id": "2026-07-trailer-user",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.6,
+  "size": [
+    1920,
+    1080
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "kind": "footage",
+      "voiceover": "This is our home server. We just asked it to plan our week.",
+      "leadSec": 0.4,
+      "padSec": 1.2,
+      "minSec": 6.5,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.55
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 40,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 3500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 600
+          },
+          {
+            "op": "type",
+            "text": "Plan our week.",
+            "delay": 95
+          },
+          {
+            "op": "pause",
+            "ms": 500
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "click"
+          },
+          {
+            "op": "pause",
+            "ms": 32000
+          }
+        ]
+      },
+      "srcOffsetSec": 3.2
+    },
+    {
+      "id": "s02",
+      "kind": "title",
+      "leadSec": 0.2,
+      "padSec": 1.4,
+      "minSec": 3.2,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "sub": "Your self-hosted AI productivity OS.",
+      "voiceover": "",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.15
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "kind": "footage",
+      "voiceover": "Micelclaw is a self-hosted AI productivity OS. Notes, mail, calendar, photos, files, money — one local database, on your own hardware.",
+      "highlight": [
+        "one",
+        "local",
+        "database"
+      ],
+      "lowerThird": "One database. Yours.",
+      "minSec": 9,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.38,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "note": "Calendar con los eventos sembrados; paneo suave",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/calendar",
+            "settleMs": 3000
+          },
+          {
+            "op": "moveTo",
+            "x": 2600,
+            "y": 1100,
+            "ms": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          },
+          {
+            "op": "moveTo",
+            "x": 1400,
+            "y": 1400,
+            "ms": 1400
+          },
+          {
+            "op": "pause",
+            "ms": 900
+          }
+        ]
+      },
+      "srcOffsetSec": 1.8
+    },
+    {
+      "id": "s04",
+      "kind": "footage",
+      "voiceover": "On top, seven agents that actually know your data — on the web, on Telegram, even by voice.",
+      "highlight": [
+        "seven",
+        "agents"
+      ],
+      "lowerThird": "Seven agents. Yours.",
+      "minSec": 7.5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.45
+        },
+        {
+          "at": 1,
+          "zoom": 1.16,
+          "cx": 0.42,
+          "cy": 0.42
+        }
+      ],
+      "capture": {
+        "note": "Grid de los 7 agentes; hover sobre francis",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/agents",
+            "settleMs": 3500
+          },
+          {
+            "op": "moveTo",
+            "x": 1200,
+            "y": 900,
+            "ms": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 700
+          },
+          {
+            "op": "moveTo",
+            "x": 2200,
+            "y": 900,
+            "ms": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          }
+        ]
+      },
+      "srcOffsetSec": 1.8
+    },
+    {
+      "id": "s05",
+      "kind": "footage",
+      "voiceover": "Ask for a plan. You get a real document, rendered as it's written.",
+      "highlight": [
+        "real",
+        "document"
+      ],
+      "lowerThird": "Ask for a document.",
+      "minSec": 7,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.15,
+          "cx": 0.62,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 95,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=Plan our week",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 500
+          },
+          {
+            "op": "type",
+            "text": "Turn it into a clean weekly plan document I can print.",
+            "delay": 55
+          },
+          {
+            "op": "pause",
+            "ms": 300
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "click"
+          },
+          {
+            "op": "pause",
+            "ms": 85000
+          }
+        ]
+      },
+      "srcOffsetSec": 80
+    },
+    {
+      "id": "s06",
+      "kind": "footage",
+      "voiceover": "Hard question? The agents deliberate. You get to watch.",
+      "highlight": [
+        "deliberate"
+      ],
+      "lowerThird": "They deliberate. Live.",
+      "minSec": 5.5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.03,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.42
+        }
+      ],
+      "capture": {
+        "note": "REHEARSAL FC: council pre-lanzado 'Where should we go this summer?' — turnos visibles",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/agents?tab=council",
+            "settleMs": 4000
+          },
+          {
+            "op": "pause",
+            "ms": 5000
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07a",
+      "kind": "footage",
+      "voiceover": "Tell your agent to save a note.",
+      "highlight": [
+        "note"
+      ],
+      "lowerThird": "Ask in plain words.",
+      "minSec": 4.5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.55
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.6
+        }
+      ],
+      "capture": {
+        "holdSec": 80,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=Plan our week",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 500
+          },
+          {
+            "op": "type",
+            "text": "Take a note: Valencia show — perimeter check, briefing 22:45, opening volley 23:00.",
+            "delay": 42
+          },
+          {
+            "op": "pause",
+            "ms": 300
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "click"
+          },
+          {
+            "op": "pause",
+            "ms": 70000
+          }
+        ]
+      },
+      "srcOffsetSec": 8.5
+    },
+    {
+      "id": "s07b",
+      "kind": "footage",
+      "voiceover": "Open Notes. It's already there.",
+      "highlight": [
+        "already",
+        "there"
+      ],
+      "lowerThird": "Saved to Notes.",
+      "minSec": 4.5,
+      "srcOffsetSec": 4.0,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.45
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.45,
+          "cy": 0.42
+        }
+      ],
+      "capture": {
+        "holdSec": 10,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia show",
+            "sfx": "click",
+            "settleMs": 2000
+          },
+          {
+            "op": "pause",
+            "ms": 2000
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "kind": "footage",
+      "voiceover": "Everything you keep becomes part of one graph.",
+      "highlight": [
+        "one",
+        "graph"
+      ],
+      "lowerThird": "One graph.",
+      "minSec": 6.5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "srcOffsetSec": 0
+    },
+    {
+      "id": "s09a",
+      "kind": "footage",
+      "voiceover": "Photos you can search by what's in them.",
+      "highlight": [
+        "search"
+      ],
+      "lowerThird": "Search by meaning.",
+      "minSec": 4.5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.4
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 16,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/photos",
+            "settleMs": 3500
+          },
+          {
+            "op": "click",
+            "selector": "input[placeholder*=\"photo\" i]",
+            "settleMs": 500
+          },
+          {
+            "op": "type",
+            "text": "beach at sunset",
+            "delay": 70
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "click",
+            "settleMs": 2500
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      },
+      "srcOffsetSec": 8.0
+    },
+    {
+      "id": "s09b",
+      "kind": "footage",
+      "voiceover": "Files with instant previews. Share with a QR.",
+      "highlight": [
+        "QR"
+      ],
+      "lowerThird": "Your private cloud.",
+      "minSec": 5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.55,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "note": "REHEARSAL FC: /drive → Shows 2026 → foto → preview → Share QR",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/drive",
+            "settleMs": 3000
+          },
+          {
+            "op": "dblclick",
+            "selector": "text=BoomClaw",
+            "settleMs": 1800,
+            "sfx": "click"
+          },
+          {
+            "op": "click",
+            "selector": "text=Malvarrosa sunset",
+            "sfx": "click",
+            "settleMs": 2000
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 5.0
+    },
+    {
+      "id": "s09c",
+      "kind": "footage",
+      "voiceover": "Telegram, WhatsApp, Signal. One inbox.",
+      "highlight": [
+        "One",
+        "inbox"
+      ],
+      "lowerThird": "One inbox.",
+      "minSec": 4.2,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.4
+        },
+        {
+          "at": 1,
+          "zoom": 1.1,
+          "cx": 0.42,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "note": "Bandeja sembrada (6 canales, 3 plataformas)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/messages",
+            "settleMs": 3500
+          },
+          {
+            "op": "moveTo",
+            "x": 900,
+            "y": 1000,
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          },
+          {
+            "op": "moveTo",
+            "x": 900,
+            "y": 1500,
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 700
+          }
+        ]
+      },
+      "srcOffsetSec": 2.5
+    },
+    {
+      "id": "s10",
+      "kind": "footage",
+      "voiceover": "And real accounting. Taxes included.",
+      "highlight": [
+        "accounting"
+      ],
+      "lowerThird": "Real accounting.",
+      "minSec": 4.2,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.13,
+          "cx": 0.5,
+          "cy": 0.42
+        }
+      ],
+      "capture": {
+        "note": "REHEARSAL FC: /finance tab Rendimiento (EBITDA) o dashboard con gráficos",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/finance",
+            "settleMs": 4000
+          },
+          {
+            "op": "pause",
+            "ms": 4000
+          }
+        ]
+      },
+      "srcOffsetSec": 2.5
+    },
+    {
+      "id": "s11",
+      "kind": "footage",
+      "voiceover": "All of this runs on a mini-PC. Local models if you want. Your data never leaves home.",
+      "highlight": [
+        "never",
+        "leaves",
+        "home"
+      ],
+      "lowerThird": "Local models. Or cloud.",
+      "minSec": 7.2,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.08,
+          "cx": 0.5,
+          "cy": 0.45
+        },
+        {
+          "at": 1,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "note": "REHEARSAL FC: Gateway → Models (runtime local Ollama visible); zoom-OUT de cierre",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/gateway",
+            "settleMs": 3500
+          },
+          {
+            "op": "click",
+            "selector": "text=Models",
+            "sfx": "click",
+            "settleMs": 2500
+          },
+          {
+            "op": "moveTo",
+            "x": 1900,
+            "y": 1200,
+            "ms": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 5.5
+    },
+    {
+      "id": "s12",
+      "kind": "outro",
+      "leadSec": 0.4,
+      "padSec": 2.2,
+      "minSec": 6,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "All your data. One brain. Your hardware.",
+      "url": "micelclaw.com",
+      "cta": "Try it.",
+      "voiceover": "Micelclaw. Your self-hosted AI productivity OS.",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

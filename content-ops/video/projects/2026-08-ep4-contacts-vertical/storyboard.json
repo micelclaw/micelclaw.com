@@ -1,0 +1,225 @@
+{
+  "id": "2026-08-ep4-contacts-vertical",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.6,
+  "size": [
+    1080,
+    1920
+  ],
+  "scenes": [
+    {
+      "id": "v1",
+      "kind": "footage",
+      "voiceover": "Who wires our shows? You don't scroll a list. You ask.",
+      "leadSec": 0.4,
+      "padSec": 0.8,
+      "minSec": 9,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 11,
+        "note": "MOVIL: chat, teclear el prompt (sin enviar; el hilo real ya existe del horizontal)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 600
+          },
+          {
+            "op": "type",
+            "text": "Who wires our shows?",
+            "delay": 70
+          },
+          {
+            "op": "pause",
+            "ms": 2000
+          }
+        ]
+      },
+      "srcOffsetSec": 3.5
+    },
+    {
+      "id": "v2",
+      "kind": "footage",
+      "voiceover": "Francis hands you the person as a chip. Tap it — Dr. Sparky Voltman. If it sparks, I can tame it. In pyrotechnics, that's your man.",
+      "minSec": 13,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 24,
+        "note": "MOVIL: abrir la conv del hilo del horizontal, scroll a la chip de Sparky, TAP -> ficha en movil (nota visible)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "moveTo",
+            "x": 26,
+            "y": 61,
+            "ms": 600
+          },
+          {
+            "op": "click",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "text=Who wires our shows",
+            "settleMs": 2000
+          },
+          {
+            "op": "moveTo",
+            "x": 340,
+            "y": 360,
+            "ms": 400
+          },
+          {
+            "op": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title*=\"Voltman\"]",
+            "settleMs": 800
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          },
+          {
+            "op": "click",
+            "selector": "a[title*=\"Voltman\"]",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 3500
+          }
+        ]
+      },
+      "srcOffsetSec": 4.0
+    },
+    {
+      "id": "v3",
+      "kind": "footage",
+      "voiceover": "Or search what you remember. Chrysanthemum — and there's Yuki. A note is enough to find a person.",
+      "minSec": 10,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.476
+        }
+      ],
+      "capture": {
+        "holdSec": 14,
+        "note": "MOVIL: /contacts, teclear chrysanthemum, tap en Yuki",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/contacts",
+            "settleMs": 4000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "click",
+            "selector": "input[placeholder=\"Search contacts...\"]",
+            "settleMs": 500
+          },
+          {
+            "op": "type",
+            "text": "chrysanthemum",
+            "delay": 75
+          },
+          {
+            "op": "pause",
+            "ms": 1200
+          },
+          {
+            "op": "click",
+            "selector": "text=Yuki Hanabi",
+            "sfx": "click",
+            "settleMs": 2200
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 3.0
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "voiceover": "Contacts — episode four of the Module Tours. Full tour on YouTube.",
+      "leadSec": 0.3,
+      "padSec": 1.2,
+      "minSec": 7,
+      "next": "Full tour on YouTube",
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Your self-hosted AI productivity OS.",
+      "url": "micelclaw.com",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

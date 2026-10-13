@@ -1,0 +1,471 @@
+[
+ {
+  "word": "Who",
+  "start": 0.4,
+  "end": 0.62,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "wires",
+  "start": 0.62,
+  "end": 0.96,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "our",
+  "start": 0.96,
+  "end": 1.18,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "shows?",
+  "start": 1.18,
+  "end": 1.52,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "You",
+  "start": 1.9,
+  "end": 1.94,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "don't",
+  "start": 1.94,
+  "end": 2.2,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "scroll",
+  "start": 2.2,
+  "end": 2.42,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "a",
+  "start": 2.42,
+  "end": 2.6,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "list.",
+  "start": 2.6,
+  "end": 2.86,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "You",
+  "start": 3.16,
+  "end": 3.24,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "ask.",
+  "start": 3.24,
+  "end": 3.56,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "Francis",
+  "start": 9.0,
+  "end": 9.48,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "hands",
+  "start": 9.48,
+  "end": 9.84,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "you",
+  "start": 9.84,
+  "end": 10.04,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "the",
+  "start": 10.04,
+  "end": 10.16,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "person",
+  "start": 10.16,
+  "end": 10.5,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "as",
+  "start": 10.5,
+  "end": 10.74,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "a",
+  "start": 10.74,
+  "end": 10.92,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "chip.",
+  "start": 10.92,
+  "end": 11.2,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Tap",
+  "start": 11.94,
+  "end": 11.96,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it",
+  "start": 11.96,
+  "end": 12.14,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "\u2014",
+  "start": 12.154,
+  "end": 12.244,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Dr.",
+  "start": 12.32,
+  "end": 12.66,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Sparky",
+  "start": 13.12,
+  "end": 13.38,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Voltman.",
+  "start": 13.38,
+  "end": 13.82,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "If",
+  "start": 14.3,
+  "end": 14.38,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it",
+  "start": 14.38,
+  "end": 14.52,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "sparks,",
+  "start": 14.52,
+  "end": 14.88,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "I",
+  "start": 15.06,
+  "end": 15.22,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "can",
+  "start": 15.22,
+  "end": 15.42,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "tame",
+  "start": 15.42,
+  "end": 15.72,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it.",
+  "start": 15.72,
+  "end": 15.98,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "In",
+  "start": 16.36,
+  "end": 16.52,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "pyrotechnics,",
+  "start": 16.52,
+  "end": 17.4,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "that's",
+  "start": 17.44,
+  "end": 17.74,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "your",
+  "start": 17.74,
+  "end": 17.84,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "man.",
+  "start": 17.84,
+  "end": 18.16,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Or",
+  "start": 22.0,
+  "end": 22.24,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "search",
+  "start": 22.24,
+  "end": 22.54,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "what",
+  "start": 22.54,
+  "end": 22.78,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "you",
+  "start": 22.78,
+  "end": 22.94,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "remember.",
+  "start": 22.94,
+  "end": 23.42,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "Chrysanthemum",
+  "start": 24.18,
+  "end": 24.66,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "\u2014",
+  "start": 24.678,
+  "end": 24.798,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "and",
+  "start": 24.9,
+  "end": 24.9,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "there's",
+  "start": 24.9,
+  "end": 25.26,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "Yuki.",
+  "start": 25.26,
+  "end": 25.52,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "A",
+  "start": 26.1,
+  "end": 26.24,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "note",
+  "start": 26.24,
+  "end": 26.44,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "is",
+  "start": 26.44,
+  "end": 26.62,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "enough",
+  "start": 26.62,
+  "end": 26.84,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "to",
+  "start": 26.84,
+  "end": 27.06,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "find",
+  "start": 27.06,
+  "end": 27.28,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "a",
+  "start": 27.28,
+  "end": 27.46,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "person.",
+  "start": 27.46,
+  "end": 27.66,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "Contacts",
+  "start": 32.3,
+  "end": 32.96,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "\u2014",
+  "start": 32.987,
+  "end": 33.167,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "episode",
+  "start": 33.32,
+  "end": 33.32,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "four",
+  "start": 33.32,
+  "end": 33.74,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "of",
+  "start": 33.74,
+  "end": 33.88,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "the",
+  "start": 33.88,
+  "end": 34.0,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Module",
+  "start": 34.0,
+  "end": 34.36,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Tours.",
+  "start": 34.36,
+  "end": 34.94,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Full",
+  "start": 35.54,
+  "end": 35.66,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "tour",
+  "start": 35.66,
+  "end": 35.9,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "on",
+  "start": 35.9,
+  "end": 36.16,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "YouTube.",
+  "start": 36.16,
+  "end": 36.38,
+  "key": false,
+  "sceneId": "outro"
+ }
+]

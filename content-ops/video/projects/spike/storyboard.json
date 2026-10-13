@@ -1,0 +1,45 @@
+{
+  "id": "spike",
+  "voice": "am_michael",
+  "pronounce": { "Micelclaw": "My-cell-claw" },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.6,
+  "scenes": [
+    {
+      "id": "sp1",
+      "kind": "title",
+      "leadSec": 0.3,
+      "title": ["Micel", "claw"],
+      "sub": "Your self-hosted AI productivity OS.",
+      "voiceover": "Micelclaw. Your self-hosted AI productivity OS.",
+      "sfx": [{ "name": "thud", "atSec": 0.15 }]
+    },
+    {
+      "id": "sp2",
+      "kind": "footage",
+      "voiceover": "Photos you can search by what's in them. All on your own hardware.",
+      "highlight": ["search", "your own hardware"],
+      "minSec": 6,
+      "fadeIn": true,
+      "camera": [
+        { "at": 0, "zoom": 1.0, "cx": 0.5, "cy": 0.5 },
+        { "at": 1, "zoom": 1.18, "cx": 0.45, "cy": 0.4 }
+      ],
+      "lowerThird": "Search by meaning.",
+      "capture": {
+        "actions": [
+          { "op": "goto", "path": "/photos", "settleMs": 3500 },
+          { "op": "moveTo", "x": 1900, "y": 900, "ms": 900 },
+          { "op": "scroll", "dy": 500 },
+          { "op": "pause", "ms": 600 },
+          { "op": "moveTo", "x": 1200, "y": 1100, "ms": 800 },
+          { "op": "click", "sfx": "click" },
+          { "op": "pause", "ms": 1500 }
+        ]
+      }
+    }
+  ]
+}

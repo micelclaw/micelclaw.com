@@ -1,0 +1,7 @@
+1
+00:00:00,000 --> 00:00:07,339
+Your server doesn't give you one assistant. It gives you a coordinator and six specialists, each with its own tools.
+
+2
+00:00:07,739 --> 00:00:13,734
+You just ask. The coordinator picks who does it. Read the write-up on micelclaw dot com.

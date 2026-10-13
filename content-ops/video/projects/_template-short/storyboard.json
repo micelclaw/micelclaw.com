@@ -1,0 +1,140 @@
+{
+  "_README": [
+    "PLANTILLA DE CORTO (5-20 s) para TikTok · Instagram Reels · YouTube Shorts.",
+    "Copia esta carpeta a projects/<fecha>-short-<tema>/ y edita. Reglas que NO se tocan:",
+    "",
+    "1. size 1080x1920 → dispara el modo MÓVIL NATIVO de 20-capture (Xvfb + Chromium headed).",
+    "   NUNCA recortar 9:16 de un 16:9: el usuario lo rechazó por verse cortado (PLAYBOOK:43).",
+    "2. music: null → 40-audio-mix mezcla SOLO voz + efectos. El Content ID de TikTok bloqueó el",
+    "   Ep.1 por la música CC-BY (2026-07-25), y sin música la descripción queda sin atribuciones.",
+    "   NO es 'mudo': la voz Kokoro va a -14 LUFS.",
+    "3. NI title NI outro. El outro del Ep.1 ocupa 6 s de mínimo — entre el 30% y el 100% de un",
+    "   corto — y ni TitleCard ni Outro tienen rama vertical (tamaños fijos de 108/84 px).",
+    "   GROWTH.md §5 lo prohíbe por otra vía: 'frame 1 = payoff sobre UI real, NUNCA logo/intro'.",
+    "4. hook = 4-8 palabras visibles DESDE EL FRAME 1 (el karaoke no llega: se ancla a la primera",
+    "   palabra hablada, ~0,3-0,5 s por el lead-in).",
+    "5. UNA sola idea: escena 1 = el gesto, escena 2 = el resultado. Con 20 s de techo, respetar",
+    "   los 2-3 s de reposo tras cada acción se consigue recortando ideas, no acelerando.",
+    "6. capture.holdSec >= ceil(srcOffsetSec + minSec + 2): 50-render recorta con -ss srcOffsetSec,",
+    "   así que el metraje tiene que sobrar por el final o la escena se queda congelada.",
+    "7. La última frase es el CTA hablado (GROWTH.md pide CTA en los últimos 5 s).",
+    "8. Kokoro lee a ~3,6 palabras/s (MEDIDO el 2026-07-27; el 1,4 que circulaba salia de dividir",
+    "   el guion del Ep.1 por ventanas infladas por minSec, no por la voz). Para un corto de 12 s",
+    "   son ~30-34 palabras en total, repartidas para que cada frase LLENE su ventana: si sobra",
+    "   ventana quedan huecos de silencio y sin musica se oyen (el gate avisa >40%, rechaza >65%).",
+    "9. TODO el texto en INGLES (guion, gancho, letrero de la portada): VOICE.md L6 lo fija para todas las redes. El 2026-07-27 este corto salio con gancho en espanol y voz en ingles."
+  ],
+  "id": "_template-short",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": null,
+  "sfxDb": -14,
+  "showCaptions": true,
+  "padSec": 0.4,
+  "size": [
+    1080,
+    1920
+  ],
+  "hook": "Four to eight words, in English",
+  "hookHoldSec": 2.2,
+  "scenes": [
+    {
+      "id": "s1",
+      "kind": "footage",
+      "voiceover": "A sentence describing the GESTURE, long enough to fill its window.",
+      "highlight": [
+        "key",
+        "word"
+      ],
+      "minSec": 7,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.06,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 12,
+        "note": "MÓVIL: la acción, con 2-3 s de reposo al final para que se lea el resultado",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4000
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 600
+          },
+          {
+            "op": "type",
+            "text": "…",
+            "delay": 50
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          }
+        ]
+      },
+      "srcOffsetSec": 3.0
+    },
+    {
+      "id": "s2",
+      "kind": "footage",
+      "voiceover": "The RESULT. The last sentence is the spoken CTA, and it goes here.",
+      "highlight": [
+        "result"
+      ],
+      "minSec": 7,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.06,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 12,
+        "note": "MÓVIL: el registro creado, abierto, con reposo",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 4500
+          },
+          {
+            "op": "click",
+            "selector": "text=…",
+            "sfx": "click",
+            "settleMs": 2500
+          },
+          {
+            "op": "pause",
+            "ms": 2000
+          }
+        ]
+      },
+      "srcOffsetSec": 2.0
+    }
+  ]
+}

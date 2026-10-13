@@ -1,0 +1,7 @@
+1
+00:00:00,300 --> 00:00:04,439
+Micelclaw. Your self-hosted AI productivity OS.
+
+2
+00:00:05,039 --> 00:00:09,135
+Photos you can search by what's in them. All on your own hardware.

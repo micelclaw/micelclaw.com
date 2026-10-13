@@ -1,0 +1,587 @@
+{
+  "id": "2026-08-ep4-contacts",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw",
+    "Fizzlepop": "Fizzle-pop"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.9,
+  "size": [
+    1920,
+    1080
+  ],
+  "scenes": [
+    {
+      "id": "cold",
+      "kind": "footage",
+      "voiceover": "The Valencia beach show happened this Sunday. Everything that exploded was scheduled to — in our line of work, that's called success. What's left is people: the crew to thank, the suppliers to restock, the inspector to reassure. Every one of them lives here.",
+      "leadSec": 0.4,
+      "padSec": 1.0,
+      "minSec": 18,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.49
+        },
+        {
+          "at": 1,
+          "zoom": 1.18,
+          "cx": 0.576,
+          "cy": 0.424
+        }
+      ],
+      "capture": {
+        "holdSec": 20,
+        "note": "Ficha de Tommy con la lista del crew al lado; ocultar Conectar via eval",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/contacts?tag=boomclaw",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 500
+          },
+          {
+            "op": "click",
+            "selector": "text=Tommy Two-Fuses",
+            "sfx": "click",
+            "settleMs": 1600
+          },
+          {
+            "op": "moveTo",
+            "x": 2200,
+            "y": 640,
+            "ms": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 4.0
+    },
+    {
+      "id": "card",
+      "kind": "series",
+      "episode": 4,
+      "moduleName": "Contacts",
+      "sub": "Micelclaw OS · Module Tours",
+      "voiceover": "",
+      "leadSec": 0.2,
+      "padSec": 1.2,
+      "minSec": 4,
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.15
+        },
+        {
+          "name": "chime",
+          "atSec": 0.55
+        }
+      ]
+    },
+    {
+      "id": "tour1",
+      "kind": "footage",
+      "voiceover": "This is everyone behind BoomClaw. A VP of Explosions. An HR manager whose handbook is on version twelve. An intern who is, on day thirty, surprisingly still alive. Tags cut the list to the people you need.",
+      "highlight": [
+        "Tags"
+      ],
+      "lowerThird": "Everyone, one list.",
+      "minSec": 19,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.439,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 22,
+        "note": "Lista All: scroll pausado por el reparto, hover en Megan y Benny, clic al chip boomclaw",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/contacts",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 400
+          },
+          {
+            "op": "hover",
+            "selector": "text=Megan Sparksworth",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 900
+          },
+          {
+            "op": "hover",
+            "selector": "text=Benny Matchstick",
+            "ms": 800
+          },
+          {
+            "op": "pause",
+            "ms": 900
+          },
+          {
+            "op": "scroll",
+            "selector": "text=Megan Sparksworth",
+            "dy": 700,
+            "ms": 1400
+          },
+          {
+            "op": "pause",
+            "ms": 900
+          },
+          {
+            "op": "click",
+            "selector": "button:text-is(\"boomclaw\")",
+            "sfx": "click",
+            "settleMs": 1400
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 3.6
+    },
+    {
+      "id": "tour2",
+      "kind": "footage",
+      "voiceover": "One click opens the whole story. Rodney Fizzlepop, head of R and D. Brilliant inventor — has lost his eyebrows four times this year. The company physician tracks their regrowth; that's in her card. Everything you'd normally keep in your head, written where the team can find it.",
+      "highlight": [
+        "story"
+      ],
+      "lowerThird": "The card remembers.",
+      "minSec": 19,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.49
+        },
+        {
+          "at": 1,
+          "zoom": 1.16,
+          "cx": 0.569,
+          "cy": 0.431
+        }
+      ],
+      "capture": {
+        "holdSec": 23,
+        "note": "Desde lista boomclaw: clic en Rodney, zoom a Notes; luego hover a Dr. Amara y clic para ver su nota de cejas",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/contacts?tag=boomclaw",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 400
+          },
+          {
+            "op": "click",
+            "selector": "text=Rodney Fizzlepop",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "moveTo",
+            "x": 2300,
+            "y": 620,
+            "ms": 1100
+          },
+          {
+            "op": "pause",
+            "ms": 1600
+          },
+          {
+            "op": "click",
+            "selector": "text=Dr. Amara Brightwell",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "moveTo",
+            "x": 2300,
+            "y": 640,
+            "ms": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 3.6
+    },
+    {
+      "id": "tour3",
+      "kind": "footage",
+      "voiceover": "And when a name escapes you, search what you remember instead. Chrysanthemum… and there's Yuki, the artist from the Japan collab. Her shells are pure art; the three a.m. video calls, apparently worth it. A note is enough to find a person.",
+      "highlight": [
+        "remember"
+      ],
+      "lowerThird": "Search by what you remember.",
+      "minSec": 19,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.55,
+          "cy": 0.439
+        }
+      ],
+      "capture": {
+        "holdSec": 22,
+        "note": "Teclear chrysanthemum en el buscador → queda Yuki sola → abrir su ficha, zoom a la nota",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/contacts",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 500
+          },
+          {
+            "op": "click",
+            "selector": "input[placeholder=\"Search contacts...\"]",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "chrysanthemum",
+            "delay": 85
+          },
+          {
+            "op": "pause",
+            "ms": 1400
+          },
+          {
+            "op": "click",
+            "selector": "text=Yuki Hanabi",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "moveTo",
+            "x": 2300,
+            "y": 620,
+            "ms": 1100
+          },
+          {
+            "op": "pause",
+            "ms": 1600
+          }
+        ]
+      },
+      "srcOffsetSec": 3.2
+    },
+    {
+      "id": "chat1",
+      "kind": "footage",
+      "voiceover": "Now, from the chat. Ask the way you'd ask a colleague: who wires our shows? Francis searches the contacts and hands back the person as a chip — Dr. Sparky Voltman. Motto: if it sparks, I can tame it.",
+      "highlight": [
+        "chip"
+      ],
+      "lowerThird": "Now, from the chat.",
+      "minSec": 18,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.55
+        }
+      ],
+      "capture": {
+        "holdSec": 200,
+        "note": "CHATMEGA (toma unica): pregunta quien cablea + update telefono Baroness + clic chip EN CAMARA. chat2/chat3 se rebanan de este mp4 con srcOffset",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 3500
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button[title]')].find(x=>x.getAttribute('title')==='Collapse sidebar'); if(b) b.click();"
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "Who wires our shows? Search the contacts. In English, please.",
+            "delay": 45
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "pop"
+          },
+          {
+            "op": "pause",
+            "ms": 40000
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "Update Baroness Helga von Knall's phone number to +49 171 555 0011. In English, please.",
+            "delay": 42
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "pop"
+          },
+          {
+            "op": "pause",
+            "ms": 45000
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title*=\"Helga\"]"
+          },
+          {
+            "op": "pause",
+            "ms": 1200
+          },
+          {
+            "op": "click",
+            "selector": "a[title*=\"Helga\"]",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 6000
+          }
+        ]
+      },
+      "srcOffsetSec": 5.0
+    },
+    {
+      "id": "chat2",
+      "kind": "footage",
+      "voiceover": "New information goes the same way. The Baroness has a new phone number — and yes, she insists on Baroness; we comply. Say it, and the card is updated. No form, no digging.",
+      "highlight": [
+        "updated"
+      ],
+      "minSec": 17,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.519
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.5,
+          "cy": 0.561
+        }
+      ],
+      "capture": {
+        "note": "REBANADA de chat1 (chatmega): copiar footage/chat1.mp4 a chat2.mp4; srcOffset al teclear del update",
+        "actions": []
+      },
+      "srcOffsetSec": 50.0
+    },
+    {
+      "id": "chat3",
+      "kind": "footage",
+      "voiceover": "And the chip is the door. Click it, and you're standing on her card — new number saved, title intact, exactly where the crew will look for it.",
+      "highlight": [
+        "door"
+      ],
+      "minSec": 16,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.16,
+          "cx": 0.569,
+          "cy": 0.431
+        }
+      ],
+      "capture": {
+        "note": "REBANADA de chat1 (chatmega): srcOffset al scrollIntoView+clic de la chip y aterrizaje en la ficha",
+        "actions": []
+      },
+      "srcOffsetSec": 99.5
+    },
+    {
+      "id": "connect",
+      "kind": "footage",
+      "voiceover": "It's all one system. The supplier's card links the invoice from the show, even the sample inspection at the port — every thread of the story in one place. And we still owe Dragon Fireworks a reorder. That's next week's episode: Mail.",
+      "highlight": [
+        "one",
+        "system"
+      ],
+      "lowerThird": "Linked to everything.",
+      "minSec": 20,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.51,
+          "cy": 0.49
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 24,
+        "note": "Ficha de McBang: Related Entities con invoice+inspeccion; clic en Show more para expandir. SIN abrir Mail (cuentas reales en camara).",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/contacts?tag=supplier",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 400
+          },
+          {
+            "op": "click",
+            "selector": "text=Professor Flash McBang",
+            "sfx": "click",
+            "settleMs": 1600
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "text=Related Entities"
+          },
+          {
+            "op": "moveTo",
+            "x": 2300,
+            "y": 880,
+            "ms": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 1800
+          },
+          {
+            "op": "click",
+            "selector": "text=more...",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "pause",
+            "ms": 2600
+          }
+        ]
+      },
+      "srcOffsetSec": 3.4
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "voiceover": "That's Contacts — every person it takes to make things go boom, all on your own hardware. Next week: Mail.",
+      "highlight": [
+        "Contacts",
+        "Mail"
+      ],
+      "leadSec": 0.3,
+      "padSec": 2.0,
+      "minSec": 12,
+      "next": "Ep. 5 — Mail",
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Your self-hosted AI productivity OS.",
+      "url": "micelclaw.com",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

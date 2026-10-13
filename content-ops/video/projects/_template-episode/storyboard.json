@@ -1,0 +1,236 @@
+{
+  "_docs": "PLANTILLA de episodio Module Tours (~150s / 2:30 — REGLA DEL USUARIO 2026-07-23: mismo contenido que un episodio de 2:00 pero contado con calma; +2-3s de hold tras cada acción para que el espectador pueda fijarse en lo interesante; el Ep.1 quedó demasiado rápido). Clonar a projects/<yyyy-mm>-epN-<modulo>/, sustituir <PLACEHOLDERS>, borrar _docs. Estructura fija: cold-open → series card → tour (3-4 beats) → 'Now, from the chat' (FIRMA: prompt → tool pills → CHIP → clic navega EN CÁMARA) → conexión (@/grafo) + tease → outro.",
+  "id": "<yyyy-mm>-ep<N>-<modulo>",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.9,
+  "size": [
+    1920,
+    1080
+  ],
+  "scenes": [
+    {
+      "id": "cold",
+      "kind": "footage",
+      "voiceover": "<GANCHO: 1-2 frases, nunca menús>",
+      "leadSec": 0.4,
+      "minSec": 9,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "note": "money shot del módulo",
+        "actions": []
+      }
+    },
+    {
+      "id": "card",
+      "kind": "series",
+      "episode": 0,
+      "moduleName": "<Module>",
+      "sub": "Micelclaw OS · Module Tours",
+      "voiceover": "",
+      "leadSec": 0.2,
+      "padSec": 1.2,
+      "minSec": 4,
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.15
+        },
+        {
+          "name": "chime",
+          "atSec": 0.5
+        }
+      ]
+    },
+    {
+      "id": "tour1",
+      "kind": "footage",
+      "voiceover": "<BEAT 1 del tour>",
+      "lowerThird": "<rótulo 2-4 palabras>",
+      "minSec": 11,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.42,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "actions": []
+      }
+    },
+    {
+      "id": "tour2",
+      "kind": "footage",
+      "voiceover": "<BEAT 2>",
+      "minSec": 11,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.55,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "actions": []
+      }
+    },
+    {
+      "id": "tour3",
+      "kind": "footage",
+      "voiceover": "<BEAT 3>",
+      "minSec": 11,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.45,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "actions": []
+      }
+    },
+    {
+      "id": "chat1",
+      "kind": "footage",
+      "voiceover": "<FIRMA parte 1: 'Now, from the chat.' + qué le pedimos>",
+      "highlight": [
+        "chat"
+      ],
+      "lowerThird": "Now, from the chat.",
+      "minSec": 11,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.55
+        },
+        {
+          "at": 1,
+          "zoom": 1.1,
+          "cx": 0.5,
+          "cy": 0.55
+        }
+      ],
+      "capture": {
+        "holdSec": 100,
+        "note": "teclear prompt + Enter; el hold deja terminar el turno (tool pills + chip). srcOffset al tecleo",
+        "actions": []
+      }
+    },
+    {
+      "id": "chat2",
+      "kind": "footage",
+      "voiceover": "<FIRMA parte 2: la chip aparece; clic → navega al registro>",
+      "highlight": [
+        "chip"
+      ],
+      "minSec": 11,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.06,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.16,
+          "cx": 0.5,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "note": "reabrir la conv, clic EN LA CHIP en cámara → navegación al módulo",
+        "actions": []
+      }
+    },
+    {
+      "id": "connect",
+      "kind": "footage",
+      "voiceover": "<CONEXIÓN: mención @ / related / grafo + tease del siguiente>",
+      "minSec": 10,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.1,
+          "cx": 0.5,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "actions": []
+      }
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "leadSec": 0.3,
+      "padSec": 2.0,
+      "minSec": 8,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Your self-hosted AI productivity OS.",
+      "url": "micelclaw.com",
+      "next": "Ep. <N+1> — <Module>",
+      "voiceover": "<CIERRE: 1 frase>",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

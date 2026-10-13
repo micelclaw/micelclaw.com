@@ -1,0 +1,7 @@
+1
+00:00:00,000 --> 00:00:04,501
+You asked your agent for a note, and it comes back as a chip you can tap.
+
+2
+00:00:05,000 --> 00:00:11,165
+And there it is. Pinned, tagged and searchable, in your own database. Micelclaw dot com.

@@ -1,0 +1,1892 @@
+[
+ {
+  "word": "The",
+  "start": 0.4,
+  "end": 0.54,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "Valencia",
+  "start": 0.54,
+  "end": 1.0,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "beach",
+  "start": 1.0,
+  "end": 1.32,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "show",
+  "start": 1.32,
+  "end": 1.7,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "has",
+  "start": 1.7,
+  "end": 1.9,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "stopped",
+  "start": 1.9,
+  "end": 2.22,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "being",
+  "start": 2.22,
+  "end": 2.48,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "a",
+  "start": 2.48,
+  "end": 2.66,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "pile",
+  "start": 2.66,
+  "end": 2.98,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "of",
+  "start": 2.98,
+  "end": 3.2,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "follow-ups.",
+  "start": 3.3,
+  "end": 3.97,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "Every",
+  "start": 4.54,
+  "end": 4.74,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "job",
+  "start": 4.74,
+  "end": 5.12,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "is",
+  "start": 5.12,
+  "end": 5.44,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "visible",
+  "start": 5.44,
+  "end": 5.76,
+  "key": true,
+  "sceneId": "cold"
+ },
+ {
+  "word": "now.",
+  "start": 5.76,
+  "end": 6.2,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "Every",
+  "start": 6.84,
+  "end": 7.0,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "deadline",
+  "start": 7.0,
+  "end": 7.48,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "has",
+  "start": 7.48,
+  "end": 7.78,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "a",
+  "start": 7.78,
+  "end": 7.96,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "place.",
+  "start": 7.96,
+  "end": 8.26,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "And",
+  "start": 8.84,
+  "end": 8.9,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "when",
+  "start": 8.9,
+  "end": 9.0,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "the",
+  "start": 9.0,
+  "end": 9.14,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "plan",
+  "start": 9.14,
+  "end": 9.44,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "moves,",
+  "start": 9.44,
+  "end": 9.88,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "the",
+  "start": 10.06,
+  "end": 10.12,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "board",
+  "start": 10.12,
+  "end": 10.34,
+  "key": true,
+  "sceneId": "cold"
+ },
+ {
+  "word": "moves",
+  "start": 10.34,
+  "end": 10.68,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "with",
+  "start": 10.68,
+  "end": 10.96,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "it.",
+  "start": 10.96,
+  "end": 11.12,
+  "key": false,
+  "sceneId": "cold"
+ },
+ {
+  "word": "Backlog.",
+  "start": 16.116,
+  "end": 16.696,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "Ready.",
+  "start": 16.696,
+  "end": 17.076,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "In",
+  "start": 17.536,
+  "end": 17.636,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "progress.",
+  "start": 17.636,
+  "end": 18.116,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "Review.",
+  "start": 18.656,
+  "end": 18.916,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "Done.",
+  "start": 19.696,
+  "end": 19.796,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "Priorities,",
+  "start": 20.696,
+  "end": 21.016,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "dates,",
+  "start": 21.276,
+  "end": 21.356,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "and",
+  "start": 21.576,
+  "end": 21.696,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "checklist",
+  "start": 21.696,
+  "end": 21.996,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "progress",
+  "start": 21.996,
+  "end": 22.616,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "are",
+  "start": 22.616,
+  "end": 22.856,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "visible",
+  "start": 22.856,
+  "end": 23.236,
+  "key": true,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "without",
+  "start": 23.236,
+  "end": 23.616,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "opening",
+  "start": 23.616,
+  "end": 24.056,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "a",
+  "start": 24.056,
+  "end": 24.296,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "thing.",
+  "start": 24.296,
+  "end": 24.536,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "And",
+  "start": 25.036,
+  "end": 25.156,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "when",
+  "start": 25.156,
+  "end": 25.256,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "the",
+  "start": 25.256,
+  "end": 25.376,
+  "key": true,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "work",
+  "start": 25.376,
+  "end": 25.556,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "changes",
+  "start": 25.556,
+  "end": 26.036,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "state,",
+  "start": 26.036,
+  "end": 26.456,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "you",
+  "start": 26.636,
+  "end": 26.736,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "move",
+  "start": 26.736,
+  "end": 26.936,
+  "key": true,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "the",
+  "start": 26.936,
+  "end": 27.136,
+  "key": true,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "card.",
+  "start": 27.136,
+  "end": 27.476,
+  "key": true,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "That",
+  "start": 27.936,
+  "end": 28.116,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "is",
+  "start": 28.116,
+  "end": 28.256,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "the",
+  "start": 28.256,
+  "end": 28.416,
+  "key": true,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "whole",
+  "start": 28.416,
+  "end": 28.636,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "form.",
+  "start": 28.636,
+  "end": 29.056,
+  "key": false,
+  "sceneId": "tour1-board"
+ },
+ {
+  "word": "Open",
+  "start": 34.116,
+  "end": 34.516,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "one",
+  "start": 34.516,
+  "end": 34.776,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "card,",
+  "start": 34.776,
+  "end": 35.136,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "and",
+  "start": 35.356,
+  "end": 35.376,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "the",
+  "start": 35.376,
+  "end": 35.516,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "detail",
+  "start": 35.516,
+  "end": 35.936,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "is",
+  "start": 35.936,
+  "end": 36.176,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "already",
+  "start": 36.176,
+  "end": 36.536,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "there:",
+  "start": 36.536,
+  "end": 36.956,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "what",
+  "start": 37.556,
+  "end": 37.676,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "it",
+  "start": 37.676,
+  "end": 37.796,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "means,",
+  "start": 37.796,
+  "end": 38.136,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "how",
+  "start": 38.696,
+  "end": 38.896,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "urgent",
+  "start": 38.896,
+  "end": 39.336,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "it",
+  "start": 39.336,
+  "end": 39.576,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "is,",
+  "start": 39.576,
+  "end": 39.896,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "when",
+  "start": 40.016,
+  "end": 40.096,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "it",
+  "start": 40.096,
+  "end": 40.196,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "is",
+  "start": 40.196,
+  "end": 40.316,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "due,",
+  "start": 40.316,
+  "end": 40.636,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "what",
+  "start": 41.016,
+  "end": 41.096,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "is",
+  "start": 41.096,
+  "end": 41.236,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "checked",
+  "start": 41.236,
+  "end": 41.536,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "off,",
+  "start": 41.536,
+  "end": 41.916,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "what",
+  "start": 42.316,
+  "end": 42.516,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "blocks",
+  "start": 42.516,
+  "end": 42.876,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "it,",
+  "start": 42.876,
+  "end": 43.156,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "and",
+  "start": 43.316,
+  "end": 43.376,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "which",
+  "start": 43.376,
+  "end": 43.596,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "records",
+  "start": 43.596,
+  "end": 44.076,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "belong",
+  "start": 44.076,
+  "end": 44.576,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "beside",
+  "start": 44.576,
+  "end": 45.036,
+  "key": false,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "it.",
+  "start": 45.036,
+  "end": 45.296,
+  "key": true,
+  "sceneId": "tour2-detail"
+ },
+ {
+  "word": "The",
+  "start": 53.116,
+  "end": 53.256,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "same",
+  "start": 53.256,
+  "end": 53.516,
+  "key": true,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "work",
+  "start": 53.516,
+  "end": 53.776,
+  "key": true,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "can",
+  "start": 53.776,
+  "end": 53.956,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "become",
+  "start": 53.956,
+  "end": 54.256,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "a",
+  "start": 54.256,
+  "end": 54.496,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "table,",
+  "start": 54.496,
+  "end": 54.836,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "a",
+  "start": 55.076,
+  "end": 55.116,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "calendar,",
+  "start": 55.116,
+  "end": 55.516,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "a",
+  "start": 55.916,
+  "end": 55.976,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "Gantt",
+  "start": 55.976,
+  "end": 56.436,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "plan,",
+  "start": 56.436,
+  "end": 56.576,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "or",
+  "start": 56.776,
+  "end": 56.896,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "a",
+  "start": 56.896,
+  "end": 57.056,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "dashboard.",
+  "start": 57.056,
+  "end": 57.556,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "Nothing",
+  "start": 58.256,
+  "end": 58.476,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "is",
+  "start": 58.476,
+  "end": 58.716,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "copied",
+  "start": 58.716,
+  "end": 59.096,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "between",
+  "start": 59.096,
+  "end": 59.536,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "them.",
+  "start": 59.536,
+  "end": 59.836,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "The",
+  "start": 60.256,
+  "end": 60.396,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "board",
+  "start": 60.396,
+  "end": 60.676,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "changes",
+  "start": 60.676,
+  "end": 61.196,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "shape.",
+  "start": 61.196,
+  "end": 61.616,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "The",
+  "start": 62.156,
+  "end": 62.256,
+  "key": false,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "data",
+  "start": 62.256,
+  "end": 62.516,
+  "key": true,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "stays",
+  "start": 62.516,
+  "end": 62.896,
+  "key": true,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "put.",
+  "start": 62.896,
+  "end": 63.236,
+  "key": true,
+  "sceneId": "tour3-views"
+ },
+ {
+  "word": "Now,",
+  "start": 71.116,
+  "end": 71.416,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "from",
+  "start": 71.576,
+  "end": 71.696,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "the",
+  "start": 71.696,
+  "end": 71.856,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "chat.",
+  "start": 71.856,
+  "end": 72.156,
+  "key": true,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "We",
+  "start": 72.776,
+  "end": 72.856,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "ask",
+  "start": 72.856,
+  "end": 73.136,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "Francis",
+  "start": 73.136,
+  "end": 73.576,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "for",
+  "start": 73.576,
+  "end": 73.816,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "one",
+  "start": 73.816,
+  "end": 74.036,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "thing:",
+  "start": 74.036,
+  "end": 74.416,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "add",
+  "start": 74.796,
+  "end": 74.996,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "a",
+  "start": 74.996,
+  "end": 75.116,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "high-priority",
+  "start": 75.172,
+  "end": 75.542,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "card",
+  "start": 75.856,
+  "end": 76.376,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "called",
+  "start": 76.376,
+  "end": 76.716,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "Print",
+  "start": 76.716,
+  "end": 77.016,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "run",
+  "start": 77.016,
+  "end": 77.296,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "of",
+  "start": 77.296,
+  "end": 77.496,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "show,",
+  "start": 77.496,
+  "end": 77.776,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "due",
+  "start": 78.136,
+  "end": 78.316,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "Saturday,",
+  "start": 78.316,
+  "end": 78.796,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "with",
+  "start": 79.056,
+  "end": 79.116,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "three",
+  "start": 79.116,
+  "end": 79.376,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "checks.",
+  "start": 79.376,
+  "end": 79.756,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "We",
+  "start": 80.356,
+  "end": 80.456,
+  "key": false,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "never",
+  "start": 80.456,
+  "end": 80.676,
+  "key": true,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "open",
+  "start": 80.676,
+  "end": 81.056,
+  "key": true,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "Projects.",
+  "start": 81.056,
+  "end": 81.556,
+  "key": true,
+  "sceneId": "chat1-prompt"
+ },
+ {
+  "word": "Francis",
+  "start": 86.116,
+  "end": 86.576,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "finds",
+  "start": 86.576,
+  "end": 87.016,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "the",
+  "start": 87.016,
+  "end": 87.276,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "right",
+  "start": 87.276,
+  "end": 87.476,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "board,",
+  "start": 87.476,
+  "end": 87.956,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "creates",
+  "start": 88.136,
+  "end": 88.496,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "the",
+  "start": 88.496,
+  "end": 88.756,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "card,",
+  "start": 88.756,
+  "end": 89.076,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "and",
+  "start": 89.236,
+  "end": 89.336,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "builds",
+  "start": 89.336,
+  "end": 89.616,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "the",
+  "start": 89.616,
+  "end": 89.836,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "checklist.",
+  "start": 89.836,
+  "end": 90.256,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "The",
+  "start": 90.936,
+  "end": 91.076,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "tool",
+  "start": 91.076,
+  "end": 91.336,
+  "key": true,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "calls",
+  "start": 91.336,
+  "end": 91.736,
+  "key": true,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "stay",
+  "start": 91.736,
+  "end": 92.096,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "visible,",
+  "start": 92.096,
+  "end": 92.456,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "so",
+  "start": 92.636,
+  "end": 92.996,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "we",
+  "start": 92.996,
+  "end": 93.316,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "can",
+  "start": 93.316,
+  "end": 93.456,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "see",
+  "start": 93.456,
+  "end": 93.716,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "what",
+  "start": 93.716,
+  "end": 93.936,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "changed.",
+  "start": 93.936,
+  "end": 94.536,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "Then",
+  "start": 95.216,
+  "end": 95.416,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "the",
+  "start": 95.416,
+  "end": 95.556,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "new",
+  "start": 95.556,
+  "end": 95.736,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "card",
+  "start": 95.736,
+  "end": 96.096,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "comes",
+  "start": 96.096,
+  "end": 96.376,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "back",
+  "start": 96.376,
+  "end": 96.736,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "as",
+  "start": 96.736,
+  "end": 96.956,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "a",
+  "start": 96.956,
+  "end": 97.116,
+  "key": false,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "chip.",
+  "start": 97.116,
+  "end": 97.356,
+  "key": true,
+  "sceneId": "chat2-result"
+ },
+ {
+  "word": "And",
+  "start": 106.116,
+  "end": 106.336,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "the",
+  "start": 106.336,
+  "end": 106.476,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "chip",
+  "start": 106.476,
+  "end": 106.676,
+  "key": true,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "is",
+  "start": 106.676,
+  "end": 106.876,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "the",
+  "start": 106.876,
+  "end": 107.056,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "door.",
+  "start": 107.056,
+  "end": 107.416,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "Click",
+  "start": 107.936,
+  "end": 108.196,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "it,",
+  "start": 108.196,
+  "end": 108.416,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "and",
+  "start": 108.596,
+  "end": 108.676,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "we",
+  "start": 108.676,
+  "end": 108.816,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "land",
+  "start": 108.816,
+  "end": 109.116,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "on",
+  "start": 109.116,
+  "end": 109.396,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "the",
+  "start": 109.396,
+  "end": 109.536,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "exact",
+  "start": 109.536,
+  "end": 109.916,
+  "key": true,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "card:",
+  "start": 109.916,
+  "end": 110.376,
+  "key": true,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "the",
+  "start": 110.796,
+  "end": 110.916,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "right",
+  "start": 110.916,
+  "end": 111.156,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "board,",
+  "start": 111.156,
+  "end": 111.556,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "the",
+  "start": 111.816,
+  "end": 111.836,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "right",
+  "start": 111.836,
+  "end": 112.056,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "deadline,",
+  "start": 112.056,
+  "end": 112.576,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "and",
+  "start": 112.796,
+  "end": 112.896,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "all",
+  "start": 112.896,
+  "end": 113.216,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "three",
+  "start": 113.216,
+  "end": 113.536,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "checks",
+  "start": 113.536,
+  "end": 113.896,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "waiting.",
+  "start": 113.896,
+  "end": 114.276,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "The",
+  "start": 114.936,
+  "end": 115.116,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "conversation",
+  "start": 115.116,
+  "end": 115.576,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "has",
+  "start": 115.576,
+  "end": 116.056,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "become",
+  "start": 116.056,
+  "end": 116.416,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "work",
+  "start": 116.416,
+  "end": 116.716,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "we",
+  "start": 116.716,
+  "end": 116.916,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "can",
+  "start": 116.916,
+  "end": 117.056,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "act",
+  "start": 117.056,
+  "end": 117.336,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "on.",
+  "start": 117.336,
+  "end": 117.696,
+  "key": false,
+  "sceneId": "chat3-chip"
+ },
+ {
+  "word": "The",
+  "start": 122.116,
+  "end": 122.276,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "board",
+  "start": 122.276,
+  "end": 122.536,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "does",
+  "start": 122.536,
+  "end": 122.756,
+  "key": true,
+  "sceneId": "connect"
+ },
+ {
+  "word": "not",
+  "start": 122.756,
+  "end": 123.016,
+  "key": true,
+  "sceneId": "connect"
+ },
+ {
+  "word": "live",
+  "start": 123.016,
+  "end": 123.256,
+  "key": true,
+  "sceneId": "connect"
+ },
+ {
+  "word": "alone.",
+  "start": 123.256,
+  "end": 123.696,
+  "key": true,
+  "sceneId": "connect"
+ },
+ {
+  "word": "The",
+  "start": 124.376,
+  "end": 124.436,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "rain",
+  "start": 124.436,
+  "end": 124.736,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "plan",
+  "start": 124.736,
+  "end": 125.076,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "from",
+  "start": 125.076,
+  "end": 125.376,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "Notes",
+  "start": 125.376,
+  "end": 125.736,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "sits",
+  "start": 125.736,
+  "end": 126.056,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "beside",
+  "start": 126.056,
+  "end": 126.516,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "the",
+  "start": 126.516,
+  "end": 126.676,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "work.",
+  "start": 126.676,
+  "end": 126.936,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "The",
+  "start": 127.496,
+  "end": 127.616,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "supplier",
+  "start": 127.616,
+  "end": 128.056,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "sits",
+  "start": 128.056,
+  "end": 128.456,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "there",
+  "start": 128.456,
+  "end": 128.756,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "too.",
+  "start": 128.756,
+  "end": 129.116,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "Next",
+  "start": 129.776,
+  "end": 129.976,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "week,",
+  "start": 129.976,
+  "end": 130.296,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "we",
+  "start": 130.376,
+  "end": 130.616,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "follow",
+  "start": 130.616,
+  "end": 130.936,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "those",
+  "start": 130.936,
+  "end": 131.276,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "people",
+  "start": 131.276,
+  "end": 131.596,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "into",
+  "start": 131.596,
+  "end": 131.876,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "Contacts",
+  "start": 131.876,
+  "end": 132.616,
+  "key": true,
+  "sceneId": "connect"
+ },
+ {
+  "word": "\u2014",
+  "start": 132.648,
+  "end": 132.858,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "the",
+  "start": 133.036,
+  "end": 133.096,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "crew",
+  "start": 133.096,
+  "end": 133.436,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "and",
+  "start": 133.436,
+  "end": 133.676,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "companies",
+  "start": 133.676,
+  "end": 134.176,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "behind",
+  "start": 134.176,
+  "end": 134.656,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "the",
+  "start": 134.656,
+  "end": 134.856,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "show.",
+  "start": 134.856,
+  "end": 135.076,
+  "key": false,
+  "sceneId": "connect"
+ },
+ {
+  "word": "That's",
+  "start": 140.416,
+  "end": 140.756,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Projects",
+  "start": 140.756,
+  "end": 141.076,
+  "key": true,
+  "sceneId": "outro"
+ },
+ {
+  "word": "\u2014",
+  "start": 141.092,
+  "end": 141.202,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "boards",
+  "start": 141.296,
+  "end": 141.576,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "that",
+  "start": 141.576,
+  "end": 141.836,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "move",
+  "start": 141.836,
+  "end": 142.056,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "from",
+  "start": 142.056,
+  "end": 142.276,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "chat,",
+  "start": 142.276,
+  "end": 142.636,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "on",
+  "start": 142.856,
+  "end": 142.936,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "your",
+  "start": 142.936,
+  "end": 143.076,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "own",
+  "start": 143.076,
+  "end": 143.296,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "hardware.",
+  "start": 143.296,
+  "end": 143.856,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Next",
+  "start": 144.516,
+  "end": 144.676,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "week:",
+  "start": 144.676,
+  "end": 144.956,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Contacts.",
+  "start": 145.396,
+  "end": 145.816,
+  "key": true,
+  "sceneId": "outro"
+ }
+]

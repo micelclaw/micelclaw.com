@@ -1,0 +1,224 @@
+{
+  "id": "2026-08-ep5-mail-vertical",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.6,
+  "size": [
+    1080,
+    1920
+  ],
+  "scenes": [
+    {
+      "id": "v1",
+      "kind": "footage",
+      "voiceover": "The reorder we owe our supplier? Nobody's typing that email. You ask for it.",
+      "leadSec": 0.4,
+      "padSec": 0.8,
+      "minSec": 9,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 13,
+        "note": "MOVIL: chat, teclear el prompt del reorder (sin enviar; el hilo real ya existe del horizontal)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 600
+          },
+          {
+            "op": "type",
+            "text": "Draft the reorder to Dragon Fireworks: 200 chrysanthemum shells.",
+            "delay": 65
+          },
+          {
+            "op": "moveTo",
+            "x": 540,
+            "y": 320,
+            "ms": 500
+          },
+          {
+            "op": "pause",
+            "ms": 2200
+          }
+        ]
+      },
+      "srcOffsetSec": 3.5
+    },
+    {
+      "id": "v2",
+      "kind": "footage",
+      "voiceover": "Francis writes it and saves it as a draft — never sent. Every email he read is a chip. Tap the invoice, and you're in Mail, on the real thread.",
+      "minSec": 13,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.52
+        }
+      ],
+      "capture": {
+        "holdSec": 26,
+        "note": "MOVIL: abrir la conv del horizontal (drawer), ocultar bash, scroll a la chip de la factura, TAP -> hilo en Mail movil",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "moveTo",
+            "x": 26,
+            "y": 61,
+            "ms": 600
+          },
+          {
+            "op": "click",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "text=Where does the Dragon Fireworks",
+            "settleMs": 2500
+          },
+          {
+            "op": "moveTo",
+            "x": 340,
+            "y": 360,
+            "ms": 400
+          },
+          {
+            "op": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "eval",
+            "js": "const l=[...document.querySelectorAll('*')].find(e=>e.children.length===0&&e.textContent.trim()==='bash'); if(l){let n=l,best=null; for(let i=0;i<12&&n;i++){ if(!n.textContent.includes('emails_save_draft')) best=n; else break; n=n.parentElement; } if(best) best.style.display='none';}"
+          },
+          {
+            "op": "eval",
+            "js": "const f=()=>[...document.querySelectorAll('*')].filter(e=>e.children.length===0&&e.textContent.trim()==='Relacionado').forEach(e=>e.textContent='Linked'); f(); new MutationObserver(f).observe(document.body,{subtree:true,childList:true});"
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title*=\"DF-2026-0451\"]",
+            "settleMs": 900
+          },
+          {
+            "op": "pause",
+            "ms": 900
+          },
+          {
+            "op": "click",
+            "selector": "a[title*=\"DF-2026-0451\"]",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 3500
+          }
+        ]
+      },
+      "srcOffsetSec": 8.0
+    },
+    {
+      "id": "v3",
+      "kind": "footage",
+      "voiceover": "And in Drafts, the reorder is waiting — addressed, referenced, ready for your send button.",
+      "minSec": 10,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.48
+        }
+      ],
+      "capture": {
+        "holdSec": 14,
+        "note": "MOVIL: deep-link al draft abierto (Edit/Send visibles)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/mail?id=5712af8e-360d-4b0f-82ca-46025269ca39",
+            "settleMs": 5000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "scroll",
+            "dy": 300,
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      },
+      "srcOffsetSec": 4.0
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "voiceover": "Mail — episode five of the Module Tours. Full tour on YouTube.",
+      "leadSec": 0.3,
+      "padSec": 1.2,
+      "minSec": 7,
+      "next": "Full tour on YouTube",
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Your self-hosted AI productivity OS.",
+      "url": "micelclaw.com",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

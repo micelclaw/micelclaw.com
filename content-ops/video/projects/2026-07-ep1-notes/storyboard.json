@@ -1,0 +1,582 @@
+{
+  "id": "2026-07-ep1-notes",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.6,
+  "size": [
+    1920,
+    1080
+  ],
+  "scenes": [
+    {
+      "id": "cold",
+      "kind": "footage",
+      "voiceover": "Every show we run starts as a note. This one is Saturday's beach show, in Valencia.",
+      "leadSec": 0.4,
+      "padSec": 1.0,
+      "minSec": 8,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.05,
+          "cx": 0.55,
+          "cy": 0.4
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.55,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 9,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia show",
+            "sfx": "click",
+            "settleMs": 2200
+          },
+          {
+            "op": "moveTo",
+            "x": 2400,
+            "y": 900,
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 4.5
+    },
+    {
+      "id": "card",
+      "kind": "series",
+      "episode": 1,
+      "moduleName": "Notes",
+      "sub": "Micelclaw OS · Module Tours",
+      "voiceover": "",
+      "leadSec": 0.2,
+      "padSec": 1.2,
+      "minSec": 3.6,
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.15
+        },
+        {
+          "name": "chime",
+          "atSec": 0.55
+        }
+      ]
+    },
+    {
+      "id": "tour1",
+      "kind": "footage",
+      "voiceover": "Notes is where things get captured — show plans, formulas, supplier quirks. Pinned for the daily stuff, tags for everything else, all in your own database.",
+      "highlight": [
+        "your",
+        "own",
+        "database"
+      ],
+      "lowerThird": "Captured. Yours.",
+      "minSec": 13,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.4,
+          "cy": 0.4
+        },
+        {
+          "at": 1,
+          "zoom": 1.13,
+          "cx": 0.35,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 14,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 3200
+          },
+          {
+            "op": "moveTo",
+            "x": 450,
+            "y": 700,
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 600
+          },
+          {
+            "op": "scroll",
+            "dy": 500
+          },
+          {
+            "op": "pause",
+            "ms": 600
+          },
+          {
+            "op": "scroll",
+            "dy": -500
+          },
+          {
+            "op": "click",
+            "selector": "text=Things I've Learned Running",
+            "sfx": "click",
+            "settleMs": 2000
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 2.0
+    },
+    {
+      "id": "tour2",
+      "kind": "footage",
+      "voiceover": "Starting one is instant. New note, a title, first line — no account, no sync, no spinner.",
+      "highlight": [
+        "instant"
+      ],
+      "lowerThird": "Zero friction.",
+      "minSec": 11,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.45,
+          "cy": 0.4
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 14,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=New Note",
+            "sfx": "click",
+            "settleMs": 2200
+          },
+          {
+            "op": "click",
+            "selector": "input[placeholder=\"Untitled\"]",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "Post-show teardown",
+            "delay": 70
+          },
+          {
+            "op": "click",
+            "selector": ".ProseMirror",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "Rack disassembly order, debris sweep, van loading.",
+            "delay": 45
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 2.5
+    },
+    {
+      "id": "tour3",
+      "kind": "footage",
+      "voiceover": "And the editor does real documents, not sticky notes. Headings, task lists, tables, images — markdown, rich text or plain, your call.",
+      "highlight": [
+        "real",
+        "documents"
+      ],
+      "lowerThird": "A real editor.",
+      "minSec": 12,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.55,
+          "cy": 0.45
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 13,
+        "note": "abrir la nota Valencia y teclear una task list en vivo (TipTap convierte '- [ ]')",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia show",
+            "settleMs": 1800
+          },
+          {
+            "op": "click",
+            "selector": ".ProseMirror",
+            "settleMs": 400
+          },
+          {
+            "op": "press",
+            "key": "Control+End",
+            "settleMs": 300
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "settleMs": 200
+          },
+          {
+            "op": "type",
+            "text": "- [ ] Confirm crew van",
+            "delay": 60
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "settleMs": 150
+          },
+          {
+            "op": "type",
+            "text": "- [ ] Print run of show",
+            "delay": 60
+          },
+          {
+            "op": "pause",
+            "ms": 1200
+          }
+        ]
+      },
+      "srcOffsetSec": 4.5
+    },
+    {
+      "id": "tour4",
+      "kind": "footage",
+      "voiceover": "Need something back? Search hits titles, content and tags in an instant.",
+      "highlight": [
+        "Search"
+      ],
+      "minSec": 9,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.4,
+          "cy": 0.4
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.4,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 12,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "input[placeholder*=\"Search notes\" i]",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "green flame",
+            "delay": 85
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          },
+          {
+            "op": "click",
+            "selector": "text=Green Flame",
+            "sfx": "click",
+            "settleMs": 1800
+          },
+          {
+            "op": "pause",
+            "ms": 1200
+          }
+        ]
+      },
+      "srcOffsetSec": 2.2
+    },
+    {
+      "id": "chat1",
+      "kind": "footage",
+      "voiceover": "But here's the habit that sticks: don't open the module at all. Just tell your agent — rain contingency, tarps, drainage check, a backup date.",
+      "highlight": [
+        "tell",
+        "your",
+        "agent"
+      ],
+      "lowerThird": "Now, from the chat.",
+      "minSec": 12,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.55
+        },
+        {
+          "at": 1,
+          "zoom": 1.1,
+          "cx": 0.5,
+          "cy": 0.58
+        }
+      ],
+      "capture": {
+        "holdSec": 110,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=Plan our week",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 500
+          },
+          {
+            "op": "type",
+            "text": "Take a note: Rain contingency for the beach show — tarps for the mortar racks, drainage check at noon, backup date August 9.",
+            "delay": 40
+          },
+          {
+            "op": "pause",
+            "ms": 300
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "click"
+          },
+          {
+            "op": "pause",
+            "ms": 98000
+          }
+        ]
+      },
+      "srcOffsetSec": 3.5
+    },
+    {
+      "id": "chat2",
+      "kind": "footage",
+      "voiceover": "Seconds later the note exists — and it comes back as a chip. Click it, and you're there. Created, filed, and linked.",
+      "highlight": [
+        "chip"
+      ],
+      "minSec": 10,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.45,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 18,
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 3500
+          },
+          {
+            "op": "click",
+            "selector": "text=Plan our week",
+            "settleMs": 3000
+          },
+          {
+            "op": "moveTo",
+            "x": 1920,
+            "y": 1300,
+            "ms": 600
+          },
+          {
+            "op": "scroll",
+            "dy": 4000
+          },
+          {
+            "op": "pause",
+            "ms": 1000
+          },
+          {
+            "op": "click",
+            "selector": "text=Rain contingency —",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          }
+        ]
+      },
+      "srcOffsetSec": 7.5
+    },
+    {
+      "id": "connect",
+      "kind": "footage",
+      "voiceover": "Notes also link outward. Type at — and connect the supplier, the event, the invoice. One tap, and you're in their record.",
+      "highlight": [
+        "link",
+        "everything"
+      ],
+      "lowerThird": "@ links everything.",
+      "minSec": 11,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.03,
+          "cx": 0.55,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.15,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 15,
+        "note": "en la nota Valencia: teclear ' @Dragon' → dropdown de menciones → seleccionar",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 3000
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia show",
+            "settleMs": 1800
+          },
+          {
+            "op": "click",
+            "selector": ".ProseMirror",
+            "settleMs": 400
+          },
+          {
+            "op": "press",
+            "key": "Control+End",
+            "settleMs": 300
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "settleMs": 200
+          },
+          {
+            "op": "type",
+            "text": "Supplier: @Dragon",
+            "delay": 90
+          },
+          {
+            "op": "pause",
+            "ms": 2000
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 4.0
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "leadSec": 0.3,
+      "padSec": 2.0,
+      "minSec": 8,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Your self-hosted AI productivity OS.",
+      "url": "micelclaw.com",
+      "next": "Ep. 2 — Calendar",
+      "voiceover": "That's Notes — one module of Micelclaw, your self-hosted AI productivity OS. Next week: Calendar.",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

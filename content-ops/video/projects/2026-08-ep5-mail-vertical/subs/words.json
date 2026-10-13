@@ -1,0 +1,499 @@
+[
+ {
+  "word": "The",
+  "start": 0.4,
+  "end": 0.54,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "reorder",
+  "start": 0.54,
+  "end": 0.92,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "we",
+  "start": 0.92,
+  "end": 1.16,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "owe",
+  "start": 1.16,
+  "end": 1.38,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "our",
+  "start": 1.38,
+  "end": 1.56,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "supplier?",
+  "start": 1.56,
+  "end": 2.02,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "Nobody's",
+  "start": 2.64,
+  "end": 3.14,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "typing",
+  "start": 3.14,
+  "end": 3.44,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "that",
+  "start": 3.44,
+  "end": 3.74,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "email.",
+  "start": 3.74,
+  "end": 4.08,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "You",
+  "start": 4.54,
+  "end": 4.64,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "ask",
+  "start": 4.64,
+  "end": 4.92,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "for",
+  "start": 4.92,
+  "end": 5.22,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "it.",
+  "start": 5.22,
+  "end": 5.36,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "Francis",
+  "start": 9.0,
+  "end": 9.46,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "writes",
+  "start": 9.46,
+  "end": 9.84,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it",
+  "start": 9.84,
+  "end": 10.1,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "and",
+  "start": 10.1,
+  "end": 10.28,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "saves",
+  "start": 10.28,
+  "end": 10.56,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it",
+  "start": 10.56,
+  "end": 10.8,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "as",
+  "start": 10.8,
+  "end": 10.92,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "a",
+  "start": 10.92,
+  "end": 11.06,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "draft",
+  "start": 11.06,
+  "end": 11.5,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "\u2014",
+  "start": 11.521,
+  "end": 11.661,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "never",
+  "start": 11.78,
+  "end": 11.9,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "sent.",
+  "start": 11.9,
+  "end": 12.28,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Every",
+  "start": 12.94,
+  "end": 13.18,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "email",
+  "start": 13.18,
+  "end": 13.68,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "he",
+  "start": 13.68,
+  "end": 13.96,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "read",
+  "start": 13.96,
+  "end": 14.26,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "is",
+  "start": 14.26,
+  "end": 14.44,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "a",
+  "start": 14.44,
+  "end": 14.64,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "chip.",
+  "start": 14.64,
+  "end": 14.88,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Tap",
+  "start": 15.52,
+  "end": 15.58,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "the",
+  "start": 15.58,
+  "end": 15.8,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "invoice,",
+  "start": 15.8,
+  "end": 16.26,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "and",
+  "start": 16.52,
+  "end": 16.56,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "you're",
+  "start": 16.56,
+  "end": 16.76,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "in",
+  "start": 16.76,
+  "end": 16.88,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Mail,",
+  "start": 16.88,
+  "end": 17.22,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "on",
+  "start": 17.44,
+  "end": 17.54,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "the",
+  "start": 17.54,
+  "end": 17.7,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "real",
+  "start": 17.7,
+  "end": 17.96,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "thread.",
+  "start": 17.96,
+  "end": 18.32,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "And",
+  "start": 22.0,
+  "end": 22.22,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "in",
+  "start": 22.22,
+  "end": 22.36,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "Drafts,",
+  "start": 22.36,
+  "end": 22.92,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "the",
+  "start": 23.02,
+  "end": 23.06,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "reorder",
+  "start": 23.06,
+  "end": 23.42,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "is",
+  "start": 23.42,
+  "end": 23.66,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "waiting",
+  "start": 23.66,
+  "end": 24.0,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "\u2014",
+  "start": 24.054,
+  "end": 24.414,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "addressed,",
+  "start": 24.72,
+  "end": 24.9,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "referenced,",
+  "start": 25.2,
+  "end": 25.54,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "ready",
+  "start": 25.98,
+  "end": 26.1,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "for",
+  "start": 26.1,
+  "end": 26.36,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "your",
+  "start": 26.36,
+  "end": 26.5,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "send",
+  "start": 26.5,
+  "end": 26.74,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "button.",
+  "start": 26.74,
+  "end": 27.1,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "Mail",
+  "start": 32.3,
+  "end": 32.68,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "\u2014",
+  "start": 32.704,
+  "end": 32.864,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "episode",
+  "start": 33.0,
+  "end": 33.1,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "five",
+  "start": 33.1,
+  "end": 33.58,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "of",
+  "start": 33.58,
+  "end": 33.76,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "the",
+  "start": 33.76,
+  "end": 33.88,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Module",
+  "start": 33.88,
+  "end": 34.26,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Tours.",
+  "start": 34.26,
+  "end": 34.78,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Full",
+  "start": 35.34,
+  "end": 35.46,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "tour",
+  "start": 35.46,
+  "end": 35.7,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "on",
+  "start": 35.7,
+  "end": 35.96,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "YouTube.",
+  "start": 35.96,
+  "end": 36.18,
+  "key": false,
+  "sceneId": "outro"
+ }
+]

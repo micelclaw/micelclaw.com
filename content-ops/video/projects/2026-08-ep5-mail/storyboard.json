@@ -1,0 +1,747 @@
+{
+  "id": "2026-08-ep5-mail",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw",
+    "McBang": "Mick-Bang"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.9,
+  "size": [
+    1920,
+    1080
+  ],
+  "scenes": [
+    {
+      "id": "cold",
+      "kind": "footage",
+      "voiceover": "Monday morning, the day after the beach show. The inbox already knows. Megan's final count — eight hundred forty seven shells, zero incidents. The councilman who filed a noise complaint in January is suddenly asking about next year. Even the insurance man wants a word — a pleasant one, for once. And Fiona says the warehouse is empty. One company, one inbox.",
+      "leadSec": 0.4,
+      "padSec": 1.0,
+      "minSec": 21,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.51
+        },
+        {
+          "at": 1,
+          "zoom": 1.16,
+          "cx": 0.44,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 33,
+        "note": "Bandeja BoomClaw con la pila del lunes en negrita; hover por Megan/concejal/Fiona; ocultar Conectar",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/mail",
+            "settleMs": 5000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 600
+          },
+          {
+            "op": "hover",
+            "selector": "text=847 Shells. Zero Incidents.",
+            "ms": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 1200
+          },
+          {
+            "op": "hover",
+            "selector": "text=Next Year's Date?",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1100
+          },
+          {
+            "op": "hover",
+            "selector": "text=Zero Claims?!",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1100
+          },
+          {
+            "op": "hover",
+            "selector": "text=We're Empty",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1800
+          }
+        ]
+      },
+      "srcOffsetSec": 4.5
+    },
+    {
+      "id": "card",
+      "kind": "series",
+      "episode": 5,
+      "moduleName": "Mail",
+      "sub": "Micelclaw OS · Module Tours",
+      "voiceover": "",
+      "leadSec": 0.2,
+      "padSec": 1.2,
+      "minSec": 4,
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.15
+        },
+        {
+          "name": "chime",
+          "atSec": 0.55
+        }
+      ]
+    },
+    {
+      "id": "tour1",
+      "kind": "footage",
+      "voiceover": "Every BoomClaw thread lives here — suppliers, permits, catering, one very persistent councilman. Three accounts on the left, one view when you want it. Unread stays honest, threads stay threads, and none of it is trapped in somebody else's cloud.",
+      "highlight": [
+        "threads"
+      ],
+      "lowerThird": "One inbox, yours.",
+      "minSec": 17,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.44,
+          "cy": 0.46
+        }
+      ],
+      "capture": {
+        "holdSec": 25,
+        "note": "Cuentas a la izquierda (hover BoomClaw/CEO/Gmail), luego hover por 2 hilos del historial",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/mail",
+            "settleMs": 5000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 500
+          },
+          {
+            "op": "moveTo",
+            "x": 640,
+            "y": 380,
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1400
+          },
+          {
+            "op": "scroll",
+            "selector": "text=847 Shells. Zero Incidents.",
+            "dy": 600,
+            "ms": 1600
+          },
+          {
+            "op": "pause",
+            "ms": 1000
+          },
+          {
+            "op": "hover",
+            "selector": "text=Boda náutica",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1000
+          },
+          {
+            "op": "hover",
+            "selector": "text=Invoice DF-2026-0451",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1600
+          }
+        ]
+      },
+      "srcOffsetSec": 4.5
+    },
+    {
+      "id": "tour2",
+      "kind": "footage",
+      "voiceover": "Here's our last order, told by its own thread. The delay announcement. The panic — Valencia was four weeks out. And the resolution: McBang filled out forty seven pages of customs forms by hand, and two hundred Thunder Dragons cleared the port. The thread remembers all of it, so nobody else has to.",
+      "highlight": [
+        "thread"
+      ],
+      "lowerThird": "The order, told by its thread.",
+      "minSec": 20,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.49
+        },
+        {
+          "at": 1,
+          "zoom": 1.15,
+          "cx": 0.56,
+          "cy": 0.44
+        }
+      ],
+      "capture": {
+        "holdSec": 29,
+        "note": "Abrir el hilo Thunder Dragons (3 mensajes), expandir el primero (delay), volver al Cleared!",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/mail",
+            "settleMs": 5000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 600
+          },
+          {
+            "op": "eval",
+            "js": "const it=[...document.querySelectorAll('*')].find(e=>e.children.length===0&&e.textContent.trim().includes('Thunder Dragons — Cleared!')); if(it) it.scrollIntoView({block:'center',behavior:'smooth'});"
+          },
+          {
+            "op": "pause",
+            "ms": 1600
+          },
+          {
+            "op": "click",
+            "selector": "text=Thunder Dragons — Cleared!",
+            "sfx": "click",
+            "settleMs": 2200
+          },
+          {
+            "op": "click",
+            "selector": "text=I regret to inform you",
+            "sfx": "click",
+            "settleMs": 1800
+          },
+          {
+            "op": "moveTo",
+            "x": 2900,
+            "y": 800,
+            "ms": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 2200
+          },
+          {
+            "op": "click",
+            "selector": "text=I have personally visited",
+            "sfx": "click",
+            "settleMs": 1800
+          },
+          {
+            "op": "pause",
+            "ms": 2800
+          }
+        ]
+      },
+      "srcOffsetSec": 4.5
+    },
+    {
+      "id": "tour3",
+      "kind": "footage",
+      "voiceover": "Six months from now you won't remember subject lines — you'll remember a word. Customs. Search it, and the whole saga comes back… along with this morning's warning from the warehouse. Search the invoice number instead, and the paperwork finds itself.",
+      "highlight": [
+        "word"
+      ],
+      "lowerThird": "Search reads everything.",
+      "minSec": 18,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.46,
+          "cy": 0.44
+        }
+      ],
+      "capture": {
+        "holdSec": 26,
+        "note": "Teclear customs en Search mail → resultados (saga + Fiona hoy); borrar; teclear DF-2026-0451 → factura",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/mail",
+            "settleMs": 5000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 500
+          },
+          {
+            "op": "click",
+            "selector": "input[placeholder=\"Search mail...\"]",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "customs",
+            "delay": 95
+          },
+          {
+            "op": "pause",
+            "ms": 2600
+          },
+          {
+            "op": "eval",
+            "js": "const i=document.querySelector('input[placeholder=\"Search mail...\"]'); const s=Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype,'value').set; s.call(i,''); i.dispatchEvent(new Event('input',{bubbles:true}));"
+          },
+          {
+            "op": "pause",
+            "ms": 400
+          },
+          {
+            "op": "type",
+            "text": "DF-2026-0451",
+            "delay": 90
+          },
+          {
+            "op": "pause",
+            "ms": 1800
+          },
+          {
+            "op": "click",
+            "selector": "text=Invoice DF-2026-0451",
+            "sfx": "click",
+            "settleMs": 2000
+          },
+          {
+            "op": "eval",
+            "js": "[...document.querySelectorAll('*')].filter(e=>e.children.length===0&&e.textContent.trim()==='Relacionado').forEach(e=>e.textContent='Linked');"
+          },
+          {
+            "op": "pause",
+            "ms": 1800
+          }
+        ]
+      },
+      "srcOffsetSec": 4.5
+    },
+    {
+      "id": "chat1",
+      "kind": "footage",
+      "voiceover": "Now, from the chat. Ask what you'd ask a colleague: where does the Dragon Fireworks order stand? Francis reads the mail — invoice, payment, customs, cleared — and adds the part that matters today: stock is at zero, and no reorder has gone out yet. Every email he cites becomes a chip.",
+      "highlight": [
+        "chip"
+      ],
+      "lowerThird": "Now, from the chat.",
+      "minSec": 19,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.12,
+          "cx": 0.5,
+          "cy": 0.548
+        }
+      ],
+      "capture": {
+        "holdSec": 215,
+        "note": "CHATMEGA (toma unica): estado del pedido + draft del reorder + clic chip factura -> Mail -> Drafts -> draft abierto. chat2/chat3 se rebanan con srcOffset (calibrar con actions.json)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 1500
+          },
+          {
+            "op": "eval",
+            "js": "localStorage.setItem('claw-insights-collapsed','true');"
+          },
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button[title]')].find(x=>x.getAttribute('title')==='Collapse sidebar'); if(b) b.click();"
+          },
+          {
+            "op": "pause",
+            "ms": 500
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "Where does the Dragon Fireworks order stand? Check the mail. In English, please.",
+            "delay": 45
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "pop"
+          },
+          {
+            "op": "pause",
+            "ms": 85000
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 400
+          },
+          {
+            "op": "type",
+            "text": "Draft a reorder email to Dragon Fireworks: 200 chrysanthemum shells, reference invoice DF-2026-0451, and ask them to start the customs paperwork now. Save it as a draft, do not send it. In English, please.",
+            "delay": 40
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "pop"
+          },
+          {
+            "op": "pause",
+            "ms": 80000
+          },
+          {
+            "op": "eval",
+            "js": "new MutationObserver(()=>{const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b&&b.style.display!=='none') b.style.display='none';}).observe(document.body,{subtree:true,childList:true});"
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title*=\"DF-2026-0451\"]"
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          },
+          {
+            "op": "click",
+            "selector": "a[title*=\"DF-2026-0451\"]",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          },
+          {
+            "op": "click",
+            "selector": "text=Drafts",
+            "sfx": "click",
+            "settleMs": 1800
+          },
+          {
+            "op": "click",
+            "selector": "text=Reorder Request",
+            "sfx": "click",
+            "settleMs": 2200
+          },
+          {
+            "op": "pause",
+            "ms": 6000
+          }
+        ]
+      },
+      "srcOffsetSec": 78.0
+    },
+    {
+      "id": "chat2",
+      "kind": "footage",
+      "voiceover": "So we fix that without opening a single form. Draft the reorder — two hundred chrysanthemum shells, reference the old invoice, and this time, start the customs paperwork early. Francis writes it and saves it as a draft. Not sent. You stay in charge.",
+      "highlight": [
+        "draft"
+      ],
+      "minSec": 17,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.52
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.5,
+          "cy": 0.56
+        }
+      ],
+      "capture": {
+        "note": "REBANADA de chat1 (chatmega): copiar footage/chat1.mp4 a chat2.mp4; srcOffset al teclear del draft",
+        "actions": []
+      },
+      "srcOffsetSec": 96.5
+    },
+    {
+      "id": "chat3",
+      "kind": "footage",
+      "voiceover": "The chips are doors. Click the invoice, and you're standing in Mail, on the original thread. And in the Drafts folder, the reorder is waiting — addressed to McBang, invoice referenced, customs warning included. All it needs is your send button.",
+      "highlight": [
+        "doors"
+      ],
+      "minSec": 18,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.04,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.14,
+          "cx": 0.53,
+          "cy": 0.45
+        }
+      ],
+      "capture": {
+        "holdSec": 34,
+        "note": "Toma propia: reabrir la conv del chatmega (tools colapsados, bash oculto), clic chip factura -> Mail -> Drafts -> draft abierto",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 1500
+          },
+          {
+            "op": "eval",
+            "js": "localStorage.setItem('claw-insights-collapsed','true');"
+          },
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4000
+          },
+          {
+            "op": "click",
+            "selector": "text=Where does the Dragon Fireworks",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "const l=[...document.querySelectorAll('*')].find(e=>e.children.length===0&&e.textContent.trim()==='bash');if(l){let n=l,best=null; for(let i=0;i<12&&n;i++){ if(!n.textContent.includes('emails_save_draft')) best=n; else break; n=n.parentElement; } if(best) best.style.display='none';}"
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button[title]')].find(x=>x.getAttribute('title')==='Collapse sidebar'); if(b) b.click();"
+          },
+          {
+            "op": "pause",
+            "ms": 900
+          },
+          {
+            "op": "eval",
+            "js": "new MutationObserver(()=>{const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b&&b.style.display!=='none') b.style.display='none';}).observe(document.body,{subtree:true,childList:true});"
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title*=\"DF-2026-0451\"]"
+          },
+          {
+            "op": "pause",
+            "ms": 1600
+          },
+          {
+            "op": "click",
+            "selector": "a[title*=\"DF-2026-0451\"]",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 2200
+          },
+          {
+            "op": "click",
+            "selector": "text=Drafts",
+            "sfx": "click",
+            "settleMs": 1800
+          },
+          {
+            "op": "click",
+            "selector": "text=Reorder Request",
+            "sfx": "click",
+            "settleMs": 2200
+          },
+          {
+            "op": "pause",
+            "ms": 6000
+          }
+        ]
+      },
+      "srcOffsetSec": 11.0
+    },
+    {
+      "id": "connect",
+      "kind": "footage",
+      "voiceover": "It's all one system. The cleared-shipment email links the supplier's card, the invoice — and one more thing: the shells themselves, as an inventory item. When those two hundred shells reach the warehouse, they become part of Inventory.",
+      "highlight": [
+        "one",
+        "system"
+      ],
+      "lowerThird": "Linked to everything.",
+      "minSec": 18,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.51,
+          "cy": 0.49
+        },
+        {
+          "at": 1,
+          "zoom": 1.13,
+          "cx": 0.56,
+          "cy": 0.53
+        }
+      ],
+      "capture": {
+        "holdSec": 26,
+        "note": "Abrir el email Cleared!, panel Related Entities con contacto+factura+item de inventario; hover por las entidades",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/mail",
+            "settleMs": 5000
+          },
+          {
+            "op": "eval",
+            "js": "const b=[...document.querySelectorAll('button')].find(e=>e.textContent.trim()==='Conectar'); if(b) b.style.display='none';"
+          },
+          {
+            "op": "pause",
+            "ms": 600
+          },
+          {
+            "op": "eval",
+            "js": "const it=[...document.querySelectorAll('*')].find(e=>e.children.length===0&&e.textContent.trim().includes('Thunder Dragons — Cleared!')); if(it) it.scrollIntoView({block:'center',behavior:'smooth'});"
+          },
+          {
+            "op": "pause",
+            "ms": 1600
+          },
+          {
+            "op": "click",
+            "selector": "text=Thunder Dragons — Cleared!",
+            "sfx": "click",
+            "settleMs": 2500
+          },
+          {
+            "op": "eval",
+            "js": "[...document.querySelectorAll('*')].filter(e=>e.children.length===0&&e.textContent.trim()==='Relacionado').forEach(e=>e.textContent='Linked');"
+          },
+          {
+            "op": "moveTo",
+            "x": 2450,
+            "y": 1150,
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1000
+          },
+          {
+            "op": "hover",
+            "selector": "text=75mm shell",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1400
+          },
+          {
+            "op": "moveTo",
+            "x": 2280,
+            "y": 1265,
+            "ms": 800
+          },
+          {
+            "op": "pause",
+            "ms": 2400
+          }
+        ]
+      },
+      "srcOffsetSec": 4.5
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "voiceover": "That's Mail — the paper trail of everything that goes boom, all on your own hardware. Next up: Photos.",
+      "highlight": [
+        "Mail",
+        "Photos"
+      ],
+      "leadSec": 0.3,
+      "padSec": 2.0,
+      "minSec": 12,
+      "next": "Ep. 6 — Photos",
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Your self-hosted AI productivity OS.",
+      "url": "micelclaw.com",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

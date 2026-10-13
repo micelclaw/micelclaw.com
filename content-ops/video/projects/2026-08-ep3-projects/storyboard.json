@@ -1,0 +1,644 @@
+{
+  "id": "2026-08-ep3-projects",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.9,
+  "size": [
+    1920,
+    1080
+  ],
+  "scenes": [
+    {
+      "id": "cold",
+      "kind": "footage",
+      "voiceover": "The Valencia beach show has stopped being a pile of follow-ups. Every job is visible now. Every deadline has a place. And when the plan moves, the board moves with it.",
+      "highlight": [
+        "visible",
+        "board"
+      ],
+      "leadSec": 0.4,
+      "minSec": 12,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.02,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.1,
+          "cx": 0.54,
+          "cy": 0.46
+        }
+      ],
+      "capture": {
+        "holdSec": 15,
+        "note": "Money shot: tablero Valencia lleno. Recorrer columnas y acabar sobre Order shells; sin modificar datos en esta escena.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/projects",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia Beach Show",
+            "sfx": "click",
+            "settleMs": 2600
+          },
+          {
+            "op": "moveTo",
+            "x": 1050,
+            "y": 520,
+            "ms": 1000
+          },
+          {
+            "op": "moveTo",
+            "x": 2550,
+            "y": 560,
+            "ms": 1600
+          },
+          {
+            "op": "hover",
+            "selector": "text=\"Order shells\"",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      }
+    },
+    {
+      "id": "card",
+      "kind": "series",
+      "episode": 3,
+      "moduleName": "Projects",
+      "sub": "Micelclaw OS · Module Tours",
+      "voiceover": "",
+      "leadSec": 0.2,
+      "padSec": 1.2,
+      "minSec": 4,
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.15
+        },
+        {
+          "name": "chime",
+          "atSec": 0.55
+        }
+      ]
+    },
+    {
+      "id": "tour1-board",
+      "kind": "footage",
+      "voiceover": "Backlog. Ready. In progress. Review. Done. Priorities, dates, and checklist progress are visible without opening a thing. And when the work changes state, you move the card. That is the whole form.",
+      "highlight": [
+        "visible",
+        "move the card"
+      ],
+      "lowerThird": "Move the work.",
+      "minSec": 18,
+      "srcOffsetSec": 5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.2,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 0.7,
+          "zoom": 1.35,
+          "cx": 0.58,
+          "cy": 0.48
+        },
+        {
+          "at": 1,
+          "zoom": 1.5,
+          "cx": 0.65,
+          "cy": 0.48
+        }
+      ],
+      "capture": {
+        "holdSec": 24,
+        "desktopSize": [
+          2560,
+          1440
+        ],
+        "uiZoom": 1,
+        "note": "Drag real y continuo de Order shells desde In Progress hasta Done, capturado a escala nativa para evitar saltos del DragOverlay.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/projects",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia Beach Show",
+            "settleMs": 2600
+          },
+          {
+            "op": "hover",
+            "selector": "text=\"Order shells\"",
+            "ms": 900
+          },
+          {
+            "op": "pause",
+            "ms": 1800
+          },
+          {
+            "op": "moveTo",
+            "selector": "text=\"Order shells\"",
+            "ms": 700
+          },
+          {
+            "op": "drag",
+            "toSelector": "text=\"Site inspection\"",
+            "pressMs": 150,
+            "activationPx": 12,
+            "activationMs": 180,
+            "ms": 1800,
+            "hoverMs": 350,
+            "sfx": "click",
+            "settleMs": 400
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      }
+    },
+    {
+      "id": "tour2-detail",
+      "kind": "footage",
+      "voiceover": "Open one card, and the detail is already there: what it means, how urgent it is, when it is due, what is checked off, what blocks it, and which records belong beside it.",
+      "highlight": [
+        "detail",
+        "what blocks it"
+      ],
+      "lowerThird": "The work, in context.",
+      "minSec": 19,
+      "srcOffsetSec": 14,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.35,
+          "cx": 0.62,
+          "cy": 0.48
+        },
+        {
+          "at": 0.6,
+          "zoom": 1.65,
+          "cx": 0.69,
+          "cy": 0.56
+        },
+        {
+          "at": 1,
+          "zoom": 1.85,
+          "cx": 0.72,
+          "cy": 0.72
+        }
+      ],
+      "capture": {
+        "holdSec": 27,
+        "note": "Abrir Firing sequence y recorrer el panel. Las relaciones se siembran antes de capturar.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/projects",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia Beach Show",
+            "settleMs": 2600
+          },
+          {
+            "op": "click",
+            "selector": "text=\"Firing sequence\"",
+            "sfx": "click",
+            "settleMs": 1800
+          },
+          {
+            "op": "hover",
+            "selector": "text=Checklist",
+            "ms": 700
+          },
+          {
+            "op": "pause",
+            "ms": 2200
+          },
+          {
+            "op": "moveTo",
+            "x": 3520,
+            "y": 1600,
+            "ms": 700
+          },
+          {
+            "op": "scroll",
+            "dy": 850
+          },
+          {
+            "op": "pause",
+            "ms": 1200
+          },
+          {
+            "op": "click",
+            "selector": "text=Dependencies",
+            "sfx": "click",
+            "settleMs": 1000
+          },
+          {
+            "op": "click",
+            "selector": "text=Linked Items",
+            "sfx": "click",
+            "settleMs": 1000
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      }
+    },
+    {
+      "id": "tour3-views",
+      "kind": "footage",
+      "voiceover": "The same work can become a table, a calendar, a Gantt plan, or a dashboard. Nothing is copied between them. The board changes shape. The data stays put.",
+      "highlight": [
+        "same work",
+        "data stays put"
+      ],
+      "lowerThird": "Change the view, not the data.",
+      "minSec": 18,
+      "srcOffsetSec": 10,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 0.5,
+          "zoom": 1.08,
+          "cx": 0.53,
+          "cy": 0.52
+        },
+        {
+          "at": 1,
+          "zoom": 1.08,
+          "cx": 0.53,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 29,
+        "note": "Cambiar Table → Gantt → Calendar → Dashboard, con hold real de 2-3 s en cada vista.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/projects",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia Beach Show",
+            "settleMs": 2600
+          },
+          {
+            "op": "click",
+            "selector": "button[title=\"Table\"]",
+            "sfx": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          },
+          {
+            "op": "click",
+            "selector": "button[title=\"Gantt\"]",
+            "sfx": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          },
+          {
+            "op": "click",
+            "selector": "button[title=\"Calendar\"]",
+            "sfx": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          },
+          {
+            "op": "click",
+            "selector": "button[title=\"Dashboard\"]",
+            "sfx": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      }
+    },
+    {
+      "id": "chat1-prompt",
+      "kind": "footage",
+      "voiceover": "Now, from the chat. We ask Francis for one thing: add a high-priority card called Print run of show, due Saturday, with three checks. We never open Projects.",
+      "highlight": [
+        "chat",
+        "never open Projects"
+      ],
+      "lowerThird": "Now, from the chat.",
+      "minSec": 15,
+      "srcOffsetSec": 5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.1,
+          "cx": 0.5,
+          "cy": 0.54
+        },
+        {
+          "at": 1,
+          "zoom": 1.34,
+          "cx": 0.51,
+          "cy": 0.62
+        }
+      ],
+      "capture": {
+        "holdSec": 155,
+        "note": "TOMA ÚNICA CHATMEGA: prompt → tool pills → chip → clic. Después copiar este mp4 a chat2-result.mp4 y chat3-chip.mp4 y calibrar los tres srcOffsetSec con actions.json.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 3500
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "eval",
+            "js": "[...document.querySelectorAll('button[title]')].find(b=>b.getAttribute('title')==='Collapse sidebar')?.click()"
+          },
+          {
+            "op": "pause",
+            "ms": 600
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 500
+          },
+          {
+            "op": "type",
+            "text": "Reply in English. In the Projects module, on the Valencia Beach Show board, create a high-priority card called \"Print run of show\" in Ready, due Saturday, August 8, with this checklist: crew call times, firing order, and weather sign-off.",
+            "delay": 40
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          },
+          {
+            "op": "press",
+            "key": "Enter",
+            "sfx": "click"
+          },
+          {
+            "op": "pause",
+            "ms": 125000
+          },
+          {
+            "op": "scroll",
+            "dy": 5000
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "a[title=\"Print run of show\"]",
+            "settleMs": 1200
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          },
+          {
+            "op": "click",
+            "selector": "a[title=\"Print run of show\"]",
+            "sfx": "click",
+            "settleMs": 3500
+          },
+          {
+            "op": "pause",
+            "ms": 3500
+          }
+        ]
+      }
+    },
+    {
+      "id": "chat2-result",
+      "kind": "footage",
+      "voiceover": "Francis finds the right board, creates the card, and builds the checklist. The tool calls stay visible, so we can see what changed. Then the new card comes back as a chip.",
+      "highlight": [
+        "tool calls",
+        "chip"
+      ],
+      "minSec": 20,
+      "srcOffsetSec": 40,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.1,
+          "cx": 0.5,
+          "cy": 0.54
+        },
+        {
+          "at": 1,
+          "zoom": 1.34,
+          "cx": 0.52,
+          "cy": 0.62
+        }
+      ]
+    },
+    {
+      "id": "chat3-chip",
+      "kind": "footage",
+      "voiceover": "And the chip is the door. Click it, and we land on the exact card: the right board, the right deadline, and all three checks waiting. The conversation has become work we can act on.",
+      "highlight": [
+        "chip",
+        "exact card"
+      ],
+      "minSec": 16,
+      "srcOffsetSec": 156,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.34,
+          "cx": 0.52,
+          "cy": 0.62
+        },
+        {
+          "at": 0.55,
+          "zoom": 1.42,
+          "cx": 0.53,
+          "cy": 0.64
+        },
+        {
+          "at": 1,
+          "zoom": 1.75,
+          "cx": 0.7,
+          "cy": 0.48
+        }
+      ]
+    },
+    {
+      "id": "connect",
+      "kind": "footage",
+      "voiceover": "The board does not live alone. The rain plan from Notes sits beside the work. The supplier sits there too. Next week, we follow those people into Contacts — the crew and companies behind the show.",
+      "highlight": [
+        "does not live alone",
+        "Contacts"
+      ],
+      "lowerThird": "Everything connects.",
+      "minSec": 18,
+      "srcOffsetSec": 18,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.55,
+          "cx": 0.67,
+          "cy": 0.58
+        },
+        {
+          "at": 1,
+          "zoom": 1.9,
+          "cx": 0.73,
+          "cy": 0.72
+        }
+      ],
+      "capture": {
+        "holdSec": 25,
+        "note": "Abrir Order shells, bajar a Linked Items y mostrar la nota Rain contingency y Professor Flash McBang. No navegar fuera: el tease queda en la misma ficha.",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/projects",
+            "settleMs": 3000
+          },
+          {
+            "op": "eval",
+            "js": "document.querySelectorAll('[data-sonner-toast],[data-sonner-toaster]').forEach(el=>el.style.display='none')"
+          },
+          {
+            "op": "click",
+            "selector": "text=Valencia Beach Show",
+            "settleMs": 2600
+          },
+          {
+            "op": "click",
+            "selector": "text=\"Order shells\"",
+            "sfx": "click",
+            "settleMs": 1800
+          },
+          {
+            "op": "moveTo",
+            "x": 3520,
+            "y": 1600,
+            "ms": 700
+          },
+          {
+            "op": "scroll",
+            "dy": 950
+          },
+          {
+            "op": "click",
+            "selector": "text=Linked Items",
+            "sfx": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "hover",
+            "selector": "text=Rain contingency — Valencia beach show",
+            "ms": 800
+          },
+          {
+            "op": "pause",
+            "ms": 2500
+          },
+          {
+            "op": "hover",
+            "selector": "text=Professor Flash McBang",
+            "ms": 800
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "leadSec": 0.3,
+      "padSec": 2.0,
+      "minSec": 12,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Your self-hosted AI productivity OS.",
+      "url": "micelclaw.com",
+      "next": "Ep. 4 — Contacts",
+      "voiceover": "That's Projects — boards that move from chat, on your own hardware. Next week: Contacts.",
+      "highlight": [
+        "Projects",
+        "Contacts"
+      ],
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

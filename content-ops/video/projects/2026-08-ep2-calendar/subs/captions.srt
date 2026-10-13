@@ -1,0 +1,39 @@
+1
+00:00:00,400 --> 00:00:14,779
+It's Tuesday, August the fourth. This Sunday is the make-up date for the Valencia beach show — the one the rain pushed back. The whole road to it lives on this calendar. One week, four calendars, and no sticky notes anywhere.
+
+2
+00:00:22,000 --> 00:00:39,536
+Here's the show week. Operations in orange. Safety inspections in red. Personal life in green — and the Japan collab has a calendar of its own. Everything in one view. And when you need to focus, any calendar switches off with one click — and comes right back.
+
+3
+00:00:43,000 --> 00:00:56,461
+Adding something by hand is quick. Sunday afternoon — load-in at the beach. A title, a place, the right calendar, and a reminder for the day before. Done. It lands exactly where the crew will look for it.
+
+4
+00:01:03,000 --> 00:01:19,640
+And plans move — this show is living proof. Inspection running late? Slide it down the morning. Need more time on site? Stretch it. The beach crew wants it Thursday instead? Drop it there. No forms, no dialogs — you just move the week around.
+
+5
+00:01:27,000 --> 00:01:41,080
+Now, the part that changes how you plan: you don't open the calendar at all. Ask Francis what the week looks like — and the whole week comes back, read straight from the same calendar. The inspection. The load-in. The show.
+
+6
+00:01:45,000 --> 00:01:55,709
+Add to it the same way. Final rehearsal, Friday evening, at the warehouse — and remind us the day before. That's the entire workflow: you say it, it's scheduled.
+
+7
+00:02:02,000 --> 00:02:08,741
+Change of plans? Say so. Push it an hour later — and it's moved. No form to find, no grid to hunt through.
+
+8
+00:02:18,000 --> 00:02:25,296
+And the chip is the door. Click it — and you're standing on the event: Friday evening, the right calendar, reminder set.
+
+9
+00:02:36,000 --> 00:02:50,315
+One last thing: none of this lives alone. Open the show, and everything around it is right there — the rain contingency note from last episode, the inspection, the paperwork. One system. One database. Yours.
+
+10
+00:02:56,300 --> 00:03:04,449
+That's Calendar — one module of Micelclaw, your self-hosted AI productivity OS. Next week: Projects.

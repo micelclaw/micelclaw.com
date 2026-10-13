@@ -1,0 +1,222 @@
+{
+  "id": "2026-07-ep1-notes-vertical",
+  "voice": "am_michael",
+  "pronounce": {
+    "Micelclaw": "My-cell-claw"
+  },
+  "music": "Chill-Wave.mp3",
+  "musicDb": -15,
+  "sfxDb": -16,
+  "showCaptions": true,
+  "padSec": 0.5,
+  "size": [
+    1080,
+    1920
+  ],
+  "scenes": [
+    {
+      "id": "v1",
+      "kind": "footage",
+      "voiceover": "Don't type your notes. Tell your agent to take them.",
+      "highlight": [
+        "tell",
+        "your",
+        "agent"
+      ],
+      "minSec": 9,
+      "fadeIn": true,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 16,
+        "note": "MÓVIL: teclear el prompt en el chat (sin enviar)",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4000
+          },
+          {
+            "op": "click",
+            "selector": "textarea",
+            "settleMs": 600
+          },
+          {
+            "op": "type",
+            "text": "Take a note: Rain contingency for the beach show — tarps, drainage check, backup date.",
+            "delay": 50
+          },
+          {
+            "op": "pause",
+            "ms": 2000
+          }
+        ]
+      },
+      "srcOffsetSec": 3.5
+    },
+    {
+      "id": "v2",
+      "kind": "footage",
+      "voiceover": "The note comes back as a chip. Click it — and you're there. Created, filed, and linked.",
+      "highlight": [
+        "chip",
+        "linked"
+      ],
+      "minSec": 10.5,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 20,
+        "note": "MÓVIL: abrir la conv, scroll al final, clic en la chip → navega a Notes",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/chat",
+            "settleMs": 4500
+          },
+          {
+            "op": "moveTo",
+            "x": 26,
+            "y": 61,
+            "ms": 600
+          },
+          {
+            "op": "click",
+            "sfx": "click",
+            "settleMs": 1500
+          },
+          {
+            "op": "click",
+            "selector": "text=Plan our week",
+            "settleMs": 2000
+          },
+          {
+            "op": "moveTo",
+            "x": 340,
+            "y": 360,
+            "ms": 400
+          },
+          {
+            "op": "click",
+            "settleMs": 1200
+          },
+          {
+            "op": "scrollIntoView",
+            "selector": "text=Rain contingency —",
+            "settleMs": 800
+          },
+          {
+            "op": "pause",
+            "ms": 800
+          },
+          {
+            "op": "click",
+            "selector": "text=Rain contingency —",
+            "sfx": "click",
+            "settleMs": 3000
+          },
+          {
+            "op": "pause",
+            "ms": 3000
+          }
+        ]
+      },
+      "srcOffsetSec": 8.0
+    },
+    {
+      "id": "v3",
+      "kind": "footage",
+      "voiceover": "Pinned, tagged, searchable — in your own database, on your own hardware.",
+      "highlight": [
+        "your",
+        "own"
+      ],
+      "minSec": 8,
+      "camera": [
+        {
+          "at": 0,
+          "zoom": 1.0,
+          "cx": 0.5,
+          "cy": 0.5
+        },
+        {
+          "at": 1,
+          "zoom": 1.05,
+          "cx": 0.5,
+          "cy": 0.5
+        }
+      ],
+      "capture": {
+        "holdSec": 14,
+        "note": "MÓVIL: notas — lista y abrir la nota",
+        "actions": [
+          {
+            "op": "goto",
+            "path": "/notes",
+            "settleMs": 4500
+          },
+          {
+            "op": "click",
+            "selector": "text=Rain contingency",
+            "sfx": "click",
+            "settleMs": 2500
+          },
+          {
+            "op": "scroll",
+            "dy": 250
+          },
+          {
+            "op": "pause",
+            "ms": 1500
+          }
+        ]
+      },
+      "srcOffsetSec": 2.5
+    },
+    {
+      "id": "outro",
+      "kind": "outro",
+      "leadSec": 0.3,
+      "padSec": 1.8,
+      "minSec": 6,
+      "title": [
+        "Micel",
+        "claw"
+      ],
+      "tagline": "Notes — Ep. 1 of the Module Tours.",
+      "url": "micelclaw.com",
+      "cta": "Full tour on YouTube.",
+      "voiceover": "That's Notes. Full tour on our channel.",
+      "sfx": [
+        {
+          "name": "thud",
+          "atSec": 0.2
+        }
+      ]
+    }
+  ]
+}

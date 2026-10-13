@@ -1,0 +1,324 @@
+[
+ {
+  "word": "Don't",
+  "start": 0.0,
+  "end": 0.36,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "type",
+  "start": 0.36,
+  "end": 0.56,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "your",
+  "start": 0.56,
+  "end": 0.76,
+  "key": true,
+  "sceneId": "v1"
+ },
+ {
+  "word": "notes.",
+  "start": 0.76,
+  "end": 1.16,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "Tell",
+  "start": 1.64,
+  "end": 1.74,
+  "key": true,
+  "sceneId": "v1"
+ },
+ {
+  "word": "your",
+  "start": 1.74,
+  "end": 1.94,
+  "key": true,
+  "sceneId": "v1"
+ },
+ {
+  "word": "agent",
+  "start": 1.94,
+  "end": 2.28,
+  "key": true,
+  "sceneId": "v1"
+ },
+ {
+  "word": "to",
+  "start": 2.28,
+  "end": 2.48,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "take",
+  "start": 2.48,
+  "end": 2.7,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "them.",
+  "start": 2.7,
+  "end": 2.98,
+  "key": false,
+  "sceneId": "v1"
+ },
+ {
+  "word": "The",
+  "start": 9.0,
+  "end": 9.14,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "note",
+  "start": 9.14,
+  "end": 9.32,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "comes",
+  "start": 9.32,
+  "end": 9.58,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "back",
+  "start": 9.58,
+  "end": 9.86,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "as",
+  "start": 9.86,
+  "end": 10.02,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "a",
+  "start": 10.02,
+  "end": 10.16,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "chip.",
+  "start": 10.16,
+  "end": 10.4,
+  "key": true,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Click",
+  "start": 10.8,
+  "end": 10.9,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "it",
+  "start": 10.9,
+  "end": 11.06,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "\u2014",
+  "start": 11.074,
+  "end": 11.164,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "and",
+  "start": 11.24,
+  "end": 11.24,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "you're",
+  "start": 11.24,
+  "end": 11.44,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "there.",
+  "start": 11.44,
+  "end": 11.74,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Created,",
+  "start": 12.64,
+  "end": 12.64,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "filed,",
+  "start": 12.8,
+  "end": 13.2,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "and",
+  "start": 13.48,
+  "end": 13.52,
+  "key": false,
+  "sceneId": "v2"
+ },
+ {
+  "word": "linked.",
+  "start": 13.52,
+  "end": 13.72,
+  "key": true,
+  "sceneId": "v2"
+ },
+ {
+  "word": "Pinned,",
+  "start": 19.5,
+  "end": 20.14,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "tagged,",
+  "start": 20.14,
+  "end": 20.46,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "searchable",
+  "start": 20.72,
+  "end": 21.28,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "\u2014",
+  "start": 21.292,
+  "end": 21.372,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "in",
+  "start": 21.44,
+  "end": 21.44,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "your",
+  "start": 21.44,
+  "end": 21.56,
+  "key": true,
+  "sceneId": "v3"
+ },
+ {
+  "word": "own",
+  "start": 21.56,
+  "end": 21.8,
+  "key": true,
+  "sceneId": "v3"
+ },
+ {
+  "word": "database,",
+  "start": 21.8,
+  "end": 22.3,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "on",
+  "start": 22.72,
+  "end": 22.9,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "your",
+  "start": 22.9,
+  "end": 23.04,
+  "key": true,
+  "sceneId": "v3"
+ },
+ {
+  "word": "own",
+  "start": 23.04,
+  "end": 23.28,
+  "key": true,
+  "sceneId": "v3"
+ },
+ {
+  "word": "hardware.",
+  "start": 23.28,
+  "end": 23.8,
+  "key": false,
+  "sceneId": "v3"
+ },
+ {
+  "word": "That's",
+  "start": 27.8,
+  "end": 28.14,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Notes.",
+  "start": 28.14,
+  "end": 28.42,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "Full",
+  "start": 28.78,
+  "end": 28.88,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "tour",
+  "start": 28.88,
+  "end": 29.12,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "on",
+  "start": 29.12,
+  "end": 29.28,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "our",
+  "start": 29.28,
+  "end": 29.42,
+  "key": false,
+  "sceneId": "outro"
+ },
+ {
+  "word": "channel.",
+  "start": 29.42,
+  "end": 29.72,
+  "key": false,
+  "sceneId": "outro"
+ }
+]
