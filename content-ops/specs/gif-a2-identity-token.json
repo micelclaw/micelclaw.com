@@ -1,0 +1,14 @@
+{
+  "name": "gif-a2-identity-token",
+  "date": "2026-07-26",
+  "kind": "concept",
+  "concept": "token",
+  "kicker": "Agent identity",
+  "signature": "micelclaw.com/blog/agent-identity",
+  "beats": [
+    { "label": "The model retypes its own 64-hex token.", "durSec": 2.5 },
+    { "label": "One wrong turn and it invents one.", "durSec": 2.0, "tone": "bad" },
+    { "label": "Now a host-side hook fills it in.", "durSec": 1.6, "tone": "amber" },
+    { "label": "The model never types the secret.", "durSec": 1.2, "tone": "good" }
+  ]
+}

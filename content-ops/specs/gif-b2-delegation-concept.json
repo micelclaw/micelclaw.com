@@ -1,0 +1,14 @@
+{
+  "name": "gif-b2-delegation-concept",
+  "date": "2026-07-26",
+  "kind": "concept",
+  "concept": "delegation",
+  "kicker": "Who's asking?",
+  "signature": "micelclaw.com/blog/agent-identity",
+  "beats": [
+    { "label": "Francis hands the job to a helper.", "durSec": 2.0, "tone": "cyan" },
+    { "label": "The helper had no token. Silence.", "durSec": 2.0, "tone": "bad" },
+    { "label": "Now every helper gets its own key.", "durSec": 1.8, "tone": "amber" },
+    { "label": "Delegated work lands in Drive.", "durSec": 1.2, "tone": "good" }
+  ]
+}

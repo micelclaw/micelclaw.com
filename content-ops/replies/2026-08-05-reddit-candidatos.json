@@ -1,0 +1,140 @@
+{
+  "generado": "2026-08-05T11:18:54.177Z",
+  "ventanaH": 24,
+  "candidatos": [
+    {
+      "sub": "docker",
+      "imagenes": [],
+      "titulo": "can anyone help me understand about running multiple docker",
+      "autor": "/u/techlover1010",
+      "fecha": "2026-08-05T10:08:32+00:00",
+      "link": "https://www.reddit.com/r/docker/comments/1vg35id/can_anyone_help_me_understand_about_running/",
+      "cuerpo": "so lets say my app 1 uses nodejs and a database like postgres and my app 2 also uses nodejs and a database similar to app 1 which is postgres what happens if i run them together will they consume more resources? or will they share the same postgres instance? are there ways to use the same postgres instance or is separating them the safest way to do it. anyone can explain this? submitted by /u/techlover1010 [link] [comments]",
+      "puntos": 19.2,
+      "edadH": 1.1728247222222221,
+      "temas": [
+        "docker",
+        "postgres",
+        "database"
+      ],
+      "motivo": null
+    },
+    {
+      "sub": "HomeServer",
+      "imagenes": [],
+      "titulo": "Debian server for NAS OS? (want details)",
+      "autor": "/u/embroi",
+      "fecha": "2026-08-05T01:28:38+00:00",
+      "link": "https://www.reddit.com/r/HomeServer/comments/1vftaa9/debian_server_for_nas_os_want_details/",
+      "cuerpo": "Hi, so I'm currently using OMV but have found it's only adding extra layers for me. I keep wanting to troubleshoot and edit stuff in the terminal as it gives me much more freedom, which I know omv doesn't like. So ideally I would have something mutable that allows me to work through the terminal when I want to, but also has a webUI for simple tasks and monitoring. My priorities are longevity and flexibility. I want something where I can tinker and set it up exactly how I want and then stay there. I feel a bit hesitant with Truenas both because of restrictions and immutability again, but also the lack of transparency from the company and huge changes that make it's future, imo, less clear. But would be up for debate on it if you think otherwise. I have been thinking about doing a headless Debian server with cockpit or some other webUI but would like to know more about it and it's cons. Like how hard is it to actually set up automated/cron stuff like rsync backups, SMART, ZFS, etc. How is updating stuff and compatibility? I am pretty comfortable with tinkering in terminals, I've been daily driving linux for over a year and have had my fair share of troubleshooting. I wont shy away from a bit of setup, but I just wanna make sure it's not gonna give me problems long term where I have to start from scratch on something else again. My setup is a ssd with server stuff on it and hdds for NAS storage. And separate boot drive ofc. I have seen in other posts that the best os is the one you're comfortable with and all of that, but I want more details about Debian from experienced users or others with the same priorities as me. The problems I might have with it probably won't show up until I'm already deep in the setup and I don't feel like jumping around like that if others can give me some detailed perspectives. submitted by /u/embroi [link] [comments]",
+      "puntos": 12,
+      "edadH": 9.837824722222223,
+      "temas": [
+        "backup",
+        "zfs",
+        "nas",
+        "truenas"
+      ],
+      "motivo": null
+    },
+    {
+      "sub": "HomeServer",
+      "imagenes": [],
+      "titulo": "Help needed",
+      "autor": "/u/kslice20",
+      "fecha": "2026-08-04T19:25:18+00:00",
+      "link": "https://www.reddit.com/r/HomeServer/comments/1vfk9vc/help_needed/",
+      "cuerpo": "I recently built a new PC so now I have an old PC with reusable parts. I would like to build a home server to degoogle everything, have more privacy on my network traffic and have a central location for all my manga, photos, videos between my wife and I. Current parts I am reusing: -GPU: PowerColor Fighter RX 6600 -Ryzen 5 5500 Chip and fan cooler on top of it -ASRock A320M-HDV R4.0 motherboard. - A couple of fans - G.SKILL Trident Z RGB Series DDR4 RAM (XMP) 16GB -80 plus smart 600w power supply. Purchasing: - ASUS Prime AP201 case. - storage undetermined My confusion is around the actual storage. I am seeing things like NAS vs SAN, raids and mirroring HDDS. - HDDS seem to be cheaper, so I believe the best course of action is maybe 2 of the red snap WD, do they need to be the same model number and make for \" mirroring\"? Does it matter if they are used? Should I just get one massive HHD, a small SSD for OS and then back everything up once a month to a portable drive? I planned to execute based on the below, are there better applications, am I missing something or do you see anything wrong? Phase 1 Build the server Install TrueNAS SCALE Set up Immich Set up Plex Set up Tailscale Import all photos Phase 2 Add Nextcloud Add Vaultwarden Add Pi-hole or AdGuard Home Phase 3 Automatic phone backups Automatic PC backups A dashboard like Homarr or Homepage to manage everything from one web page submitted by /u/kslice20 [link] [comments]",
+      "puntos": 12,
+      "edadH": 15.893380277777778,
+      "temas": [
+        "tailscale",
+        "backup",
+        "raid",
+        "nas",
+        "truenas",
+        "gpu",
+        "immich",
+        "nextcloud",
+        "adguard"
+      ],
+      "motivo": null
+    },
+    {
+      "sub": "docker",
+      "imagenes": [],
+      "titulo": "ROS 2 + Gazebo GUI, USB passthrough, & Jetson cross-builds on Apple Silicon: Docker Desktop vs OrbStack?",
+      "autor": "/u/marcusmine42",
+      "fecha": "2026-08-04T15:46:51+00:00",
+      "link": "https://www.reddit.com/r/docker/comments/1vfe42h/ros_2_gazebo_gui_usb_passthrough_jetson/",
+      "cuerpo": "Hey everybody! I’m evaluating a MacBook Pro M1 Max (64GB RAM) for local dev, primarily to take advantage of Apple's high unified memory bandwidth for local AI. However, a huge portion of my daily work involves containerized ROS 2 development, embedded hardware, and remote edge deployment. I’m looking for real-world feedback on container virtualization performance on ARM64 macOS (Docker Desktop vs. OrbStack vs. UTM/Lima). My Containerized Workflow: ROS 2 & 3D Simulation: Running Linux/ARM64 ROS 2 containers with X11 / Wayland display forwarding (XQuartz, VNC, or web-GUI) for RViz and Gazebo. Embedded / Serial Flashing: Passing serial interfaces (FTDI, CH340, USB-to-UART) into containers for microcontroller flashing ( esptool , stm32flash ) and serial monitoring. Cross-Platform Container Builds: Multi-arch builds and SSH-based remote container deployments targeting ARM64 NVIDIA Jetson boards. Questions for Docker users on macOS: 3D GUI Forwarding Performance: Is software rendering (LLVMpipe) inside Linux containers on macOS fast enough for daily 3D simulation work in Gazebo/RViz, or does the virtualization hop create too much lag? Docker Engine Alternatives: Does switching to OrbStack significantly reduce CPU overhead and idle battery drain when running multi-container ROS setups compared to Docker Desktop? USB Passthrough Reliability: How reliable is device mapping (passing /dev/ttyUSB* or /dev/ttyACM* ) into Linux containers on Apple Silicon hosts? Appreciate any insights or performance tips from folks running containerized robotics or hardware stacks on Apple Silicon! submitted by /u/marcusmine42 [link] [comments]",
+      "puntos": 7,
+      "edadH": 19.53421361111111,
+      "temas": [
+        "docker",
+        "container"
+      ],
+      "motivo": null
+    },
+    {
+      "sub": "pihole",
+      "imagenes": [],
+      "titulo": "How to switch from internet to ethernet.",
+      "autor": "/u/paperjammer1180",
+      "fecha": "2026-08-05T03:51:27+00:00",
+      "link": "https://www.reddit.com/r/pihole/comments/1vfwcr9/how_to_switch_from_internet_to_ethernet/",
+      "cuerpo": "I'm a beginner to this and haven't done anything like this before. Could someone please give me a step by step guide on how to switch from connection over the internet to an ethernet cable. I first used the internet option when setting it up but now there's been lots of connection issues. Whenever I trying finding a guide for how to do this it seems that an update has been released in the past year that made everything before than outdated specifically on the step to switch the pihole from communicating over the internet to the ethernet cable. submitted by /u/paperjammer1180 [link] [comments]",
+      "puntos": 5,
+      "edadH": 7.457546944444444,
+      "temas": [
+        "pihole"
+      ],
+      "motivo": null
+    },
+    {
+      "sub": "truenas",
+      "imagenes": [],
+      "titulo": "I need a bit of help with some desision making.",
+      "autor": "/u/NoFail5735",
+      "fecha": "2026-08-05T02:23:01+00:00",
+      "link": "https://www.reddit.com/r/truenas/comments/1vfuhqu/i_need_a_bit_of_help_with_some_desision_making/",
+      "cuerpo": "I have 2 options that have presented themselves to me The first 2 images is this storage beast, 32gb of ram and 11x(500gb) + 5x(1tb) drives included. System has a single 1gb ethernet port. For 400 dollars The second 2 images is this ibm server. X3690 X5 Enterprise. Dual Xeon E7-2870 (20 cores), 128GB of ram, 1 small 145gb sas drive included with fresh ubuntu install on it. Has room for 4 sas/sata drives on the front slots and 4 aditional sata internal. 2x 1Gigabit ethernet and 4x 10GbE Converged network adapters. For 175 dollars. Penny for your thoughts? Wanting to setup truenas and possibly something like plex. submitted by /u/NoFail5735 [link] [comments]",
+      "puntos": 5,
+      "edadH": 8.931435833333333,
+      "temas": [
+        "truenas"
+      ],
+      "motivo": null
+    },
+    {
+      "sub": "HomeServer",
+      "imagenes": [],
+      "titulo": "Building a DIY portable NAS: What hardware specs do you want?",
+      "autor": "/u/Substantial-You-5489",
+      "fecha": "2026-08-05T01:35:46+00:00",
+      "link": "https://www.reddit.com/r/HomeServer/comments/1vftfq0/building_a_diy_portable_nas_what_hardware_specs/",
+      "cuerpo": "I’m planning to DIY a portable NAS. I haven’t tested hardware with this configuration before, so I’d love to get your suggestions on hardware specs. * Storage: 2×NVMe PCIe x2 / 4×NVMe PCIe x4 * Network: Single 2.5GbE / Dual 2.5GbE / 5GbE * Wi-Fi: Wi-Fi 6 / Wi-Fi 7 / No built-in Wi-Fi What other must-have features do you need and why? submitted by /u/Substantial-You-5489 [link] [comments]",
+      "puntos": 5,
+      "edadH": 9.718935833333333,
+      "temas": [
+        "nas"
+      ],
+      "motivo": null
+    },
+    {
+      "sub": "Nextcloud",
+      "imagenes": [],
+      "titulo": "Synch google keep?",
+      "autor": "/u/Nervous_Type_9175",
+      "fecha": "2026-08-04T20:27:08+00:00",
+      "link": "https://www.reddit.com/r/NextCloud/comments/1vflzs0/synch_google_keep/",
+      "cuerpo": "Google files and calendars are synched with nextcloud via app. Wonderful in decreasing the dependance on big tech. Is there any plans to provide any app to synch keep notes? submitted by /u/Nervous_Type_9175 [link] [comments]",
+      "puntos": 3,
+      "edadH": 14.862824722222221,
+      "temas": [
+        "nextcloud"
+      ],
+      "motivo": null
+    }
+  ]
+}

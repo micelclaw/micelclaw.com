@@ -85,4 +85,4 @@ An inventory is only worth having if it's true, and it's only true if updating i
 
 ---
 
-*Next up: your photos. Type what you half-remember about one — the colour of a door, a city, someone's face — and see if it finds it.*
+*Next up: your files. The two questions a folder was never able to answer — did I already save this, and what did it look like before?*

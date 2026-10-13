@@ -1,0 +1,16 @@
+{
+  "name": "gif-b1-delegation-shots",
+  "date": "2026-07-26",
+  "kind": "shots",
+  "kicker": "Who's asking?",
+  "signature": "micelclaw.com/blog/agent-identity",
+  "beats": [
+    { "label": "One coordinator. Six specialist helpers.", "durSec": 2.2,
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/c1-1-tree.png", "fit": "contain", "focus": { "zoom": 1, "cx": 0.5, "cy": 0.5 } },
+    { "label": "Each helper: its own apps and budget.", "durSec": 2.0, "tone": "cyan",
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/a1-3-dali.png", "focus": { "zoom": 1, "cx": 0.5, "cy": 0.7 } },
+    { "label": "And its own tool access.", "durSec": 1.6, "tone": "amber",
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/a1-2-tools.png", "focus": { "zoom": 1, "cx": 0.5, "cy": 0.25 } },
+    { "label": "Every one proves who it is.", "durSec": 1.2, "tone": "good" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "gif-c2-team-concept",
+  "date": "2026-07-27",
+  "kind": "concept",
+  "concept": "team",
+  "kicker": "Your AI team",
+  "signature": "micelclaw.com",
+  "beats": [
+    { "label": "You ask for something.", "durSec": 1.8 },
+    { "label": "One coordinator picks the right helper.", "durSec": 2.2, "tone": "cyan" },
+    { "label": "Each helper proves who it is.", "durSec": 1.8, "tone": "amber" },
+    { "label": "The job actually gets done.", "durSec": 1.2, "tone": "good" }
+  ]
+}

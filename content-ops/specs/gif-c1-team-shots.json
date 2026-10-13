@@ -1,0 +1,16 @@
+{
+  "name": "gif-c1-team-shots",
+  "date": "2026-07-27",
+  "kind": "shots",
+  "kicker": "Your AI team",
+  "signature": "micelclaw.com",
+  "beats": [
+    { "label": "Your AI has a team.", "durSec": 1.8,
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/c1-1-tree.png", "fit": "contain" },
+    { "label": "One coordinator takes your request.", "durSec": 2.2, "tone": "cyan",
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/c1-2-coord.png", "fit": "contain" },
+    { "label": "Specialists do the actual work.", "durSec": 2.0, "tone": "amber",
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/c1-3-helpers.png", "fit": "contain" },
+    { "label": "Each one proves who it is.", "durSec": 1.2, "tone": "good" }
+  ]
+}

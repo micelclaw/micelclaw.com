@@ -1,0 +1,16 @@
+{
+  "name": "gif-a1-identity-shots",
+  "date": "2026-07-26",
+  "kind": "shots",
+  "kicker": "Agent identity",
+  "signature": "micelclaw.com/blog/agent-identity",
+  "beats": [
+    { "label": "Every agent has its own identity files.", "durSec": 2.2,
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/a1-1-identity.png", "focus": { "zoom": 1, "cx": 0.5, "cy": 0.2 } },
+    { "label": "Its own tool access.", "durSec": 1.8, "tone": "cyan",
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/a1-2-tools.png", "focus": { "zoom": 1, "cx": 0.5, "cy": 0.25 } },
+    { "label": "The audio helper: 6 apps, its own budget.", "durSec": 2.0, "tone": "amber",
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/crops/a1-3-dali.png", "focus": { "zoom": 1, "cx": 0.5, "cy": 0.7 } },
+    { "label": "Each agent gets its own key.", "durSec": 1.2, "tone": "good" }
+  ]
+}
