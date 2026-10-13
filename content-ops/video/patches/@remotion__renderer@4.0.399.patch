@@ -1,0 +1,16 @@
+diff --git a/dist/get-port.js b/dist/get-port.js
+index dc16bcba64e4be355dd5e7f65225860727f18d87..d59168a72087eea1d897406b11b288bf0290db8e 100644
+--- a/dist/get-port.js
++++ b/dist/get-port.js
+@@ -14,9 +14,9 @@ const isPortAvailableOnHost = ({ portToTry, host, }) => {
+             status = 'unavailable';
+             socket.destroy();
+         });
+-        socket.setTimeout(3000);
++        socket.setTimeout(500);
+         socket.on('timeout', () => {
+-            status = 'unavailable';
++            status = 'available';
+             socket.destroy();
+             resolve(status);
+         });

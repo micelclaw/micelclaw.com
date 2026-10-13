@@ -1,0 +1,30 @@
+{
+  "name": "@micelclaw/video-pipeline",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pipeline de generación de vídeo de content-ops (Remotion + ffmpeg + Kokoro TTS)",
+  "scripts": {
+    "studio": "remotion studio remotion/index.ts",
+    "render": "remotion render remotion/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.399",
+    "@remotion/renderer": "4.0.399",
+    "@remotion/transitions": "4.0.399",
+    "@remotion/zod-types": "4.0.399",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.399",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.8.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@remotion/renderer@4.0.399": "patches/@remotion__renderer@4.0.399.patch"
+    }
+  }
+}
