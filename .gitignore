@@ -32,3 +32,20 @@ content-ops/assets/*.tmp.png
 # Claude Code
 CLAUDE.md
 .claude/
+
+# Local content credentials, sessions and Python runtime
+content-ops/.env.local.*
+!content-ops/.env.local.example
+__pycache__/
+*.py[cod]
+.venv/
+
+# Downloaded video models and redundant font download archives
+content-ops/video/assets/models/
+content-ops/video/assets/fonts/*.zip
+content-ops/video/assets/fonts/*.ttc
+
+# Machine-local footage links and generated QA stills
+content-ops/video/public/footage/
+content-ops/video/projects/*/thumbs/_still-*.png
+content-ops/video/projects/*/thumbs/*-qa*.png
