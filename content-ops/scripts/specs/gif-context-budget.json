@@ -1,0 +1,35 @@
+{
+  "name": "gif-context-budget",
+  "date": "2026-08-02",
+  "kind": "shots",
+  "kicker": "Context budget",
+  "beats": [
+    {
+      "label": "Every app costs the agent room to think.",
+      "durSec": 2.6,
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/budget-crop-francis.png",
+      "fit": "contain",
+      "tone": "amber"
+    },
+    {
+      "label": "Nine apps, 97% of the window gone.",
+      "durSec": 2.4,
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/budget-crop-francis.png",
+      "fit": "contain",
+      "tone": "bad"
+    },
+    {
+      "label": "Same apps, a roomier model: 41%.",
+      "durSec": 2.4,
+      "shotSrc": "/home/victor/Projects/_artifacts/screenshots/inbox/budget-crop-darwin.png",
+      "fit": "contain",
+      "tone": "good"
+    },
+    {
+      "label": "45% of the catalogue was two field descriptions.",
+      "durSec": 1.6,
+      "tone": "amber"
+    }
+  ],
+  "signature": "micelclaw.com/blog"
+}

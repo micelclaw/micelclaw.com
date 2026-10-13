@@ -1,0 +1,36 @@
+{
+  "name": "gif-money-lenses",
+  "date": "2026-08-03",
+  "kind": "shots",
+  "_NOTA": "Recortes a ~1.10 (la proporcion del panel del GIF) para que lo LLENEN sin bandas muertas.",
+  "kicker": "Your money, three views",
+  "beats": [
+    {
+      "label": "Personal: am I better off than in January, and where is it going?",
+      "durSec": 3.2,
+      "shotSrc": "/home/victor/Projects/_artifacts/scratch/g-personal.png",
+      "fit": "contain",
+      "tone": "amber"
+    },
+    {
+      "label": "Invoicing: what you billed, what arrived, and who's late.",
+      "durSec": 3.0,
+      "shotSrc": "/home/victor/Projects/_artifacts/scratch/g-invoicing.png",
+      "fit": "contain",
+      "tone": "amber"
+    },
+    {
+      "label": "Accounting: for the twice a year someone asks you for something official.",
+      "durSec": 3.0,
+      "shotSrc": "/home/victor/Projects/_artifacts/scratch/g-accounting.png",
+      "fit": "contain",
+      "tone": "good"
+    },
+    {
+      "label": "Same data. Three lenses. Your own box.",
+      "durSec": 1.8,
+      "tone": "amber"
+    }
+  ],
+  "signature": "micelclaw.com/blog"
+}

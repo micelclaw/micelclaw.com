@@ -1,0 +1,36 @@
+{
+  "name": "gif-inventory-ledger",
+  "date": "2026-08-06",
+  "kind": "shots",
+  "_NOTA": "Recortes a ~1.10 (la proporcion del panel del GIF) para que lo LLENEN sin bandas muertas.",
+  "kicker": "From receipt to inventory",
+  "beats": [
+    {
+      "label": "Photograph a receipt. The items show up proposed, not created.",
+      "durSec": 3.2,
+      "shotSrc": "/home/victor/Projects/_artifacts/scratch/g-inv-review.png",
+      "fit": "contain",
+      "tone": "amber"
+    },
+    {
+      "label": "Approve, and it becomes a movement. Nothing is ever deleted.",
+      "durSec": 3.0,
+      "shotSrc": "/home/victor/Projects/_artifacts/scratch/g-inv-stock.png",
+      "fit": "contain",
+      "tone": "amber"
+    },
+    {
+      "label": "What you own, where it is, what it cost, when the warranty ends.",
+      "durSec": 3.0,
+      "shotSrc": "/home/victor/Projects/_artifacts/scratch/g-inv-catalog.png",
+      "fit": "contain",
+      "tone": "good"
+    },
+    {
+      "label": "Read by a model running on your own machine.",
+      "durSec": 1.8,
+      "tone": "amber"
+    }
+  ],
+  "signature": "micelclaw.com/blog"
+}

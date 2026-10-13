@@ -1,0 +1,14 @@
+{
+  "name": "gif-agents-seams",
+  "date": "2026-07-29",
+  "kind": "concept",
+  "concept": "team",
+  "kicker": "Not one assistant",
+  "beats": [
+    { "label": "You ask for one thing.", "durSec": 1.8 },
+    { "label": "A coordinator picks the specialist.", "durSec": 2.2, "tone": "cyan" },
+    { "label": "Each one runs as itself, with its own tools.", "durSec": 2.2, "tone": "amber" },
+    { "label": "That handoff took us four months.", "durSec": 1.4, "tone": "good" }
+  ],
+  "signature": "micelclaw.com/blog"
+}
